@@ -5,6 +5,7 @@
         <div class="h1 text-center">
             Laravel
         </div>
+
     </div>
 @endsection
 

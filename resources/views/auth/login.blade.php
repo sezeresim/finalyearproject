@@ -4,7 +4,7 @@
     <div class="section section-signup" style="background-size: cover; background-position: top center; min-height: 700px;">
         <div class="container">
             <div class="row">
-                <div class="card card-signup" data-background-color="orange">
+                <div class="card card-signup" data-background-color="blue">
                     <form method="POST" action="{{ route('login') }}">
                         @csrf
                         <div class="card-header text-center">
