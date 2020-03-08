@@ -9,7 +9,6 @@
 
     <title>{{ config('app.name', 'Laravel') }}</title>
     <!-- Fonts -->
-    <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
     <!-- Styles -->
     <link href="{{ asset('assets/css/bootstrap.min.css') }}" rel="stylesheet">
@@ -17,7 +16,7 @@
 </head>
 
 <body class="index-page sidebar-collapse" >
-<nav class="navbar navbar-expand-lg bg-primary" >
+<nav class="navbar navbar-expand-lg bg-info" >
     <div class="container">
         <a class="navbar-brand" href="{{ url('/') }}">
             {{--{{ config('app.name', 'Laravel') }}--}}

@@ -5545,7 +5545,7 @@ img {
 }
 
 .card-signup {
-  max-width: 500px;
+  max-width: 350px;
   margin: 0 auto;
 }
 
@@ -5555,8 +5555,8 @@ img {
 }
 
 .card-signup .card-title {
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 .card-signup .card-footer {

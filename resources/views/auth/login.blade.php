@@ -50,7 +50,7 @@
                             </div>
                         </div>
                         <div class="card-footer text-center">
-                            <button type="submit" class="btn btn-neutral btn-round">
+                            <button type="submit" class="btn btn-neutral text text-black">
                                 {{ __('Login') }}
                             </button>
                             @if (Route::has('password.request'))
