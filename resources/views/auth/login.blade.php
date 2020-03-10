@@ -12,11 +12,6 @@
                         </div>
                         <div class="card-body">
                             <div class="input-group no-border">
-                                <div class="input-group-prepend">
-                              <span class="input-group-text">
-                                <i class="now-ui-icons users_circle-08"></i>
-                              </span>
-                                </div>
                                 <input placeholder="Enter Your E-Mail" id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
 
                                 @error('email')
@@ -27,11 +22,7 @@
 
                             </div>
                             <div class="input-group no-border">
-                                <div class="input-group-prepend">
-                              <span class="input-group-text">
-                                <i class="now-ui-icons ui-1_email-85"></i>
-                              </span>
-                                </div>
+
                                 <input placeholder="Enter Your Password" id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="current-password">
 
                                 @error('password')
