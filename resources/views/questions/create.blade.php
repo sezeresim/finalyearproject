@@ -13,12 +13,16 @@
                             <div class="form-group">
                                 <label for="title" class="category">Title</label>
                                 <input name="title" type="text" class="form-control" id="title" aria-describedby="TitleHelp" placeholder="Testinize İsim Veriniz.">
-                                <small id="TitleHelp" class="form-text text-muted">Testinize bir isim veriniz.</small>
+                                @error('title')
+                                    <small class="text-danger">{{$message}}</small>
+                                @enderror
                             </div>
                             <div class="form-group">
                                 <label for="purpose" class="category">Purpose</label>
                                 <input name="purpose" type="text" class="form-control" id="purpose" aria-describedby="purposeHelp" placeholder="Testinizin Amacı Nedir.">
-                                <small id="purposeHelp" class="form-text text-muted">Testinizin Amacı Nedir.</small>
+                                @error('purpose')
+                                    <small class="text-danger">{{$message}}</small>
+                                @enderror
                             </div>
                             <button type="submit" class="btn btn-success">Kaydet</button>
                         </form>

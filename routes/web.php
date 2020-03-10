@@ -18,8 +18,10 @@ Route::get('/', function () {
 });
 
 Auth::routes();
-
 Route::get('/home', 'HomeController@index')->name('home');
 
+//For Questions
 Route::get('questions/create','questionAreaController@create');
+Route::post('questions','questionAreaController@store');
+Route::get('questions/{question}','questionAreaController@show');
 
