@@ -2,23 +2,24 @@
 
 namespace App\Http\Controllers;
 
-use App\questionArea;
+use App\QuestionArea;
 use Illuminate\Http\Request;
 
 class QuestionController extends Controller
 {
-    public function create(questionArea $questionArea){
+    public function create(QuestionArea $questionArea){
         return view('question.create',compact('questionArea'));
     }
 
-    public function store(questionArea $questionArea){
+    public function store(QuestionArea $questionArea){
         //dd(request()->all());
 
-        $data=request()->validate([
+        $data = request()->validate([
             'question.question'=>'required',
             'answers.*.answer'=>'required',
         ]);
-        dd($data);
-        $question=$questionArea->test()->create($data['question']);
+        //dd($data);
+        $question=$questionArea->questions()->create($data['question']);
+        $question->answers()->createMany($data['answers']);
     }
 }

@@ -15,7 +15,7 @@ class CreateQuestionsTable extends Migration
     {
         Schema::create('questions', function (Blueprint $table) {
             $table->id();
-            $table->unsignedBigInteger('questionarea_id');
+            $table->unsignedBigInteger('question_area_id');
             $table->string('question');
             $table->timestamps();
         });
@@ -28,6 +28,6 @@ class CreateQuestionsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('tests');
+        Schema::dropIfExists('questions');
     }
 }

@@ -8,7 +8,7 @@ class Answer extends Model
 {
     protected $guarded=[];
 
-    public function test(){
+    public function questions(){
         return $this->belongsTo(Question::class);
     }
 }

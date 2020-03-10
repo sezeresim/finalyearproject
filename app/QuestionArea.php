@@ -12,7 +12,7 @@ class questionArea extends Model
         return $this->belongsTo(User::class);
     }
 
-    public function test(){
+    public function questions(){
         return $this->hasMany(Question::class);
     }
 }

@@ -33,7 +33,7 @@ class questionAreaController extends Controller
         return redirect('/questionarea/'.$questions->id);
     }
 
-    public function show(\App\questionArea $questionarea)
+    public function show(\App\QuestionArea $questionarea)
     {
         return view('questionarea.show',compact('questionarea'));
     }
