@@ -26,4 +26,4 @@ Route::post('questionarea','QuestionAreaController@store');
 Route::get('questionarea/{questionarea}','QuestionAreaController@show');
 
 Route::get('questions/{questionArea}/tests/create','QuestionController@create');
-Route::post('questions/{questionArea}/tests','QuestionController@store');
+Route::post('questions/{questionArea}/question','QuestionController@store');
