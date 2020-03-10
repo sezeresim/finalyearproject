@@ -13,7 +13,7 @@ class questionAreaController extends Controller
 
     public function create()
     {
-        return view('questions.create');
+        return view('questionarea.create');
     }
 
     public function store()
@@ -26,15 +26,15 @@ class questionAreaController extends Controller
 
         /*$data['user_id']=auth()->user()->id;
 
-        $questions = \App\questionArea::create($data);*/
+        $questionarea = \App\questionArea::create($data);*/
 
         $questions= auth()->user()->questions()->create($data);
 
-        return redirect('/questions/'.$questions->id);
+        return redirect('/questionarea/'.$questions->id);
     }
 
-    public function show(\App\questionArea $question)
+    public function show(\App\questionArea $questionarea)
     {
-        return view('questions.show',compact('question'));
+        return view('questionarea.show',compact('questionarea'));
     }
 }

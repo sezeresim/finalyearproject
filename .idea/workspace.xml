@@ -2,11 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4247a708-5a15-4128-8808-9dbf6a8decf2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/resources/views/question/create.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/questionAreaController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/questionAreaController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/questionArea.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/questionArea.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/questions/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/questions/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/questionAreaController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/QuestionAreaController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/questionArea.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/QuestionArea.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/questions/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/questionarea/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/questions/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/questionarea/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server.php" beforeDir="false" afterPath="$PROJECT_DIR$/server.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Feature/ExampleTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/ExampleTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Unit/ExampleTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Unit/ExampleTest.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -134,12 +140,18 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/test" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Final Project\projectWeb\resources\views\test" />
+    </key>
   </component>
   <component name="RunManager" selected="JavaScript Debug.web.php">
     <configuration name="web.php" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/projectWeb/routes/web.php" useBuiltInWebServerPort="true">
@@ -169,7 +181,7 @@
       <workItem from="1583610824292" duration="7778000" />
       <workItem from="1583689932803" duration="7441000" />
       <workItem from="1583776922161" duration="1217000" />
-      <workItem from="1583845059799" duration="11805000" />
+      <workItem from="1583845059799" duration="18524000" />
     </task>
     <servers />
   </component>
@@ -192,6 +204,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="320" y="133" key="#com.intellij.ide.fileTemplates.ui.ConfigureTemplatesDialog/0.0.1366.728@0.0.1366.728" timestamp="1583612590649" />
+    <state x="411" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1583875176216">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="411" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.728@0.0.1366.728" timestamp="1583875176216" />
     <state width="1323" height="196" key="GridCell.Tab.0.bottom" timestamp="1583859052632">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

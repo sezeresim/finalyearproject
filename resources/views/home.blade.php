@@ -13,7 +13,7 @@
                     @endif
                     Panel
                         <hr>
-                        <a href="/questions/create" class="btn btn-success">Yeni bir test oluştur</a>
+                        <a href="/questionarea/create" class="btn btn-success">Yeni bir test oluştur</a>
                 </div>
             </div>
 

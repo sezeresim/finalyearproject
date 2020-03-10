@@ -21,7 +21,9 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 //For Questions
-Route::get('questions/create','questionAreaController@create');
-Route::post('questions','questionAreaController@store');
-Route::get('questions/{question}','questionAreaController@show');
+Route::get('questionarea/create','QuestionAreaController@create');
+Route::post('questionarea','QuestionAreaController@store');
+Route::get('questionarea/{questionarea}','QuestionAreaController@show');
 
+Route::get('questions/{questionArea}/tests/create','QuestionController@create');
+Route::post('questions/{questionArea}/tests','QuestionController@store');

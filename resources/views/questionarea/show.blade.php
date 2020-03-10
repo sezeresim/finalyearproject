@@ -6,10 +6,9 @@
             <div class="col-md-12">
                 <div class="card">
                     <div class="card-body">
-                        <p>Title : {{$question->id}}</p>
-                        <p>Question Id : {{$question->id}}</p>
-                        <p>Question Purpose : {{$question->purpose}}</p>
+                        <p>{{$questionarea->title}}</p>
                         <hr>
+                        <a class="btn btn-success" href="/questions/{{$questionarea->id}}/tests/create">Yeni Soru Ekle</a>
                     </div>
                 </div>
 
