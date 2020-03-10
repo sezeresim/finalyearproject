@@ -6,7 +6,9 @@
             <div class="col-md-12">
                 <div class="card">
                     <div class="card-body">
-                        <p>{{$question->title}}</p>
+                        <p>Title : {{$question->id}}</p>
+                        <p>Question Id : {{$question->id}}</p>
+                        <p>Question Purpose : {{$question->purpose}}</p>
                         <hr>
                     </div>
                 </div>
