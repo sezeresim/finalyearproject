@@ -35,6 +35,8 @@ class questionAreaController extends Controller
 
     public function show(\App\QuestionArea $questionarea)
     {
+        $questionarea->load('questions.answers');
+
         return view('questionarea.show',compact('questionarea'));
     }
 }

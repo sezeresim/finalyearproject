@@ -21,5 +21,7 @@ class QuestionController extends Controller
         //dd($data);
         $question=$questionArea->questions()->create($data['question']);
         $question->answers()->createMany($data['answers']);
+
+        return redirect('/questionarea/'.$questionArea->id);
     }
 }
