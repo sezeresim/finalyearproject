@@ -11,11 +11,12 @@
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Nunito:400,700" rel="stylesheet">
     <!-- Styles -->
-    <link href="{{ asset('assets/css/bootstrap.min.css') }}" rel="stylesheet">
-    <link href="{{ asset('assets/css/now-ui-kit.css?v=1.3.0') }}" rel="stylesheet">
+    <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/custom.css') }}" rel="stylesheet">
+
 </head>
 
-<body class="index-page sidebar-collapse" >
+<body>
     <nav class="navbar navbar-expand-lg bg-info" >
         <div class="container">
             <a class="navbar-brand" href="{{ url('/') }}">
@@ -23,7 +24,7 @@
                 Sezer Esim
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
-                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon">///Menu</span>
             </button>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -53,10 +54,10 @@
                             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                                 <a class="dropdown-item" href="{{ route('logout') }}"
                                    onclick="event.preventDefault();
-                                                         document.getElementById('logout-form').submit();"><i class="now-ui-icons sport_user-run"></i>
+                                                         document.getElementById('logout-form').submit();">
                                     {{ __('Logout') }}
                                 </a>
-                                <a class="dropdown-item" href="{{ route('home') }}"><i class="now-ui-icons users_single-02"></i>
+                                <a class="dropdown-item" href="{{ route('home') }}">
                                     {{ __('Profile') }}
                                 </a>
                                 <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
@@ -69,43 +70,29 @@
             </div>
         </div>
     </nav>
-    <div class="wrapper">
-        <div class="main">
+    <div >
+        <div class="container section-padding">
             @yield('content')
         </div>
-        <footer class="footer" >
-            <div class="footer" data-background-color="black">
-                <nav>
-                    <ul>
-                        <li>
-                            <a href="http://sezer.best">
-                                @sezeresim
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-                <div class="copyright" id="copyright" style="margin-right: 10px;">
-                    &copy;
-                    <script>
-                        document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))
-                    </script>
+        <footer>
+            <!--Bottom Footer-->
+            <div class="bottom section-padding">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="copyright">
+                                sezer.best
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
+            <!--Bottom Footer-->
         </footer>
     </div>
     <!--   Core JS Files   -->
-    <script src="{{ asset('assets/js/core/jquery.min.js') }}" type="text/javascript"></script>
-    <script src="{{ asset('assets/js/core/popper.min.js') }}" type="text/javascript"></script>
-    <script src="{{ asset('assets/js/core/bootstrap.min.js') }}" type="text/javascript"></script>
-    <!--  Plugin for Switches, full documentation here: http://www.jque.re/plugins/version3/bootstrap.switch/ -->
-    <script src="{{ asset('assets/js/plugins/bootstrap-switch.js') }}"></script>
-    <!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
-    <script src="{{ asset('assets/js/plugins/nouislider.min.js') }}" type="text/javascript"></script>
-    <!--  Plugin for the DatePicker, full documentation here: https://github.com/uxsolutions/bootstrap-datepicker -->
-    <script src="{{ asset('assets/js/plugins/bootstrap-datepicker.js') }}" type="text/javascript"></script>
-   {{-- <!--  Google Maps Plugin    -->
-    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>--}}
-    <!-- Control Center for Now Ui Kit: parallax effects, scripts for the example pages etc -->
-    <script src="{{ asset('assets/js/now-ui-kit.js?v=1.3.0') }}" type="text/javascript"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 </html>

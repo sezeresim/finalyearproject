@@ -1,13 +1,210 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4247a708-5a15-4128-8808-9dbf6a8decf2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/survey/show.blade.php" afterDir="false" />
+    <list default="true" id="7b7971d4-60a0-44c8-9bbe-4cb8c4a06ce3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/public/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/custom.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/QuestionAreaController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/QuestionAreaController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/QuestionController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/QuestionController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Controller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/css/bootstrap.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/css/now-ui-kit.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/css/now-ui-kit.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/css/now-ui-kit.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/demo/demo.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/fonts/nucleo-license.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/fonts/nucleo-outline.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/fonts/nucleo-outline.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/fonts/nucleo-outline.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/fonts/nucleo-outline.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/apple-icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/avatar.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/bg1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/bg11.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/bg3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/bg4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/bg5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/bg6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/bg7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/bg8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/blurred-image-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/creative-tim-white-slim2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/default-avatar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/eva.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/favicon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/flags/AD.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/flags/AE.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/flags/AG.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/flags/AM.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/flags/AR.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/flags/AT.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/flags/AU.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/flags/BE.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/flags/BF.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/flags/BG.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/flags/BO.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/flags/BR.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/flags/CA.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/flags/CD.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/flags/CG.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/flags/CH.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/flags/CL.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/flags/CM.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/flags/CN.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/flags/CO.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/flags/CZ.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/flags/DE.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/flags/DJ.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/flags/DK.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/flags/DZ.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/flags/EE.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/flags/EG.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/flags/ES.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/flags/FI.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/flags/FR.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/flags/GA.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/flags/GB.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/flags/GM.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/flags/GT.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/flags/HN.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/flags/HT.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/flags/HU.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/flags/ID.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/flags/IE.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/flags/IL.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/flags/IN.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/flags/IQ.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/flags/IR.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/flags/IT.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/flags/JM.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/flags/JO.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/flags/JP.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/flags/KG.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/flags/KN.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/flags/KP.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/flags/KR.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/flags/KW.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/flags/KZ.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/flags/LA.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/flags/LB.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/flags/LC.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/flags/LS.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/flags/LU.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/flags/LV.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/flags/MG.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/flags/MK.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/flags/ML.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/flags/MM.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/flags/MT.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/flags/MX.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/flags/NA.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/flags/NE.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/flags/NG.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/flags/NI.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/flags/NL.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/flags/NO.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/flags/OM.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/flags/PA.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/flags/PE.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/flags/PG.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/flags/PK.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/flags/PL.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/flags/PT.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/flags/PY.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/flags/QA.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/flags/RO.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/flags/RU.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/flags/RW.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/flags/SA.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/flags/SE.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/flags/SG.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/flags/SL.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/flags/SN.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/flags/SO.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/flags/SV.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/flags/TD.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/flags/TJ.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/flags/TL.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/flags/TR.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/flags/TZ.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/flags/UA.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/flags/US.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/flags/VE.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/flags/VN.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/flags/YE.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/header.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/hero-image-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/hero-image-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/hero-image-3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/invision-white-slim.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/julie.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/landing.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/login.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/logo-square.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/now-logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/nucleo-logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/profile.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/ryan.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/js/core/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/js/core/jquery.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/js/core/popper.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/js/now-ui-kit.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/js/now-ui-kit.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/js/now-ui-kit.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/js/plugins/bootstrap-datepicker.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/js/plugins/bootstrap-switch.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/js/plugins/nouislider.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/scss/now-ui-kit.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/scss/now-ui-kit/_alerts.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/scss/now-ui-kit/_badges.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/scss/now-ui-kit/_buttons.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/scss/now-ui-kit/_cards.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/scss/now-ui-kit/_carousel.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/scss/now-ui-kit/_checkboxes-radio.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/scss/now-ui-kit/_dropdown.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/scss/now-ui-kit/_example-pages.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/scss/now-ui-kit/_footers.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/scss/now-ui-kit/_images.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/scss/now-ui-kit/_inputs.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/scss/now-ui-kit/_misc.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/scss/now-ui-kit/_mixins.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/scss/now-ui-kit/_modals.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/scss/now-ui-kit/_navbar.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/scss/now-ui-kit/_nucleo-outline.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/scss/now-ui-kit/_pagination.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/scss/now-ui-kit/_pills.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/scss/now-ui-kit/_popups.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/scss/now-ui-kit/_progress.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/scss/now-ui-kit/_responsive.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/scss/now-ui-kit/_sections.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/scss/now-ui-kit/_tabs.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/scss/now-ui-kit/_typography.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/scss/now-ui-kit/_variables.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/scss/now-ui-kit/cards/_card-plain.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/scss/now-ui-kit/cards/_card-signup.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/scss/now-ui-kit/mixins/_badges.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/scss/now-ui-kit/mixins/_buttons.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/scss/now-ui-kit/mixins/_cards.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/scss/now-ui-kit/mixins/_datepicker.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/scss/now-ui-kit/mixins/_dropdown.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/scss/now-ui-kit/mixins/_inputs.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/scss/now-ui-kit/mixins/_modals.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/scss/now-ui-kit/mixins/_navbar.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/scss/now-ui-kit/mixins/_pages.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/scss/now-ui-kit/mixins/_popovers.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/scss/now-ui-kit/mixins/_transparency.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/scss/now-ui-kit/mixins/_vendor-prefixes.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/scss/now-ui-kit/plugins/_plugin-bootstrap-switch.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/scss/now-ui-kit/plugins/_plugin-datepicker.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/scss/now-ui-kit/plugins/_plugin-nouislider.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/scss/now-ui-kit/plugins/_plugin-perfect-scrollbar.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/register.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/register.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/questionarea/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/questionarea/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/question/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/question/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/questionarea/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/questionarea/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -15,17 +212,21 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution>
       <executable />
     </execution>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="PackageJsonUpdateNotifier">
-    <dismissed value="$PROJECT_DIR$/package.json" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -126,176 +327,49 @@
       <path value="$PROJECT_DIR$/vendor/laravel/ui" />
     </include_path>
   </component>
-  <component name="ProjectId" id="1YoVmJMpl92fAbapRm0iB9xk0Fi" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <ConfirmationsSetting value="2" id="Add" />
-  </component>
+  <component name="ProjectId" id="1Z5fBCtA2atd3cr1QPLfXKZUfif" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/survey" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/css" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\Final Project\projectWeb\resources\views\survey" />
-      <recent name="E:\Final Project\projectWeb\resources\views\test" />
+      <recent name="E:\Final Project\projectWeb\public\css" />
     </key>
-  </component>
-  <component name="RunManager" selected="JavaScript Debug.web.php">
-    <configuration name="web.php" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/projectWeb/routes/web.php" useBuiltInWebServerPort="true">
-      <method v="2" />
-    </configuration>
-    <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
-      <TestRunner scope="XML" />
-      <method v="2" />
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="JavaScript Debug.web.php" />
-      </list>
-    </recent_temporary>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Final Project\projectWeb\public" />
+      <recent name="E:\Final Project\projectWeb\public\assets\css" />
+    </key>
   </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="4247a708-5a15-4128-8808-9dbf6a8decf2" name="Default Changelist" comment="" />
-      <created>1583609092176</created>
+      <changelist id="7b7971d4-60a0-44c8-9bbe-4cb8c4a06ce3" name="Default Changelist" comment="" />
+      <created>1584133739370</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1583609092176</updated>
-      <workItem from="1583609099560" duration="1686000" />
-      <workItem from="1583610824292" duration="7778000" />
-      <workItem from="1583689932803" duration="7441000" />
-      <workItem from="1583776922161" duration="1217000" />
-      <workItem from="1583845059799" duration="19310000" />
-      <workItem from="1583876644584" duration="2321000" />
-      <workItem from="1583946166579" duration="7053000" />
+      <updated>1584133739370</updated>
+      <workItem from="1584133748229" duration="4870000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
   <component name="WindowStateProjectService">
-    <state x="320" y="133" key="#com.intellij.ide.fileTemplates.ui.ConfigureTemplatesDialog" timestamp="1583612590649">
+    <state x="342" y="188" key="com.intellij.ide.util.TipDialog" timestamp="1584133823673">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="320" y="133" key="#com.intellij.ide.fileTemplates.ui.ConfigureTemplatesDialog/0.0.1366.728@0.0.1366.728" timestamp="1583612590649" />
-    <state x="411" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1583875176216">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="411" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.728@0.0.1366.728" timestamp="1583875176216" />
-    <state width="1323" height="196" key="GridCell.Tab.0.bottom" timestamp="1583859052632">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1323" height="196" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1583859052632" />
-    <state width="1323" height="196" key="GridCell.Tab.0.center" timestamp="1583859052631">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1323" height="196" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1583859052631" />
-    <state width="1323" height="196" key="GridCell.Tab.0.left" timestamp="1583859052631">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1323" height="196" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1583859052631" />
-    <state width="1323" height="196" key="GridCell.Tab.0.right" timestamp="1583859052631">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1323" height="196" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1583859052631" />
-    <state width="1323" height="196" key="GridCell.Tab.1.bottom" timestamp="1583859052632">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1323" height="196" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1583859052632" />
-    <state width="1323" height="196" key="GridCell.Tab.1.center" timestamp="1583859052632">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1323" height="196" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1583859052632" />
-    <state width="1323" height="196" key="GridCell.Tab.1.left" timestamp="1583859052632">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1323" height="196" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1583859052632" />
-    <state width="1323" height="196" key="GridCell.Tab.1.right" timestamp="1583859052632">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1323" height="196" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1583859052632" />
-    <state width="1323" height="196" key="GridCell.Tab.2.bottom" timestamp="1583859052632">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1323" height="196" key="GridCell.Tab.2.bottom/0.0.1366.728@0.0.1366.728" timestamp="1583859052632" />
-    <state width="1323" height="196" key="GridCell.Tab.2.center" timestamp="1583859052632">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1323" height="196" key="GridCell.Tab.2.center/0.0.1366.728@0.0.1366.728" timestamp="1583859052632" />
-    <state width="1323" height="196" key="GridCell.Tab.2.left" timestamp="1583859052632">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1323" height="196" key="GridCell.Tab.2.left/0.0.1366.728@0.0.1366.728" timestamp="1583859052632" />
-    <state width="1323" height="196" key="GridCell.Tab.2.right" timestamp="1583859052632">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1323" height="196" key="GridCell.Tab.2.right/0.0.1366.728@0.0.1366.728" timestamp="1583859052632" />
-    <state x="184" y="6" key="SettingsEditor" timestamp="1583609950609">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="184" y="6" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1583609950609" />
-    <state x="92" y="127" width="1182" height="544" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1583877032277">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="92" y="127" width="1182" height="544" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1366.728@0.0.1366.728" timestamp="1583877032277" />
-    <state x="342" y="188" key="com.intellij.ide.util.TipDialog" timestamp="1583946167901">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="342" y="188" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1583946167901" />
-    <state x="485" y="276" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1583877003483">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="485" y="276" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728@0.0.1366.728" timestamp="1583877003483" />
-    <state x="339" y="162" key="run.anything.popup" timestamp="1583956181885">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="339" y="162" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1583956181885" />
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1583609910234">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1583609910234" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/resources/views/layouts/app.blade.php</url>
-          <line>2</line>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/app/Http/Controllers/Controller.php</url>
-          <line>4</line>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <state x="342" y="188" key="com.intellij.ide.util.TipDialog/0.0.1366.728/-1440.-79.1440.860@0.0.1366.728" timestamp="1584133823673" />
   </component>
 </project>
