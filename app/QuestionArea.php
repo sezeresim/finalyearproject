@@ -8,11 +8,17 @@ class questionArea extends Model
 {
     protected $guarded=[];
 
-    public function user(){
+    public function user()
+    {
         return $this->belongsTo(User::class);
     }
 
-    public function questions(){
+    public function questions()
+    {
         return $this->hasMany(Question::class);
+    }
+    public function surveys()
+    {
+        return $this->hasMany( Survey::class);
     }
 }

@@ -26,3 +26,4 @@ Route::get('/questions/{questionArea}/question/create','QuestionController@creat
 Route::post('/questions/{questionArea}/question','QuestionController@store');
 
 Route::get('/surveys/{questionarea}-{slug}','SurveyController@show');
+Route::post('/surveys/{questionarea}-{slug}','SurveyController@store');
