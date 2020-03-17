@@ -20,7 +20,18 @@
                         <div class="card-body ">
                             <ul class="list-group">
                                 @foreach($question->answers as $answer)
-                                    <li class="list-group-item">{{ $answer->answer }}</li>
+                                    <li class="list-group-item d-flex justify-content-between">
+                                        <div>{{ $answer->answer }}</div>
+                                        @if($question->responses->count())
+                                            <div>{{ intval(($answer->responses->count() * 100 ) /$question->responses->count())}} %</div>
+                                        @endif
+                                    </li>
+
+                                   {{-- <div class="progress">
+                                        <div class="progress-bar bg-success" role="progressbar" style="width: {{ ($answer->responses->count() * 100 ) /$question->responses->count()}}%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+                                        <div class="progress-bar" role="progressbar" style="width: {{ 100-(($answer->responses->count() * 100 ) /$question->responses->count())}}%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>--}}
+
                                 @endforeach
                             </ul>
                         </div>

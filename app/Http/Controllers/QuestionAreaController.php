@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\QuestionArea;
 use Illuminate\Http\Request;
 
 class questionAreaController extends Controller
@@ -28,14 +29,14 @@ class questionAreaController extends Controller
 
         $questionarea = \App\questionArea::create($data);*/
 
-        $questions= auth()->user()->questions()->create($data);
+        $questions= auth()->user()->questionarea()->create($data);
 
         return redirect('/questionarea/'.$questions->id);
     }
 
-    public function show(\App\QuestionArea $questionarea)
+    public function show(QuestionArea $questionarea)
     {
-        $questionarea->load('questions.answers');
+        $questionarea->load('questions.answers.responses');
 
         return view('questionarea.show',compact('questionarea'));
     }
