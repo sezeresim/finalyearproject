@@ -14,6 +14,8 @@ class Controller extends BaseController
 
     public function indexfun(){
         $questions=\App\QuestionArea::all();
+
+       // return response()->json($questions);
         return view('welcome',compact('questions'));
     }
 }

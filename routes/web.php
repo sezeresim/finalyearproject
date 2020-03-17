@@ -17,15 +17,19 @@ Route::get('/','Controller@indexfun');
 Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
-//For Questions
+//My Test
+Route::get('/mytests','MyTestsController@index');
+
+//For Question Area
 Route::get('/questionarea/create','QuestionAreaController@create');
 Route::post('/questionarea','QuestionAreaController@store');
 Route::get('/questionarea/{questionarea}','QuestionAreaController@show');
 
+//For Edit Questions
 Route::get('/questions/{questionarea}/question/create','QuestionController@create');
 Route::post('/questions/{questionarea}/question','QuestionController@store');
 Route::delete('/questions/{questionarea}/question/{question}','QuestionController@destroy');
 
-
+//Survey and Test for public
 Route::get('/surveys/{questionarea}-{slug}','SurveyController@show');
 Route::post('/surveys/{questionarea}-{slug}','SurveyController@store');

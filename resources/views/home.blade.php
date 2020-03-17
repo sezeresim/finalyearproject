@@ -6,18 +6,18 @@
         <div class="col-md-12">
             <div class="card">
                 <div class="card-header">
-                    Yönetim Paneli
+                    Profilim
                 </div>
                 <div class="card-body">
-                    @if (session('status'))
-                        <div class="alert alert-success" role="alert">
-                            {{ session('status') }}
-                        </div>
-                    @endif
-                        <a href="/questionarea/create" class="btn btn-success">Yeni bir test oluştur</a>
+                    <ul>
+                        <li>İsim :{{ Auth::user()->name }}</li>
+                        <li>Yetki :{{ Auth::user()->role }}</li>
+                        <li>Toplam Test Sayısı :{{ Auth::user()->post_count }}</li>
+                        <li>Oluşturulan Test Sayısı :{{ Auth::user()->post_counter }}</li>
+                    </ul>
                 </div>
             </div>
-            <div class="card mt-4">
+            {{--<div class="card mt-4">
                 <div class="card-header">
                     Oluşturduğum Testler
                 </div>
@@ -39,7 +39,7 @@
                         @endforeach
                     </ul>
                 </div>
-            </div>
+            </div>--}}
 
         </div>
     </div>
