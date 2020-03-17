@@ -23,6 +23,7 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        $question_areas= auth()->user()->questionarea;
+        return view('home',compact('question_areas'));
     }
 }

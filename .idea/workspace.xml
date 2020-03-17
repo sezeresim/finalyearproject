@@ -2,18 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7b7971d4-60a0-44c8-9bbe-4cb8c4a06ce3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/Sezer_Esim.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/SurveyController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/SurveyController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/QuestionController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/QuestionController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/QuestionArea.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/QuestionArea.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/bootstrap.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/bootstrap.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/custom.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/custom.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/questionarea/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/questionarea/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/question/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/question/create.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/questionarea/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/questionarea/show.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/survey/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/survey/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -21,11 +18,25 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" doNotAsk="true">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="DONT_SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution>
       <executable />
     </execution>
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -149,7 +160,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/public/css" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -159,6 +170,23 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\Final Project\projectWeb\public\css" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="development" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="development" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.development" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -172,26 +200,67 @@
       <updated>1584133739370</updated>
       <workItem from="1584133748229" duration="5467000" />
       <workItem from="1584191199242" duration="1488000" />
-      <workItem from="1584194134432" duration="10209000" />
+      <workItem from="1584194134432" duration="12344000" />
+      <workItem from="1584293390288" duration="4250000" />
+      <workItem from="1584349934573" duration="669000" />
+      <workItem from="1584366815551" duration="1207000" />
+      <workItem from="1584393896403" duration="607000" />
+      <workItem from="1584396068424" duration="15000" />
+      <workItem from="1584441850333" duration="7255000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="WindowStateProjectService">
-    <state x="-1219" y="-7" key="SettingsEditor" timestamp="1584194084979">
+    <state x="-940" y="92" key="FileChooserDialogImpl" timestamp="1584295888893">
       <screen x="-1440" y="-79" width="1440" height="860" />
     </state>
-    <state x="-1219" y="-7" key="SettingsEditor/0.0.1366.728/-1440.-79.1440.860@-1440.-79.1440.860" timestamp="1584194084979" />
-    <state x="-1079" y="143" key="com.intellij.ide.util.TipDialog" timestamp="1584194136153">
+    <state x="-940" y="92" key="FileChooserDialogImpl/0.0.1366.728/-1440.-79.1440.860@-1440.-79.1440.860" timestamp="1584295888893" />
+    <state width="1419" height="196" key="GridCell.Tab.0.bottom" timestamp="1584223924604">
       <screen x="-1440" y="-79" width="1440" height="860" />
     </state>
-    <state x="-1079" y="143" key="com.intellij.ide.util.TipDialog/0.0.1366.728/-1440.-79.1440.860@-1440.-79.1440.860" timestamp="1584194136153" />
+    <state width="1419" height="196" key="GridCell.Tab.0.bottom/0.0.1366.728/-1440.-79.1440.860@-1440.-79.1440.860" timestamp="1584223924604" />
+    <state width="1419" height="196" key="GridCell.Tab.0.center" timestamp="1584223924604">
+      <screen x="-1440" y="-79" width="1440" height="860" />
+    </state>
+    <state width="1419" height="196" key="GridCell.Tab.0.center/0.0.1366.728/-1440.-79.1440.860@-1440.-79.1440.860" timestamp="1584223924604" />
+    <state width="1419" height="196" key="GridCell.Tab.0.left" timestamp="1584223924604">
+      <screen x="-1440" y="-79" width="1440" height="860" />
+    </state>
+    <state width="1419" height="196" key="GridCell.Tab.0.left/0.0.1366.728/-1440.-79.1440.860@-1440.-79.1440.860" timestamp="1584223924604" />
+    <state width="1419" height="196" key="GridCell.Tab.0.right" timestamp="1584223924604">
+      <screen x="-1440" y="-79" width="1440" height="860" />
+    </state>
+    <state width="1419" height="196" key="GridCell.Tab.0.right/0.0.1366.728/-1440.-79.1440.860@-1440.-79.1440.860" timestamp="1584223924604" />
+    <state x="-1347" y="61" key="SettingsEditor" timestamp="1584295876528">
+      <screen x="-1440" y="-79" width="1440" height="860" />
+    </state>
+    <state x="-1347" y="61" key="SettingsEditor/0.0.1366.728/-1440.-79.1440.860@-1440.-79.1440.860" timestamp="1584295876528" />
+    <state x="342" y="188" key="com.intellij.ide.util.TipDialog" timestamp="1584441848079">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="-1079" y="143" key="com.intellij.ide.util.TipDialog/0.0.1366.728/-1440.-79.1440.860@-1440.-79.1440.860" timestamp="1584349933921" />
     <state x="342" y="188" key="com.intellij.ide.util.TipDialog/0.0.1366.728/-1440.-79.1440.860@0.0.1366.728" timestamp="1584133823673" />
-    <state x="-1057" y="101" width="672" height="678" key="search.everywhere.popup" timestamp="1584222753071">
-      <screen x="-1440" y="-79" width="1440" height="860" />
+    <state x="342" y="188" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1584441848079" />
+    <state x="1749" y="43" width="672" height="678" key="search.everywhere.popup" timestamp="1584450462286">
+      <screen x="1366" y="-137" width="1440" height="860" />
     </state>
-    <state x="-1057" y="101" width="672" height="678" key="search.everywhere.popup/0.0.1366.728/-1440.-79.1440.860@-1440.-79.1440.860" timestamp="1584222753071" />
+    <state x="-1057" y="101" width="672" height="678" key="search.everywhere.popup/0.0.1366.728/-1440.-79.1440.860@-1440.-79.1440.860" timestamp="1584299109696" />
+    <state x="1749" y="43" width="672" height="678" key="search.everywhere.popup/0.0.1366.728/1366.-137.1440.860@1366.-137.1440.860" timestamp="1584450462286" />
   </component>
 </project>

@@ -6,10 +6,9 @@
             <div class="col-md-12">
                 <div class="card">
 
+                    <div class="card-header">Soru Oluştur  ID:{{$questionarea->id}}</div>
                     <div class="card-body">
-                        <p>Soru Oluştur  ID:{{$questionArea->id}}</p>
-                        <hr>
-                        <form action="/questions/{{$questionArea->id}}/question" method="post">
+                        <form action="/questions/{{$questionarea->id}}/question" method="post">
                             @csrf
 
                             <div class="form-group">
@@ -23,8 +22,7 @@
                             </div>
                             <div class="form-group">
                                 <fieldset>
-                                    <legend>Choices</legend>
-                                    <small id="choicesHelp" class="form-text text-muted">Cevap girin</small>
+                                    <legend>Cevaplar</legend>
                                     <div>
                                         <div class="form-group">
                                             <label for="answer1" class="category">Cevap 1</label>

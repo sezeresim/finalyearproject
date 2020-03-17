@@ -3,10 +3,19 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Str;
 
-class questionArea extends Model
+class QuestionArea extends Model
 {
     protected $guarded=[];
+
+    public function path()
+    {
+        return url('/questionarea/'. $this->id);
+    }
+    public function publicPath(){
+        return url('/surveys/'.$this->id.'-'. Str::slug($this->title));
+    }
 
     public function user()
     {

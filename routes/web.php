@@ -22,8 +22,10 @@ Route::get('/questionarea/create','QuestionAreaController@create');
 Route::post('/questionarea','QuestionAreaController@store');
 Route::get('/questionarea/{questionarea}','QuestionAreaController@show');
 
-Route::get('/questions/{questionArea}/question/create','QuestionController@create');
-Route::post('/questions/{questionArea}/question','QuestionController@store');
+Route::get('/questions/{questionarea}/question/create','QuestionController@create');
+Route::post('/questions/{questionarea}/question','QuestionController@store');
+Route::delete('/questions/{questionarea}/question/{question}','QuestionController@destroy');
+
 
 Route::get('/surveys/{questionarea}-{slug}','SurveyController@show');
 Route::post('/surveys/{questionarea}-{slug}','SurveyController@store');

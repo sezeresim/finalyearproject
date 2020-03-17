@@ -20,7 +20,7 @@ class User extends Authenticatable
     ];
 
     /**
-     * The attributes that should be hidden for arrays.
+     * The at1tributes that should be hidden for arrays.
      *
      * @var array
      */
@@ -37,7 +37,7 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
     ];
 
-    public function questions(){
-        return $this->hasMany(questionArea::class);
+    public function questionarea(){
+        return $this->hasMany(QuestionArea::class);
     }
 }

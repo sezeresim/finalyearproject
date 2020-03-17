@@ -14,6 +14,10 @@
                         <div  class="text text-dark">
                             {{ $question->purpose }}
                         </div>
+                        <br>
+                        <div>
+                            <a class="btn btn-success col-md-12" href="/surveys/{{$question->id}}-{{ Str::slug($question->title) }}">Teste Git</a>
+                        </div>
                     </div>
                 </div>
             </div>
