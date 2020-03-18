@@ -2,16 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7b7971d4-60a0-44c8-9bbe-4cb8c4a06ce3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/public/js/custom.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Controller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/QuestionAreaController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/QuestionAreaController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/QuestionArea.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/QuestionArea.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/mytests/mytests.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/mytests/mytests.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,6 +39,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -163,14 +161,14 @@
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\Final Project\projectWeb\public\css" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\Final Project\projectWeb\public\css" />
       <recent name="E:\Final Project\projectWeb\public\js" />
       <recent name="E:\Final Project\projectWeb\public" />
       <recent name="E:\Final Project\projectWeb\public\assets\css" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Final Project\projectWeb\public\css" />
     </key>
   </component>
   <component name="RunManager">
@@ -208,7 +206,8 @@
       <workItem from="1584366815551" duration="1207000" />
       <workItem from="1584393896403" duration="607000" />
       <workItem from="1584396068424" duration="15000" />
-      <workItem from="1584441850333" duration="18838000" />
+      <workItem from="1584441850333" duration="22097000" />
+      <workItem from="1584560797579" duration="3435000" />
     </task>
     <servers />
   </component>
@@ -265,12 +264,12 @@
       <screen x="-1440" y="-79" width="1440" height="860" />
     </state>
     <state x="-1347" y="61" key="SettingsEditor/0.0.1366.728/-1440.-79.1440.860@-1440.-79.1440.860" timestamp="1584295876528" />
-    <state x="342" y="188" key="com.intellij.ide.util.TipDialog" timestamp="1584441848079">
+    <state x="342" y="188" key="com.intellij.ide.util.TipDialog" timestamp="1584560799325">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="-1079" y="143" key="com.intellij.ide.util.TipDialog/0.0.1366.728/-1440.-79.1440.860@-1440.-79.1440.860" timestamp="1584349933921" />
     <state x="342" y="188" key="com.intellij.ide.util.TipDialog/0.0.1366.728/-1440.-79.1440.860@0.0.1366.728" timestamp="1584133823673" />
-    <state x="342" y="188" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1584441848079" />
+    <state x="342" y="188" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1584560799325" />
     <state x="1742" y="127" key="run.anything.popup" timestamp="1584464770870">
       <screen x="1366" y="-137" width="1440" height="860" />
     </state>

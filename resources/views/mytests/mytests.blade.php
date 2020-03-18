@@ -4,41 +4,50 @@
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-12">
-                <div class="card">
-                    <div class="card-header">
-                        Yönetim Paneli
-                    </div>
-                    <div class="card-body">
+                <div>
+                    <div class="mt-2">
                         @if(Auth::user()->post_counter==Auth::user()->post_count)
-                            <div class="alert alert-primary" role="alert">
-                                Daha Fazla Test Oluşturamazsınız!
+                            <div class="alert alert-danger" role="alert">
+                                <i class="fas fa-exclamation"></i>
+                                Daha Fazla Oluşturamazsınız
                             </div>
                         @else
-                        <a href="/questionarea/create" class="btn btn-success">Yeni bir test oluştur</a>
+                            <a href="/questionarea/create" class="btn btn-success">Yeni bir test oluştur</a>
                         @endif
                     </div>
-                </div>
-                <div class="card mt-4">
-                    <div class="card-header">
-                        Oluşturduğum Testler
-                    </div>
-                    <div class="card-body">
-                        <ul class="list-group">
+                    <div class="mt-2">
+                        <table class="table">
+                            <thead class="thead-dark">
+                            <tr>
+                                <th scope="col">Sıra</th>
+                                <th scope="col">Test Adı</th>
+                                <th scope="col">Toplam Soru</th>
+                                <th scope="col">Toplam Katılımcı</th>
+                                <th scope="col">Oluşturma Tarihi</th>
+                                <th scope="col">Paylaşım Linki</th>
+                                <th scope="col">İşlemler</th>
+                            </tr>
+                            </thead>
+                            <tbody>
                             @foreach($question_areas as $question_area)
-                                <li class="list-group-item">
-                                    <a href="{{$question_area->path()}}">{{ $question_area->title }}</a>
+                                <tr>
+                                    <th scope="row">{{ $loop->iteration }} </th>
+                                    <td> <a href="{{$question_area->path()}}" class="text text-dark">{{ $question_area->title }}</a></td>
+                                    <td>{{ $question_area->questions->count() }}</td>
+                                    <td>{{$question_area->surveys->count()}}</td>
+                                    <td>{{ $question_area->created_at }}</td>
+                                    <td>
+                                        <a href="{{ $question_area->publicPath() }}">{{ $question_area->publicPath() }}</a>
+                                    </td>
 
-                                    <div class="mt-2">
-                                        <small class="font-weight-bold">Share URL</small>
-                                        <p>
-                                            <a href="{{ $question_area->publicPath() }}">
-                                                {{ $question_area->publicPath() }}
-                                            </a>
-                                        </p>
-                                    </div>
-                                </li>
+                                    <td>
+                                        <a href="{{$question_area->path()}}" class="btn btn-sm btn-info">Teste Git</a>
+                                        <a href="" class="btn btn-sm btn-danger">Sil</a>
+                                    </td>
+                                </tr>
                             @endforeach
-                        </ul>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
 

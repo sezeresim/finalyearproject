@@ -13,6 +13,7 @@ class QuestionArea extends Model
     {
         return url('/questionarea/'. $this->id);
     }
+
     public function publicPath(){
         return url('/surveys/'.$this->id.'-'. Str::slug($this->title));
     }
