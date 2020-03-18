@@ -12,7 +12,9 @@
                                 Daha Fazla Oluşturamazsınız
                             </div>
                         @else
-                            <a href="/questionarea/create" class="btn btn-success">Yeni bir test oluştur</a>
+                            <a href="/questionarea/create" class="btn btn-success">Yeni bir test oluştur
+                                <span class="badge badge-light">{{Auth::user()->post_count-Auth::user()->post_counter}}</span>
+                            </a>
                         @endif
                     </div>
                     <div class="mt-2">
@@ -21,10 +23,10 @@
                             <tr>
                                 <th scope="col">Sıra</th>
                                 <th scope="col">Test Adı</th>
-                                <th scope="col">Toplam Soru</th>
-                                <th scope="col">Toplam Katılımcı</th>
+                                <th scope="col">#Soru</th>
+                                <th scope="col">#Katılımcı</th>
                                 <th scope="col">Oluşturma Tarihi</th>
-                                <th scope="col">Paylaşım Linki</th>
+                                <th scope="col">P.Link</th>
                                 <th scope="col">İşlemler</th>
                             </tr>
                             </thead>
@@ -37,12 +39,12 @@
                                     <td>{{$question_area->surveys->count()}}</td>
                                     <td>{{ $question_area->created_at }}</td>
                                     <td>
-                                        <a href="{{ $question_area->publicPath() }}">{{ $question_area->publicPath() }}</a>
+                                        <a href="{{ $question_area->publicPath() }}"><i class="fas fa-share"></i>Link</a>
                                     </td>
 
                                     <td>
-                                        <a href="{{$question_area->path()}}" class="btn btn-sm btn-info">Teste Git</a>
-                                        <a href="" class="btn btn-sm btn-danger">Sil</a>
+                                        <a href="{{$question_area->path()}}" class="btn btn-sm btn-info"><i class="far fa-eye"></i> Teste Git</a>
+                                        <a href="" class="btn btn-sm btn-danger"><i class="fas fa-trash"></i></a>
                                     </td>
                                 </tr>
                             @endforeach
