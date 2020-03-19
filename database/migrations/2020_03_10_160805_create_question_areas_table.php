@@ -15,10 +15,13 @@ class CreateQuestionAreasTable extends Migration
     {
         Schema::create('question_areas', function (Blueprint $table) {
             $table->id('id');
-            $table->unsignedBigInteger('user_id');
+            $table->unsignedBigInteger('user_id');;
             $table->string('title');
             $table->string('purpose');
             $table->timestamps();
+
+            //foreign key
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
         });
     }
 
