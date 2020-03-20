@@ -3,7 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="7b7971d4-60a0-44c8-9bbe-4cb8c4a06ce3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/custom.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/custom.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -167,20 +169,21 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/css" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/pricing" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Final Project\projectWeb\resources\views\pricing" />
+      <recent name="E:\Final Project\projectWeb\public\css" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\Final Project\projectWeb\public\css" />
       <recent name="E:\Final Project\projectWeb\public\js" />
       <recent name="E:\Final Project\projectWeb\public" />
       <recent name="E:\Final Project\projectWeb\public\assets\css" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\Final Project\projectWeb\public\css" />
     </key>
   </component>
   <component name="RunManager">
@@ -249,7 +252,7 @@
       <workItem from="1584560797579" duration="5176000" />
       <workItem from="1584651249164" duration="1596000" />
       <workItem from="1584652910998" duration="329000" />
-      <workItem from="1584695447332" duration="8414000" />
+      <workItem from="1584695447332" duration="9000000" />
     </task>
     <servers />
   </component>
@@ -330,5 +333,21 @@
     <state x="-1057" y="101" width="672" height="678" key="search.everywhere.popup/0.0.1366.728/-1440.-79.1440.860@-1440.-79.1440.860" timestamp="1584299109696" />
     <state x="1749" y="43" width="672" height="678" key="search.everywhere.popup/0.0.1366.728/1366.-137.1440.860@1366.-137.1440.860" timestamp="1584450462286" />
     <state x="363" y="152" width="672" height="574" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1584710954301" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/resources/views/pricing/show.blade.php</url>
+          <line>10</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/resources/views/pricing/show.blade.php</url>
+          <line>12</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

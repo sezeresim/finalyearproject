@@ -34,7 +34,7 @@
                         <a class="nav-link text text-white" href="/mytests"><i class="fas fa-poll-h"></i> Testlerim</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text text-white" href="/mytests"><i class="fas fa-cart-plus"></i> Ücretlendirme</a>
+                        <a class="nav-link text text-white" href="/pricing"><i class="fas fa-cart-plus"></i> Ücretlendirme</a>
                     </li>
                 </ul>
 

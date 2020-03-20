@@ -33,3 +33,6 @@ Route::delete('/questions/{questionarea}/question/{question}','QuestionControlle
 //Survey and Test for public
 Route::get('/surveys/{questionarea}-{slug}','SurveyController@show');
 Route::post('/surveys/{questionarea}-{slug}','SurveyController@store');
+
+//Pricing
+Route::get('/pricing','PricingController@index');
