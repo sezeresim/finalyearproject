@@ -19,6 +19,9 @@ class CreateSurveysTable extends Migration
             $table->string('name');
             $table->string('email');
             $table->timestamps();
+            //foreign key
+            $table->foreign('question_area_id')->references('id')->on('question_areas')->onDelete('cascade');
+
         });
     }
 

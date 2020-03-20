@@ -19,6 +19,10 @@ class CreateSurveyResponsesTable extends Migration
             $table->unsignedBigInteger('question_id');
             $table->unsignedBigInteger('answer_id');
             $table->timestamps();
+
+            //foreign key
+            $table->foreign('survey_id')->references('id')->on('surveys')->onDelete('cascade');
+
         });
     }
 

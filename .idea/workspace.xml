@@ -2,12 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7b7971d4-60a0-44c8-9bbe-4cb8c4a06ce3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/database.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_03_10_160805_create_question_areas_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_03_10_160805_create_question_areas_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_03_10_195046_create_questions_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_03_10_195046_create_questions_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_03_10_195118_create_answers_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_03_10_195118_create_answers_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_03_14_210516_create_surveys_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_03_14_210516_create_surveys_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_03_14_210555_create_survey_responses_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_03_14_210555_create_survey_responses_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/register.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/register.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,13 +49,6 @@
         <item name="MySQL - finaldb@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="finaldb: schema" type="76f4a085:MysqlImplModel$Schema" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="MySQL - finaldb@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="finaldb: schema" type="76f4a085:MysqlImplModel$Schema" />
-        <item name="users: table" type="285a2a93:MysqlImplModel$Table" />
       </path>
     </expand>
     <select />
@@ -259,7 +255,8 @@
       <workItem from="1584441850333" duration="22097000" />
       <workItem from="1584560797579" duration="5176000" />
       <workItem from="1584651249164" duration="1596000" />
-      <workItem from="1584652910998" duration="272000" />
+      <workItem from="1584652910998" duration="329000" />
+      <workItem from="1584695447332" duration="8110000" />
     </task>
     <servers />
   </component>
@@ -324,21 +321,21 @@
       <screen x="-1440" y="-79" width="1440" height="860" />
     </state>
     <state x="-1347" y="61" key="SettingsEditor/0.0.1366.728/-1440.-79.1440.860@-1440.-79.1440.860" timestamp="1584295876528" />
-    <state x="342" y="188" key="com.intellij.ide.util.TipDialog" timestamp="1584652920738">
+    <state x="342" y="188" key="com.intellij.ide.util.TipDialog" timestamp="1584695738845">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="-1079" y="143" key="com.intellij.ide.util.TipDialog/0.0.1366.728/-1440.-79.1440.860@-1440.-79.1440.860" timestamp="1584349933921" />
     <state x="342" y="188" key="com.intellij.ide.util.TipDialog/0.0.1366.728/-1440.-79.1440.860@0.0.1366.728" timestamp="1584133823673" />
-    <state x="342" y="188" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1584652920738" />
+    <state x="342" y="188" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1584695738845" />
     <state x="1742" y="127" key="run.anything.popup" timestamp="1584464770870">
       <screen x="1366" y="-137" width="1440" height="860" />
     </state>
     <state x="1742" y="127" key="run.anything.popup/0.0.1366.728/1366.-137.1440.860@1366.-137.1440.860" timestamp="1584464770870" />
-    <state x="363" y="152" width="672" height="574" key="search.everywhere.popup" timestamp="1584651571773">
+    <state x="363" y="152" width="672" height="574" key="search.everywhere.popup" timestamp="1584710954301">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="-1057" y="101" width="672" height="678" key="search.everywhere.popup/0.0.1366.728/-1440.-79.1440.860@-1440.-79.1440.860" timestamp="1584299109696" />
     <state x="1749" y="43" width="672" height="678" key="search.everywhere.popup/0.0.1366.728/1366.-137.1440.860@1366.-137.1440.860" timestamp="1584450462286" />
-    <state x="363" y="152" width="672" height="574" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1584651571773" />
+    <state x="363" y="152" width="672" height="574" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1584710954301" />
   </component>
 </project>
