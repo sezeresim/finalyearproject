@@ -5,15 +5,17 @@
     <div class="row justify-content-center">
         <div class="col-md-12">
             <div class="card">
-                <div class="card-header">
+                <div class="card-header font-weight-bold">
                     Profilim
                 </div>
                 <div class="card-body">
-                    <ul>
-                        <li>İsim :{{ Auth::user()->name }}</li>
-                        <li>Yetki :{{ Auth::user()->role }}</li>
-                        <li>Toplam Test Sayısı :{{ Auth::user()->post_count }}</li>
-                        <li>Oluşturulan Test Sayısı :{{ Auth::user()->post_counter }}</li>
+                    <ul class="list-group list-group-flush text text-dark font-weight-bold">
+                        <li class="list-group-item">İsim :{{ Auth::user()->name }}</li>
+                        <li class="list-group-item">Ülke :{{ Auth::user()->country }}</li>
+                        <li class="list-group-item">Doğum Tarihi :{{ Auth::user()->birtdate }}</li>
+                        <li class="list-group-item">Yetki :{{ Auth::user()->role }}</li>
+                        <li class="list-group-item">Toplam Test Sayısı :{{ Auth::user()->post_count }}</li>
+                        <li class="list-group-item">Oluşturulan Test Sayısı :{{ Auth::user()->post_counter }}</li>
                     </ul>
                 </div>
             </div>
