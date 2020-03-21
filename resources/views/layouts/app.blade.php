@@ -34,6 +34,9 @@
                 <!-- Right Side Of Navbar -->
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
+                        <a class="nav-link text text-white" href="/myclass"><i class="fas fa-users"></i> Sınıflarım</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link text text-white" href="/mytests"><i class="fas fa-poll-h"></i> Testlerim</a>
                     </li>
                     <li class="nav-item">

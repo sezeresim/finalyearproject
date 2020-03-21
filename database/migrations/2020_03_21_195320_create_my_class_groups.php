@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateSurveyResponsesTable extends Migration
+class CreateMyClassGroups extends Migration
 {
     /**
      * Run the migrations.
@@ -13,19 +13,14 @@ class CreateSurveyResponsesTable extends Migration
      */
     public function up()
     {
-        Schema::create('survey_responses', function (Blueprint $table) {
+        Schema::create('my_class_groups', function (Blueprint $table) {
             $table->id();
-            $table->unsignedBigInteger('survey_id');
-            $table->unsignedBigInteger('question_id');
-            $table->unsignedBigInteger('answer_id');
+            $table->string('name');
+            $table->unsignedBigInteger('owner_id');
             $table->timestamps();
 
-
             //foreign key
-            $table->foreign('survey_id')->references('id')->on('surveys')->onDelete('cascade');
-
-
-
+            $table->foreign('owner_id')->references('id')->on('users')->onDelete('cascade');
         });
     }
 
@@ -36,6 +31,6 @@ class CreateSurveyResponsesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('survey_responses');
+        Schema::dropIfExists('my_class_groups');
     }
 }

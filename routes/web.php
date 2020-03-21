@@ -36,3 +36,7 @@ Route::post('/surveys/{questionarea}-{slug}','SurveyController@store');
 
 //Pricing
 Route::get('/pricing','PricingController@index');
+
+//Class
+Route::get('myclass','MyClassController@show');
+

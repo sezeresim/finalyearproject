@@ -14,7 +14,7 @@ class CreateQuestionAreasTable extends Migration
     public function up()
     {
         Schema::create('question_areas', function (Blueprint $table) {
-            $table->id('id');
+            $table->id();
             $table->unsignedBigInteger('user_id');;
             $table->string('title');
             $table->string('purpose');
