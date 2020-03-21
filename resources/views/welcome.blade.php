@@ -23,6 +23,11 @@
             </div>
         @endforeach
         </div>
+        <ul class="list-group">
+            @foreach($users as $user)
+                <li class="list-group-item col-md-3">{{$user->email}}</li>
+            @endforeach
+        </ul>
     </div>
 @endsection
 

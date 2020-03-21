@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\QuestionArea;
+use App\User;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Foundation\Bus\DispatchesJobs;
 use Illuminate\Foundation\Validation\ValidatesRequests;
@@ -14,8 +15,8 @@ class Controller extends BaseController
 
     public function indexfun(){
         $questions=\App\QuestionArea::all();
-
+        $users=User::all();
        // return response()->json($questions);
-        return view('welcome',compact('questions'));
+        return view('welcome',compact('questions','users'));
     }
 }
