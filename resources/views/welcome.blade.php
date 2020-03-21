@@ -23,11 +23,14 @@
             </div>
         @endforeach
         </div>
-        <ul class="list-group">
-            @foreach($users as $user)
-                <li class="list-group-item col-md-3">{{$user->email}}</li>
-            @endforeach
-        </ul>
+        <div>
+            <select class="form-control" id="group" name="group">
+                @foreach($users as $user)
+                    <option class="list-group-item col-md-3" value="{{ $user->id }}">{{$user->email}}</option>
+                @endforeach
+            </select>
+        </div>
+        <div id="example"></div>
     </div>
 @endsection
 

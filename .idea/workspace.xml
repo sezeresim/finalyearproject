@@ -2,27 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7b7971d4-60a0-44c8-9bbe-4cb8c4a06ce3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/database/seeds/UsersTableSeeder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css-sketch/bootstrap-grid.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css-sketch/bootstrap-grid.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css-sketch/bootstrap-grid.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css-sketch/bootstrap-grid.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css-sketch/bootstrap-reboot.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css-sketch/bootstrap-reboot.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css-sketch/bootstrap-reboot.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css-sketch/bootstrap-reboot.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css-sketch/bootstrap.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css-sketch/bootstrap.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css-sketch/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css-sketch/bootstrap.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css-sketch/custom.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/mix-manifest.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/components/Example.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Controller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/custom.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/custom.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/ExampleComponent.vue" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/pricing/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pricing/show.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.mix.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,6 +62,7 @@
       <list>
         <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="Vue Single File Component" />
       </list>
     </option>
   </component>
@@ -277,7 +270,7 @@
       <workItem from="1584695447332" duration="10657000" />
       <workItem from="1584726188142" duration="3316000" />
       <workItem from="1584737419192" duration="2720000" />
-      <workItem from="1584788050877" duration="1561000" />
+      <workItem from="1584788050877" duration="6527000" />
     </task>
     <servers />
   </component>
@@ -318,30 +311,34 @@
     </state>
     <state x="1816" y="48" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728/1366.-137.1440.860@1366.-137.1440.860" timestamp="1584473352961" />
     <state x="427" y="157" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1584788360985" />
+    <state x="296" y="0" key="CommitChangelistDialog2" timestamp="1584794757181">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="296" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1584794757181" />
     <state x="-940" y="92" key="FileChooserDialogImpl" timestamp="1584295888893">
       <screen x="-1440" y="-79" width="1440" height="860" />
     </state>
     <state x="-940" y="92" key="FileChooserDialogImpl/0.0.1366.728/-1440.-79.1440.860@-1440.-79.1440.860" timestamp="1584295888893" />
-    <state width="905" height="152" key="GridCell.Tab.0.bottom" timestamp="1584652217380">
+    <state width="1323" height="270" key="GridCell.Tab.0.bottom" timestamp="1584794743672">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1419" height="196" key="GridCell.Tab.0.bottom/0.0.1366.728/-1440.-79.1440.860@-1440.-79.1440.860" timestamp="1584223924604" />
-    <state width="905" height="152" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1584652217380" />
-    <state width="905" height="152" key="GridCell.Tab.0.center" timestamp="1584652217380">
+    <state width="1323" height="270" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1584794743672" />
+    <state width="1323" height="270" key="GridCell.Tab.0.center" timestamp="1584794743672">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1419" height="196" key="GridCell.Tab.0.center/0.0.1366.728/-1440.-79.1440.860@-1440.-79.1440.860" timestamp="1584223924604" />
-    <state width="905" height="152" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1584652217380" />
-    <state width="905" height="152" key="GridCell.Tab.0.left" timestamp="1584652217380">
+    <state width="1323" height="270" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1584794743672" />
+    <state width="1323" height="270" key="GridCell.Tab.0.left" timestamp="1584794743672">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1419" height="196" key="GridCell.Tab.0.left/0.0.1366.728/-1440.-79.1440.860@-1440.-79.1440.860" timestamp="1584223924604" />
-    <state width="905" height="152" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1584652217380" />
-    <state width="905" height="152" key="GridCell.Tab.0.right" timestamp="1584652217380">
+    <state width="1323" height="270" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1584794743672" />
+    <state width="1323" height="270" key="GridCell.Tab.0.right" timestamp="1584794743672">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1419" height="196" key="GridCell.Tab.0.right/0.0.1366.728/-1440.-79.1440.860@-1440.-79.1440.860" timestamp="1584223924604" />
-    <state width="905" height="152" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1584652217380" />
+    <state width="1323" height="270" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1584794743672" />
     <state x="446" y="183" key="NewPhpClassDialog" timestamp="1584788317339">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -378,6 +375,12 @@
           <url>file://$PROJECT_DIR$/resources/views/pricing/show.blade.php</url>
           <line>12</line>
           <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/resources/js/components/Example.js</url>
+          <line>8</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
