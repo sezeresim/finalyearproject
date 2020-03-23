@@ -11,6 +11,7 @@ class SurveyController extends Controller
         $questionarea->load('questions.answers');
         return view('survey.show',compact('questionarea'));
     }
+
     public function store(QuestionArea $questionarea)
     {
 //        dd(request()->all());

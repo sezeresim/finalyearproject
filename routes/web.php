@@ -38,7 +38,7 @@ Route::post('/surveys/{questionarea}-{slug}','SurveyController@store');
 Route::get('/pricing','PricingController@index');
 
 //Class
-Route::get('myclass','ClassGroupController@index');
-Route::get('myclass/create','ClassGroupController@create');
-Route::post('myclass','ClassGroupController@store');
-Route::get('myclass/{myclass}','ClassGroupController@show');
+Route::get('/myclass','ClassGroupController@index');
+Route::get('/myclass/create','ClassGroupController@create');
+Route::post('/myclass','ClassGroupController@store');
+Route::get('/myclass/{classgroup}','ClassGroupController@show');

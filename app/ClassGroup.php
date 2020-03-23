@@ -9,6 +9,11 @@ class ClassGroup extends Model
 {
     protected $guarded=[];
 
+    public function path()
+    {
+        return url('/myclass/'. $this->id);
+    }
+
     public function publicPath(){
         return url('/myclass/'.$this->id.'-'. Str::slug($this->name));
     }
@@ -18,7 +23,7 @@ class ClassGroup extends Model
         return $this->belongsTo(User::class);
     }
 
-    public function members()
+    public function classlist()
     {
         return $this->hasMany(ClassList::class);
     }

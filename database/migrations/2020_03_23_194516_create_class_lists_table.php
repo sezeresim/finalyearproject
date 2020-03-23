@@ -15,12 +15,12 @@ class CreateClassListsTable extends Migration
     {
         Schema::create('class_lists', function (Blueprint $table) {
             $table->id();
-            $table->unsignedBigInteger('group_id');
-            $table->unsignedBigInteger('user_id');
+            $table->unsignedBigInteger('class_group_id');
+            $table->unsignedBigInteger('list_id');
             $table->timestamps();
 
             //foreign key
-            $table->foreign('group_id')->references('id')->on('class_groups')->onDelete('cascade');
+            $table->foreign('class_group_id')->references('id')->on('class_groups')->onDelete('cascade');
         });
     }
 

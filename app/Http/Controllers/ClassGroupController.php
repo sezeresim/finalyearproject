@@ -35,8 +35,8 @@ class ClassGroupController extends Controller
 
     public function show(ClassGroup $classgroup)
     {
-        //$classgroup->load('members');
-
+        $classgroup->load('classlist');
+        //dd($classgroup);
         return view('myclass.list.show',compact('classgroup'));
     }
 }

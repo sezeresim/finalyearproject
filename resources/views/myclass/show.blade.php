@@ -21,7 +21,7 @@
                         <tr>
                             <th scope="row">{{ $loop->iteration }} </th>
                             <td><a>{{ $group->name }}</a></td>
-                            <td><a href="/myclass/{{ $group->id }}">Sınıfı Yönet</a></td>
+                            <td><a href="{{ $group->path() }}">Sınıfı Yönet</a></td>
                         </tr>
                     @endforeach
                     </tbody>
