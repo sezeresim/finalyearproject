@@ -10,18 +10,18 @@
             <div class="mt-2">
                 <table class="table">
                     <thead class="thead-dark">
-                    <tr>
-                        <th scope="col">Sıra</th>
-                        <th scope="col">Test Adı</th>
-                        <th scope="col">Düzenle </th>
-                    </tr>
+                        <tr>
+                            <th scope="col">Sıra</th>
+                            <th scope="col">Test Adı</th>
+                            <th scope="col">Düzenle </th>
+                        </tr>
                     </thead>
                     <tbody>
                     @foreach($groups as $group)
                         <tr>
                             <th scope="row">{{ $loop->iteration }} </th>
-                            <td><a>{{ $group->name }}</a></td>
-                            <td><a href="{{ $group->path() }}">Sınıfı Yönet</a></td>
+                            <td scope="row"><a>{{ $group->name }}</a></td>
+                            <td scope="row"><a href="{{ $group->path() }}">Sınıfı Yönet</a></td>
                         </tr>
                     @endforeach
                     </tbody>

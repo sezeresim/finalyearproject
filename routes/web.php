@@ -42,3 +42,6 @@ Route::get('/myclass','ClassGroupController@index');
 Route::get('/myclass/create','ClassGroupController@create');
 Route::post('/myclass','ClassGroupController@store');
 Route::get('/myclass/{classgroup}','ClassGroupController@show');
+
+//ClassList
+Route::post('/myclass/{classgroup}/add','ClassListController@store');

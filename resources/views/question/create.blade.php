@@ -17,7 +17,7 @@
                                        value="{{ old('question.question') }}"
                                        id="question" aria-describedby="questionHelp" placeholder="Soru oluşturunuz.">
                                 @error('question.question')
-                                    <small class="text-danger">{{$message}}</small>
+                                <small class="text-danger">{{$message}}</small>
                                 @enderror
                             </div>
                             <div class="form-group">

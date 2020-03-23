@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\ClassGroup;
+use App\User;
 use Illuminate\Http\Request;
 
 class ClassGroupController extends Controller
@@ -36,7 +37,8 @@ class ClassGroupController extends Controller
     public function show(ClassGroup $classgroup)
     {
         $classgroup->load('classlist');
+        $users=User::all();
         //dd($classgroup);
-        return view('myclass.list.show',compact('classgroup'));
+        return view('myclass.list.show',compact('classgroup','users'));
     }
 }
