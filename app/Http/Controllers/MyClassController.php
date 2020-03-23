@@ -7,8 +7,13 @@ use Illuminate\Http\Request;
 
 class MyClassController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+
     public function show(){
-        $mygroups=MyClassGroup::all();
-        return view('myclass.show',compact('mygroups'));
+        $groups=MyClassGroup::all();
+        return view('myclass.show',compact('groups'));
     }
 }

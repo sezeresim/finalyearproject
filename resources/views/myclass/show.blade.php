@@ -5,9 +5,11 @@
     <div class="row justify-content-center">
         <div class="col-md-12">
             <ul>
-                @foreach($groups as $group)
+                @forelse($groups as $group)
                 <li>{{ $group }}</li>
-                @endforeach
+                @empty
+                <li>Mevcut bir sınıfa sahip değilsiniz</li>
+                @endforelse
             </ul>
         </div>
     </div>
