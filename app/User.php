@@ -42,6 +42,6 @@ class User extends Authenticatable
         return $this->hasMany(QuestionArea::class);
     }
     public function myclassgroup(){
-        return $this->hasMany(MyClassGroup::class);
+        return $this->hasMany(ClassGroup::class);
     }
 }

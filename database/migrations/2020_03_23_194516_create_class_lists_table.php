@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateMyClassGroups extends Migration
+class CreateClassListsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,14 +13,14 @@ class CreateMyClassGroups extends Migration
      */
     public function up()
     {
-        Schema::create('my_class_groups', function (Blueprint $table) {
+        Schema::create('class_lists', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
-            $table->unsignedBigInteger('owner_id');
+            $table->unsignedBigInteger('group_id');
+            $table->unsignedBigInteger('user_id');
             $table->timestamps();
 
             //foreign key
-            $table->foreign('owner_id')->references('id')->on('users')->onDelete('cascade');
+            $table->foreign('group_id')->references('id')->on('class_groups')->onDelete('cascade');
         });
     }
 
@@ -31,6 +31,6 @@ class CreateMyClassGroups extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('my_class_groups');
+        Schema::dropIfExists('class_lists');
     }
 }

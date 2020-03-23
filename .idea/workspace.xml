@@ -2,11 +2,52 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7b7971d4-60a0-44c8-9bbe-4cb8c4a06ce3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/ClassGroup.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/ClassList.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/ClassGroupController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/ClassListController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fontawesome-free-5.12.1-web/css/all.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fontawesome-free-5.12.1-web/css/all.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fontawesome-free-5.12.1-web/css/brands.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fontawesome-free-5.12.1-web/css/brands.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fontawesome-free-5.12.1-web/css/fontawesome.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fontawesome-free-5.12.1-web/css/fontawesome.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fontawesome-free-5.12.1-web/css/regular.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fontawesome-free-5.12.1-web/css/regular.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fontawesome-free-5.12.1-web/css/solid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fontawesome-free-5.12.1-web/css/solid.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fontawesome-free-5.12.1-web/css/svg-with-js.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fontawesome-free-5.12.1-web/css/svg-with-js.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fontawesome-free-5.12.1-web/css/v4-shims.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fontawesome-free-5.12.1-web/css/v4-shims.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fontawesome-free-5.12.1-web/js/all.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fontawesome-free-5.12.1-web/js/all.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fontawesome-free-5.12.1-web/js/brands.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fontawesome-free-5.12.1-web/js/brands.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fontawesome-free-5.12.1-web/js/conflict-detection.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fontawesome-free-5.12.1-web/js/conflict-detection.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fontawesome-free-5.12.1-web/js/fontawesome.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fontawesome-free-5.12.1-web/js/fontawesome.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fontawesome-free-5.12.1-web/js/regular.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fontawesome-free-5.12.1-web/js/regular.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fontawesome-free-5.12.1-web/js/solid.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fontawesome-free-5.12.1-web/js/solid.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fontawesome-free-5.12.1-web/js/v4-shims.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fontawesome-free-5.12.1-web/js/v4-shims.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/myclass/create.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/myclass/list/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/Sezer_Esim.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/Sezer_Esim.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/MyClassController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/MyClassController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/MyClassController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/MyClass.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/MyClassGroup.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_03_21_195320_create_my_class_groups.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_03_23_194441_create_class_groups_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_03_21_202234_create_my_class_users.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_03_23_194516_create_class_lists_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/UsersTableSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/UsersTableSeeder.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/myclass/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/myclass/show.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -176,23 +217,24 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/myclass" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/myclass/list" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Final Project\projectWeb\resources\views\myclass\list" />
+      <recent name="E:\Final Project\projectWeb\resources\views\myclass" />
+      <recent name="E:\Final Project\projectWeb\resources\views\pricing" />
+      <recent name="E:\Final Project\projectWeb\public\css" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\Final Project\projectWeb\resources\views" />
       <recent name="E:\Final Project\projectWeb\public\css" />
       <recent name="E:\Final Project\projectWeb\public\js" />
       <recent name="E:\Final Project\projectWeb\public" />
       <recent name="E:\Final Project\projectWeb\public\assets\css" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\Final Project\projectWeb\resources\views\myclass" />
-      <recent name="E:\Final Project\projectWeb\resources\views\pricing" />
-      <recent name="E:\Final Project\projectWeb\public\css" />
     </key>
   </component>
   <component name="RunManager">
@@ -268,7 +310,7 @@
       <workItem from="1584803188793" duration="6885000" />
       <workItem from="1584823815513" duration="17000" />
       <workItem from="1584824470140" duration="7000" />
-      <workItem from="1584974464367" duration="2657000" />
+      <workItem from="1584974464367" duration="10884000" />
     </task>
     <servers />
   </component>
@@ -314,11 +356,11 @@
       <screen x="1366" y="-137" width="1440" height="860" />
     </state>
     <state x="1723" y="62" key="#com.intellij.ide.fileTemplates.ui.ConfigureTemplatesDialog/0.0.1366.728/1366.-137.1440.860@1366.-137.1440.860" timestamp="1584462099371" />
-    <state x="427" y="157" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1584819473976">
+    <state x="427" y="157" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1584993550437">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="1816" y="48" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728/1366.-137.1440.860@1366.-137.1440.860" timestamp="1584473352961" />
-    <state x="427" y="157" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1584819473976" />
+    <state x="427" y="157" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1584993550437" />
     <state x="296" y="0" key="CommitChangelistDialog2" timestamp="1584794757181">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -364,10 +406,15 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="533" y="103" key="RollbackChangesDialog/0.0.1366.728@0.0.1366.728" timestamp="1584976241366" />
-    <state x="-1347" y="61" key="SettingsEditor" timestamp="1584295876528">
-      <screen x="-1440" y="-79" width="1440" height="860" />
+    <state x="88" y="13" key="SettingsEditor" timestamp="1584991756566">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="-1347" y="61" key="SettingsEditor/0.0.1366.728/-1440.-79.1440.860@-1440.-79.1440.860" timestamp="1584295876528" />
+    <state x="88" y="13" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1584991756566" />
+    <state x="392" y="6" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1584989511562">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="392" y="6" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1366.728@0.0.1366.728" timestamp="1584989511562" />
     <state x="342" y="188" key="com.intellij.ide.util.TipDialog" timestamp="1584975132954">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

@@ -15,6 +15,13 @@ class UsersTableSeeder extends Seeder
      */
     public function run()
     {
+        DB::table('users')->insert([
+            'name' => 'sezer esim',
+            'email' => 'sezeresim@gmail.com',
+            'password' => Hash::make(123456789),
+            'birtdate' => Carbon::parse('2000-01-01'),
+            'country' => Str::random(10),
+        ]);
         for ($i=0; $i < 100; $i++) {
             DB::table('users')->insert([
                 'name' => Str::random(10),
