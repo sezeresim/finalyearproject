@@ -5,7 +5,7 @@ use Carbon\Carbon;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Str;
-
+use Faker\Factory as Faker;
 class UsersTableSeeder extends Seeder
 {
     /**
@@ -15,16 +15,17 @@ class UsersTableSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('users')->insert([
+       DB::table('users')->insert([
             'name' => 'sezer esim',
             'email' => 'sezeresim@gmail.com',
-            'password' => Hash::make(123456789),
+            'password' => Hash::make(12345678),
             'birtdate' => Carbon::parse('2000-01-01'),
             'country' => Str::random(10),
         ]);
-        for ($i=0; $i < 100; $i++) {
+        $faker = Faker::create();
+        for ($i=0; $i < 200; $i++) {
             DB::table('users')->insert([
-                'name' => Str::random(10),
+                'name' => $faker->name,
                 'email' => Str::random(10) . '@gmail.com',
                 'password' => Hash::make('password'),
                 'birtdate' => Carbon::parse('2000-01-01'),

@@ -3,12 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7b7971d4-60a0-44c8-9bbe-4cb8c4a06ce3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ClassGroupController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ClassGroupController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ClassListController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ClassListController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/myclass/list/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/myclass/list/show.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/myclass/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/myclass/show.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/question/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/question/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/UsersTableSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/UsersTableSeeder.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -278,7 +273,7 @@
       <workItem from="1584803188793" duration="6885000" />
       <workItem from="1584823815513" duration="17000" />
       <workItem from="1584824470140" duration="7000" />
-      <workItem from="1584974464367" duration="16454000" />
+      <workItem from="1584974464367" duration="17123000" />
     </task>
     <servers />
   </component>
@@ -312,6 +307,10 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="275" y="22" key="#Inspections" timestamp="1584999689586">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="275" y="22" key="#Inspections/0.0.1366.728@0.0.1366.728" timestamp="1584999689586" />
     <state x="275" y="22" key="#Scopes" timestamp="1584727544013">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
