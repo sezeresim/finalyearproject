@@ -42,7 +42,7 @@ class questionAreaController extends Controller
         //Counting Post
         auth()->user()->increment('post_counter',1);
 
-        return redirect('/questionarea/'.$questions->id);
+        return redirect('/questionarea/'. $questions->id);
     }
 
     public function show(QuestionArea $questionarea)
