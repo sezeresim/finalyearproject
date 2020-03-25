@@ -3,9 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="7b7971d4-60a0-44c8-9bbe-4cb8c4a06ce3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ClassListController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ClassListController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_03_23_194516_create_class_lists_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_03_23_194516_create_class_lists_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/myclass/list/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/myclass/list/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ClassGroupController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ClassGroupController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/myclass/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/myclass/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,8 +59,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="JavaScript File" />
         <option value="Vue Single File Component" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -173,7 +173,6 @@
   <component name="ProjectViewState">
     <option name="autoscrollFromSource" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
@@ -185,7 +184,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/myclass/list" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -278,7 +277,7 @@
       <workItem from="1584974464367" duration="17212000" />
       <workItem from="1585058847712" duration="793000" />
       <workItem from="1585077788427" duration="816000" />
-      <workItem from="1585131693451" duration="5639000" />
+      <workItem from="1585131693451" duration="9400000" />
     </task>
     <servers />
   </component>
@@ -378,11 +377,11 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="533" y="103" key="RollbackChangesDialog/0.0.1366.728@0.0.1366.728" timestamp="1584976241366" />
-    <state x="88" y="13" key="SettingsEditor" timestamp="1585139205934">
+    <state x="88" y="13" key="SettingsEditor" timestamp="1585151542424">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="-1347" y="61" key="SettingsEditor/0.0.1366.728/-1440.-79.1440.860@-1440.-79.1440.860" timestamp="1584295876528" />
-    <state x="88" y="13" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1585139205934" />
+    <state x="88" y="13" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1585151542424" />
     <state x="413" y="169" key="com.intellij.database.dbimport.ImportUtil.MyDialog" timestamp="1584997097042">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -402,12 +401,12 @@
     </state>
     <state x="1742" y="127" key="run.anything.popup/0.0.1366.728/1366.-137.1440.860@1366.-137.1440.860" timestamp="1584464770870" />
     <state x="357" y="223" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1585139559199" />
-    <state x="363" y="152" width="672" height="574" key="search.everywhere.popup" timestamp="1584819552848">
+    <state x="363" y="152" width="672" height="574" key="search.everywhere.popup" timestamp="1585151729875">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="-1057" y="101" width="672" height="678" key="search.everywhere.popup/0.0.1366.728/-1440.-79.1440.860@-1440.-79.1440.860" timestamp="1584299109696" />
     <state x="1749" y="43" width="672" height="678" key="search.everywhere.popup/0.0.1366.728/1366.-137.1440.860@1366.-137.1440.860" timestamp="1584450462286" />
-    <state x="363" y="152" width="672" height="574" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1584819552848" />
+    <state x="363" y="152" width="672" height="574" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1585151729875" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

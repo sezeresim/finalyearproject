@@ -42,6 +42,7 @@ Route::get('/myclass','ClassGroupController@index');
 Route::get('/myclass/create','ClassGroupController@create');
 Route::post('/myclass','ClassGroupController@store');
 Route::get('/myclass/{classgroup}/list','ClassGroupController@show');
+Route::delete('myclass/{classgroup}/delete','ClassGroupController@destroy');
 
 //ClassList
 Route::post('/myclass/{classgroup}/list/add','ClassListController@store');

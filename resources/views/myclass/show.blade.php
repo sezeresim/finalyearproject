@@ -12,7 +12,7 @@
                     <thead class="thead-dark">
                         <tr>
                             <th scope="col">Sıra</th>
-                            <th scope="col">Test Adı</th>
+                            <th scope="col">Sınıf Adı</th>
                             <th scope="col">Düzenle </th>
                         </tr>
                     </thead>
@@ -21,7 +21,19 @@
                         <tr>
                             <th scope="row">{{ $loop->iteration }} </th>
                             <td scope="row"><a>{{ $group->name }}</a></td>
-                            <td scope="row"><a href="{{ $group->path() }}">Sınıfı Yönet</a></td>
+                            <td scope="row">
+                                <div class="row btn-group-sm">
+                                    <a class="btn btn-outline-info mr-1" href="{{ $group->path() }}"><i class="fas fa-users-cog"></i> Sınıfı Yönet</a>
+                                    <form action="/myclass/{{$group->id}}/delete" method="post">
+                                        @method('DELETE')
+                                        @csrf
+                                        <button  type="submit" class="btn btn-sm btn-outline-danger" onclick="return confirm('{{ $group->name }} sınıfını silmek istediğinizden eminmisiniz?')">
+                                            <i class="fa fa-trash"></i> Sil
+                                        </button>
+                                    </form>
+                                </div>
+                            </td>
+
                         </tr>
                     @endforeach
                     </tbody>

@@ -41,4 +41,11 @@ class ClassGroupController extends Controller
         //dd($classgroup);
         return view('myclass.list.show',compact('classgroup','users'));
     }
+
+    public function destroy(ClassGroup $classgroup)
+    {
+        $classgroup->delete();
+
+        return redirect('myclass');
+    }
 }
