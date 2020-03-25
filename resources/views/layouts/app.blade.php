@@ -46,9 +46,7 @@
                     <li class="nav-item">
                         <a class="nav-link text text-white" href="/mytests"><i class="fas fa-poll-h"></i> Testlerim</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link text text-white" href="/pricing"><i class="fas fa-cart-plus"></i> Ücretlendirme</a>
-                    </li>
+
                     <li class="nav-item dropdown">
                         <a id="navbarDropdown" class="nav-link dropdown-toggle text text-success" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                             <i class="fas fa-user"></i>
@@ -59,6 +57,10 @@
                             <a class="dropdown-item" href="{{ route('home') }}">
                                 {{ __('Profilim') }}
                                 <i class="fas fa-user"></i>
+                            </a>
+                            <a class="dropdown-item" href="/pricing">
+                               Ücretlendirme
+                                <i class="fas fa-cart-plus"></i>
                             </a>
                             <a class="dropdown-item" href="{{ route('logout') }}"
                                onclick="event.preventDefault();

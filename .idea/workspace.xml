@@ -3,19 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7b7971d4-60a0-44c8-9bbe-4cb8c4a06ce3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ClassListController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ClassListController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/MyTestsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/MyTestsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/QuestionAreaController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/QuestionAreaController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_03_10_160805_create_question_areas_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_03_10_160805_create_question_areas_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css-sketch/bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css-sketch/bootstrap.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css-sketch/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css-sketch/bootstrap.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/bootstrap.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/myclass/list/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/myclass/list/show.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/mytests/mytests.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/mytests/mytests.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/pricing/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pricing/show.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -280,7 +268,7 @@
       <workItem from="1584974464367" duration="17212000" />
       <workItem from="1585058847712" duration="793000" />
       <workItem from="1585077788427" duration="816000" />
-      <workItem from="1585131693451" duration="14959000" />
+      <workItem from="1585131693451" duration="15159000" />
     </task>
     <servers />
   </component>
