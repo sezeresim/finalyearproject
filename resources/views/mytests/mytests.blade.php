@@ -43,8 +43,16 @@
                                     </td>
 
                                     <td>
-                                        <a href="{{$question_area->path()}}" class="btn btn-sm btn-info"><i class="far fa-eye"></i> Teste Git</a>
-                                        <a href="" class="btn btn-sm btn-danger"><i class="fas fa-trash"></i></a>
+                                        <div class="row">
+                                            <a href="{{$question_area->path()}}" class="btn btn-sm btn-outline-info mr-1"><i class="far fa-eye"></i> Teste Git</a>
+                                            <form action="/mytests/{{$question_area->id}}" method="post">
+                                                @method('DELETE')
+                                                @csrf
+                                                <button  type="submit" class="btn btn-sm btn-outline-danger" onclick="return confirm('{{ $question_area->title  }} silmek istediğinizden eminmisiniz?')">
+                                                    <i class="fa fa-trash"></i> Sil
+                                                </button>
+                                            </form>
+                                        </div>
                                     </td>
                                 </tr>
                             @endforeach

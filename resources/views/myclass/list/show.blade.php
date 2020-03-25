@@ -19,7 +19,7 @@
                 </form>
                 @error('list_id')
                 <div class="alert alert-danger mt-2" role="alert">
-                    {{$message}}
+                    <i class="fas fa-exclamation-triangle"></i> {{$message}}
                 </div>
                 @enderror
             </div>

@@ -21,7 +21,7 @@ class ClassListController extends Controller
             'list_id'=>['required','unique:class_lists']
             ],
             [
-                'unique' => 'Bu sınıfta bu kullanıcı bulunmaktadır.',
+                'unique' => 'Eklediğiniz kullanıcı bulunmaktadır.',
             ]);
         $data['list_id']=request('list_id');
 

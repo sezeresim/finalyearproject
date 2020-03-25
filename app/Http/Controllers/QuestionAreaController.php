@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\QuestionArea;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\DB;
 
 class questionAreaController extends Controller
 {
@@ -51,5 +52,13 @@ class questionAreaController extends Controller
         $questionarea->load('questions');
 
         return view('questionarea.show',compact('questionarea'));
+    }
+
+    public function destroy(QuestionArea $questionarea)
+    {
+        $questionarea->delete();
+        auth()->user()->decrement('post_counter');
+
+        return redirect('/questionarea/'.$questionarea->id);
     }
 }

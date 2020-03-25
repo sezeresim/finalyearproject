@@ -11,10 +11,8 @@
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Nunito:400,700" rel="stylesheet">
     <!-- Styles -->
-    <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
-    {{--
+    {{--<link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">--}}
         <link href="{{ asset('css-sketch/bootstrap.min.css') }}" rel="stylesheet">
-    --}}
     <link href="{{ asset('css/custom.css') }}" rel="stylesheet">
     <link href="{{ asset('fontawesome-free-5.12.1-web/css/all.css') }}" rel="stylesheet">
     <script src="{{ asset('fontawesome-free-5.12.1-web/js/all.js') }}"></script>
@@ -59,13 +57,13 @@
 
                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="{{ route('home') }}">
-                                {{ __('Profile') }}
+                                {{ __('Profilim') }}
                                 <i class="fas fa-user"></i>
                             </a>
                             <a class="dropdown-item" href="{{ route('logout') }}"
                                onclick="event.preventDefault();
                                                          document.getElementById('logout-form').submit();">
-                                {{ __('Logout') }}
+                                {{ __('Çıkış Yap') }}
                                 <i class="fas fa-sign-out-alt"></i>
                             </a>
                             <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">

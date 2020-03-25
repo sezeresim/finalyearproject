@@ -2,9 +2,9 @@
 
 @section('content')
     <div class="container">
-        <div class="row">
-        @foreach($questions as $question)
-            <div class="col-md-4 ">
+        <section class="row ">
+            @foreach($questions as $question)
+                <div class="col-md-4">
                 <div class="card border border-dark mb-4">
                     <div class="card-body">
                         <div class="font-weight-bold">
@@ -21,8 +21,8 @@
                     </div>
                 </div>
             </div>
-        @endforeach
-        </div>
+            @endforeach
+        </section>
         {{--<div>
             <select class="form-control" id="group" name="group">
                 @foreach($users as $user)

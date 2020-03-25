@@ -2,8 +2,6 @@
 
 @section('content')
     <div class="container">
-        <!-- This snippet uses Font Awesome 5 Free as a dependency. You can download it at fontawesome.io! -->
-
         <section class="pricing">
             <div class="container">
                 <div class="row">
