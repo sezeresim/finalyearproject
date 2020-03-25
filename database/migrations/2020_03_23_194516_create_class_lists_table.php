@@ -16,7 +16,7 @@ class CreateClassListsTable extends Migration
         Schema::create('class_lists', function (Blueprint $table) {
             $table->id();
             $table->unsignedBigInteger('class_group_id');
-            $table->unsignedBigInteger('list_id');
+            $table->unsignedBigInteger('list_id')->unique();
             $table->timestamps();
 
             //foreign key

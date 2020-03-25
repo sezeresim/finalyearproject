@@ -15,11 +15,16 @@ class ClassListController extends Controller
 
     public function store(ClassGroup $classgroup){
 
-        $data = request()->validate([
-            'list_id'=>'required',
-        ]);
+
+        $data = request()->validate(
+            [
+            'list_id'=>['required','unique:class_lists']
+            ],
+            [
+                'unique' => 'Bu sınıfta bu kullanıcı bulunmaktadır.',
+            ]);
         $data['list_id']=request('list_id');
-        //dd(request()->all());
+
         $addlist=$classgroup->classlist()->create($data);
         return redirect('/myclass/'.$classgroup->id .'/list');
     }

@@ -17,6 +17,11 @@
                     </div>
                     <button type="submit" class="btn btn-success">Kişiyi Ekle</button>
                 </form>
+                @error('list_id')
+                <div class="alert alert-danger mt-2" role="alert">
+                    {{$message}}
+                </div>
+                @enderror
             </div>
 
             <div class="mt-2">
@@ -37,9 +42,8 @@
                                 <form action="/myclass/{{$classgroup->id}}/list/{{$list->id}}" method="post">
                                     @method('DELETE')
                                     @csrf
-
-                                    <button type="submit" class="btn btn-sm btn-outline-danger">
-                                        <i class="fa fa-trash"></i> Sil {{$list->id}}
+                                    <button  type="submit" class="btn btn-sm btn-outline-danger">
+                                        <i class="fa fa-trash"></i> Sil
                                     </button>
                                 </form>
                             </td>
