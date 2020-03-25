@@ -5,7 +5,7 @@
     <div class="row">
         <div class="col-md-12">
             <div >
-                <form action="/myclass/{{$classgroup->id}}/add" method="post">
+                <form action="/myclass/{{$classgroup->id}}/list/add" method="post">
                     @csrf
                     <div class="form-group">
                         <select class="form-control" id="group" name="list_id">
@@ -25,7 +25,7 @@
                         <tr>
                             <th >Sıra</th>
                             <th >İsim</th>
-                            <th >#user</th>
+                            <th >Düzenle</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -33,7 +33,16 @@
                         <tr>
                             <td > {{$loop->iteration}}</td>
                             <td> {{ $users->find($list->list_id)->name }}</td>
-                            <td>{{ $list->list_id }}</td>
+                            <td>
+                                <form action="/myclass/{{$classgroup->id}}/list/{{$list->id}}" method="post">
+                                    @method('DELETE')
+                                    @csrf
+
+                                    <button type="submit" class="btn btn-sm btn-outline-danger">
+                                        <i class="fa fa-trash"></i> Sil {{$list->id}}
+                                    </button>
+                                </form>
+                            </td>
                         </tr>
                     @endforeach
                     </tbody>

@@ -3,7 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="7b7971d4-60a0-44c8-9bbe-4cb8c4a06ce3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/UsersTableSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/UsersTableSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/ClassGroup.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/ClassGroup.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ClassListController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ClassListController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/myclass/list/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/myclass/list/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -183,7 +186,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/myclass/list" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -273,7 +276,10 @@
       <workItem from="1584803188793" duration="6885000" />
       <workItem from="1584823815513" duration="17000" />
       <workItem from="1584824470140" duration="7000" />
-      <workItem from="1584974464367" duration="17123000" />
+      <workItem from="1584974464367" duration="17212000" />
+      <workItem from="1585058847712" duration="793000" />
+      <workItem from="1585077788427" duration="816000" />
+      <workItem from="1585131693451" duration="3782000" />
     </task>
     <servers />
   </component>
@@ -323,11 +329,11 @@
       <screen x="1366" y="-137" width="1440" height="860" />
     </state>
     <state x="1723" y="62" key="#com.intellij.ide.fileTemplates.ui.ConfigureTemplatesDialog/0.0.1366.728/1366.-137.1440.860@1366.-137.1440.860" timestamp="1584462099371" />
-    <state x="427" y="157" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1584993550437">
+    <state x="427" y="157" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1585140534366">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="1816" y="48" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728/1366.-137.1440.860@1366.-137.1440.860" timestamp="1584473352961" />
-    <state x="427" y="157" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1584993550437" />
+    <state x="427" y="157" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1585140534366" />
     <state x="296" y="0" key="CommitChangelistDialog2" timestamp="1584794757181">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -373,11 +379,11 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="533" y="103" key="RollbackChangesDialog/0.0.1366.728@0.0.1366.728" timestamp="1584976241366" />
-    <state x="88" y="13" key="SettingsEditor" timestamp="1584991756566">
+    <state x="88" y="13" key="SettingsEditor" timestamp="1585139205934">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="-1347" y="61" key="SettingsEditor/0.0.1366.728/-1440.-79.1440.860@-1440.-79.1440.860" timestamp="1584295876528" />
-    <state x="88" y="13" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1584991756566" />
+    <state x="88" y="13" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1585139205934" />
     <state x="413" y="169" key="com.intellij.database.dbimport.ImportUtil.MyDialog" timestamp="1584997097042">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -386,17 +392,17 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="392" y="6" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1366.728@0.0.1366.728" timestamp="1584995547981" />
-    <state x="342" y="188" key="com.intellij.ide.util.TipDialog" timestamp="1584975132954">
+    <state x="342" y="188" key="com.intellij.ide.util.TipDialog" timestamp="1585131695585">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="-1079" y="143" key="com.intellij.ide.util.TipDialog/0.0.1366.728/-1440.-79.1440.860@-1440.-79.1440.860" timestamp="1584349933921" />
     <state x="342" y="188" key="com.intellij.ide.util.TipDialog/0.0.1366.728/-1440.-79.1440.860@0.0.1366.728" timestamp="1584133823673" />
-    <state x="342" y="188" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1584975132954" />
-    <state x="357" y="223" key="run.anything.popup" timestamp="1584994857472">
+    <state x="342" y="188" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1585131695585" />
+    <state x="357" y="223" key="run.anything.popup" timestamp="1585139559199">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="1742" y="127" key="run.anything.popup/0.0.1366.728/1366.-137.1440.860@1366.-137.1440.860" timestamp="1584464770870" />
-    <state x="357" y="223" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1584994857472" />
+    <state x="357" y="223" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1585139559199" />
     <state x="363" y="152" width="672" height="574" key="search.everywhere.popup" timestamp="1584819552848">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

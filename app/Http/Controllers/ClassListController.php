@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\ClassGroup;
+use App\ClassList;
 use Illuminate\Http\Request;
 
 class ClassListController extends Controller
@@ -20,6 +21,12 @@ class ClassListController extends Controller
         $data['list_id']=request('list_id');
         //dd(request()->all());
         $addlist=$classgroup->classlist()->create($data);
-        return redirect('/myclass/'.$classgroup->id);
+        return redirect('/myclass/'.$classgroup->id .'/list');
+    }
+
+    public function destroy(ClassGroup $classgroup,ClassList $list)
+    {
+        $list->delete();
+        return redirect($classgroup->path());
     }
 }

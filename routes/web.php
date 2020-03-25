@@ -41,7 +41,8 @@ Route::get('/pricing','PricingController@index');
 Route::get('/myclass','ClassGroupController@index');
 Route::get('/myclass/create','ClassGroupController@create');
 Route::post('/myclass','ClassGroupController@store');
-Route::get('/myclass/{classgroup}','ClassGroupController@show');
+Route::get('/myclass/{classgroup}/list','ClassGroupController@show');
 
 //ClassList
-Route::post('/myclass/{classgroup}/add','ClassListController@store');
+Route::post('/myclass/{classgroup}/list/add','ClassListController@store');
+Route::delete('/myclass/{classgroup}/list/{list}','ClassListController@destroy');

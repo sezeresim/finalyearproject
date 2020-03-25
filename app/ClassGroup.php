@@ -11,7 +11,7 @@ class ClassGroup extends Model
 
     public function path()
     {
-        return url('/myclass/'. $this->id);
+        return url('/myclass/'. $this->id .'/list');
     }
 
     public function publicPath(){
