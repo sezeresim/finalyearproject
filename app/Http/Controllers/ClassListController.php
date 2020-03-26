@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\ClassGroup;
 use App\ClassList;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class ClassListController extends Controller
 {
@@ -15,15 +16,11 @@ class ClassListController extends Controller
 
     public function store(ClassGroup $classgroup){
 
-
-        $data = request()->validate(
-            [
-            'list_id'=>['required','unique:class_lists']
-            ],
-            [
+       $data = request()->validate([
+            'list_id'=>['required'],
+            ], [
                 'unique' => 'Eklediğiniz kullanıcı bulunmaktadır.',
             ]);
-        $data['list_id']=request('list_id');
 
         $addlist=$classgroup->classlist()->create($data);
         return redirect('/myclass/'.$classgroup->id .'/list');
