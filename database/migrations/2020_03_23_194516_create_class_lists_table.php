@@ -18,7 +18,7 @@ class CreateClassListsTable extends Migration
             $table->unsignedBigInteger('class_group_id');
             $table->unsignedBigInteger('list_id');
             $table->timestamps();
-
+            $table->unique(['class_group_id','list_id']);
             //foreign key
             $table->foreign('class_group_id')->references('id')->on('class_groups')->onDelete('cascade');
         });

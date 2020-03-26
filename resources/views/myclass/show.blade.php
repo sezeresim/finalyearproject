@@ -4,10 +4,10 @@
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-12">
-            <div>
-                <a href="myclass/create" class="btn btn-success"> <i class="fas fa-address-card"></i> Sınıf Yarat</a>
-            </div>
             <div class="mt-2">
+                <div>
+                    <a href="myclass/create" class="btn btn-success"> <i class="fas fa-address-card"></i> Sınıf Yarat</a>
+                </div>
                 <table class="table">
                     <thead class="thead-dark">
                         <tr>

@@ -2,12 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7b7971d4-60a0-44c8-9bbe-4cb8c4a06ce3" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/projectWeb.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/projectWeb.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ClassListController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ClassListController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/UsersTableSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/UsersTableSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/register.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/register.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_03_23_194516_create_class_lists_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_03_23_194516_create_class_lists_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/custom.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/custom.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/myclass/list/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/myclass/list/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/myclass/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/myclass/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/survey/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/survey/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -198,6 +205,7 @@
       <path value="$PROJECT_DIR$/vendor/symfony/http-kernel" />
       <path value="$PROJECT_DIR$/vendor/symfony/polyfill-ctype" />
       <path value="$PROJECT_DIR$/vendor/laravel/ui" />
+      <path value="$PROJECT_DIR$/vendor/felixkiss/uniquewith-validator" />
     </include_path>
   </component>
   <component name="ProjectId" id="1Z5fBCtA2atd3cr1QPLfXKZUfif" />
@@ -315,7 +323,8 @@
       <workItem from="1585164669876" duration="683000" />
       <workItem from="1585165402882" duration="3649000" />
       <workItem from="1585170008616" duration="3088000" />
-      <workItem from="1585212472372" duration="6328000" />
+      <workItem from="1585212472372" duration="9527000" />
+      <workItem from="1585233550913" duration="4416000" />
     </task>
     <task id="LOCAL-00001" summary="deneme todo">
       <created>1585159502750</created>
@@ -457,12 +466,12 @@
     </state>
     <state x="1742" y="127" key="run.anything.popup/0.0.1366.728/1366.-137.1440.860@1366.-137.1440.860" timestamp="1584464770870" />
     <state x="357" y="223" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1585159445364" />
-    <state x="363" y="152" width="672" height="574" key="search.everywhere.popup" timestamp="1585159725406">
+    <state x="363" y="152" width="672" height="574" key="search.everywhere.popup" timestamp="1585237654401">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="-1057" y="101" width="672" height="678" key="search.everywhere.popup/0.0.1366.728/-1440.-79.1440.860@-1440.-79.1440.860" timestamp="1584299109696" />
     <state x="1749" y="43" width="672" height="678" key="search.everywhere.popup/0.0.1366.728/1366.-137.1440.860@1366.-137.1440.860" timestamp="1584450462286" />
-    <state x="363" y="152" width="672" height="574" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1585159725406" />
+    <state x="363" y="152" width="672" height="574" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1585237654401" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -474,22 +483,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/resources/views/welcome.blade.php</url>
-          <line>26</line>
+          <line>27</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/resources/js/components/Example.js</url>
           <line>8</line>
           <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php-line-method">
-          <url>file://$PROJECT_DIR$/app/Http/Controllers/QuestionController.php</url>
-          <line>15</line>
-          <properties>
-            <option name="className" value="\App\Http\Controllers\QuestionController" />
-            <option name="methodName" value="store" />
-          </properties>
-          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

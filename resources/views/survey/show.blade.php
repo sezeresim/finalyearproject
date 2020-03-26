@@ -49,14 +49,14 @@
                                 @enderror
                             </div>
                             <div class="form-group">
-                                <label for="email" class="category">E-Mail Adresi</label>
-                                <input name="survey[email]" type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="E-Mail Giriniz">
+                                <label for="email" class="category">E-Posta Adresi</label>
+                                <input name="survey[email]" type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="E-Posta Giriniz">
                                 @error('email')
                                 <small class="text-danger">{{$message}}</small>
                                 @enderror
                             </div>
                             <div>
-                                <button class="btn btn-outline-success" type="submit">Complete Survey</button>
+                                <button class="btn btn-outline-success" type="submit">Tamamla</button>
                             </div>
                         </div>
                     </div>

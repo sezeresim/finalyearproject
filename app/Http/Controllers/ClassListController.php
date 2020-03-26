@@ -4,8 +4,7 @@ namespace App\Http\Controllers;
 
 use App\ClassGroup;
 use App\ClassList;
-use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Validator;
+
 
 
 class ClassListController extends Controller
@@ -18,12 +17,13 @@ class ClassListController extends Controller
     public function store(ClassGroup $classgroup){
 
        $data = request()->validate([
-            'list_id'=>['required',],
+            'list_id'=>['required','unique:class_lists,list_id,NULL,id,class_group_id,'.$classgroup->id],
             ], [
                 'unique' => 'Eklediğiniz kullanıcı bulunmaktadır.',
             ]);
 
         $addlist=$classgroup->classlist()->create($data);
+
         return redirect('/myclass/'.$classgroup->id .'/list');
     }
 

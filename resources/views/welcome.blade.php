@@ -5,6 +5,7 @@
         <section class="row ">
             @foreach($questions as $question)
                 <div class="col-md-4">
+
                 <div class="card border border-dark mb-4">
                     <div class="card-body">
                         {{--TODO--}}

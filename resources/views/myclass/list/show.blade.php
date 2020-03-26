@@ -4,7 +4,7 @@
 <div class="container">
     <div class="row">
         <div class="col-md-12">
-            <div >
+            <div class="mb-2">
                 <form action="/myclass/{{$classgroup->id}}/list/add" method="post">
                     @csrf
                     <div class="form-group">
