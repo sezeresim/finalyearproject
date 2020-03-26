@@ -55,6 +55,8 @@ class RegisterController extends Controller
             'password' => ['required', 'string', 'min:8', 'confirmed'],
             'birtdate' => ['required'],
             'country'=>['required'],
+        ],[
+            'name.required'=>"Lütfen isim alanını doldurunuz."
         ]);
     }
 

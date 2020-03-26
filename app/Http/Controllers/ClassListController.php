@@ -5,7 +5,8 @@ namespace App\Http\Controllers;
 use App\ClassGroup;
 use App\ClassList;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Validator;
+
 
 class ClassListController extends Controller
 {
@@ -17,7 +18,7 @@ class ClassListController extends Controller
     public function store(ClassGroup $classgroup){
 
        $data = request()->validate([
-            'list_id'=>['required'],
+            'list_id'=>['required',],
             ], [
                 'unique' => 'Eklediğiniz kullanıcı bulunmaktadır.',
             ]);
