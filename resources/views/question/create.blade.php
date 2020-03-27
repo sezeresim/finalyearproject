@@ -43,7 +43,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <button type="button" class="btn btn-outline-success mt-2" onclick="add_answer();">
+                                        <button type="button" class="btn btn-outline-success mt-2 col-md-12" onclick="add_answer();">
                                             <i class="fas fa-plus"></i> Ek Cevap Ekle
                                         </button>
                                     </div>

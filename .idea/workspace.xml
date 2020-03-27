@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7b7971d4-60a0-44c8-9bbe-4cb8c4a06ce3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/custom.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/custom.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/question/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/question/create.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -308,7 +306,7 @@
       <workItem from="1585170008616" duration="3088000" />
       <workItem from="1585212472372" duration="9527000" />
       <workItem from="1585233550913" duration="4845000" />
-      <workItem from="1585321898292" duration="7374000" />
+      <workItem from="1585321898292" duration="7592000" />
     </task>
     <task id="LOCAL-00001" summary="deneme todo">
       <created>1585159502750</created>
