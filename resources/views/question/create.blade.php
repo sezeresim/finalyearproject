@@ -6,13 +6,12 @@
             <div class="col-md-12">
                 <div class="card">
 
-                    <div class="card-header">Soru Oluştur  ID:{{$questionarea->id}}</div>
+                    <div class="card-header">Soru Oluştur</div>
                     <div class="card-body">
                         <form action="/questions/{{$questionarea->id}}/question" method="post">
                             @csrf
 
                             <div class="form-group">
-                                <label for="question" class="category">Soru</label>
                                 <input autocomplete="off" name="question[question]" type="text" class="form-control"
                                        value="{{ old('question.question') }}"
                                        id="question" aria-describedby="questionHelp" placeholder="Soru oluşturunuz.">
@@ -24,27 +23,29 @@
                                 <fieldset>
                                     <legend>Cevaplar</legend>
                                     <div class="form-group">
-                                        <table id="employee_table" class="col-12">
-                                            <tr id="row1" class="row">
-                                                <td class="col-md-12">
+                                        <div id="answers_form" class="col-12">
+                                            <div id="row1" class="row">
+                                                <div class="mt-2 input-group">
                                                     <input autocomplete="off" name="answers[][answer]" type="text" class="form-control"
                                                            value="{{ old('answers.0.answer') }}"
                                                            id="answer1" aria-describedby="choicesHelp" placeholder="Cevap oluşturunuz.">
                                                     @error('answers.1.answer')
                                                     <small class="text-danger">{{$message}}</small>
                                                     @enderror
-                                                </td>
-                                                <td  class="col-md-12">
+                                                </div>
+                                                <div  class="mt-2 input-group">
                                                     <input autocomplete="off" name="answers[][answer]" type="text" class="form-control"
                                                            value="{{ old('answers.1.answer') }}"
                                                            id="answer2" aria-describedby="choicesHelp" placeholder="Cevap oluşturunuz.">
                                                     @error('answers.2.answer')
                                                     <small class="text-danger">{{$message}}</small>
                                                     @enderror
-                                                </td>
-                                            </tr>
-                                        </table>
-                                        <input type="button" class="btn btn-outline-success" onclick="add_row();" value="Cevap Ekle">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button type="button" class="btn btn-outline-success mt-2" onclick="add_answer();">
+                                            <i class="fas fa-plus"></i> Ek Cevap Ekle
+                                        </button>
                                     </div>
                                 </fieldset>
                             </div>

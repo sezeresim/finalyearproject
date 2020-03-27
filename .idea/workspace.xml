@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="7b7971d4-60a0-44c8-9bbe-4cb8c4a06ce3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ClassListController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ClassListController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/js/custom.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/custom.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/question/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/question/create.blade.php" afterDir="false" />
     </list>
@@ -44,13 +43,6 @@
         <item name="MySQL - finaldb@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="finaldb: schema" type="76f4a085:MysqlImplModel$Schema" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="MySQL - finaldb@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="finaldb: schema" type="76f4a085:MysqlImplModel$Schema" />
-        <item name="class_lists: table" type="285a2a93:MysqlImplModel$Table" />
       </path>
     </expand>
     <select />
@@ -316,7 +308,7 @@
       <workItem from="1585170008616" duration="3088000" />
       <workItem from="1585212472372" duration="9527000" />
       <workItem from="1585233550913" duration="4845000" />
-      <workItem from="1585321898292" duration="3675000" />
+      <workItem from="1585321898292" duration="7374000" />
     </task>
     <task id="LOCAL-00001" summary="deneme todo">
       <created>1585159502750</created>
@@ -458,12 +450,12 @@
     </state>
     <state x="1742" y="127" key="run.anything.popup/0.0.1366.728/1366.-137.1440.860@1366.-137.1440.860" timestamp="1584464770870" />
     <state x="357" y="223" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1585159445364" />
-    <state x="363" y="152" width="672" height="574" key="search.everywhere.popup" timestamp="1585325095980">
+    <state x="363" y="152" width="672" height="574" key="search.everywhere.popup" timestamp="1585335281877">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="-1057" y="101" width="672" height="678" key="search.everywhere.popup/0.0.1366.728/-1440.-79.1440.860@-1440.-79.1440.860" timestamp="1584299109696" />
     <state x="1749" y="43" width="672" height="678" key="search.everywhere.popup/0.0.1366.728/1366.-137.1440.860@1366.-137.1440.860" timestamp="1584450462286" />
-    <state x="363" y="152" width="672" height="574" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1585325095980" />
+    <state x="363" y="152" width="672" height="574" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1585335281877" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

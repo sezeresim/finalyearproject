@@ -1,16 +1,20 @@
-function add_row()
+function add_answer()
 {
-    $rowno=$("#employee_table tr").length;
+    $rowno=$("#answers_form div").length;
+    //console.log($rowno);
     $rowno=$rowno+1;
-    $("#employee_table tr:last").after("" +
-        "<tr id='row"+$rowno+"'>" +
-        "<td>" +
+    $("#answers_form div:last").after("" +
+        "<div class='input-group mt-2' id='row"+$rowno+"'>" +
         "<input class='form-control' autocomplete='off' name='answers[][answer]' type='text'  placeholder='Cevap oluşturunuz.'>" +
-        "</td>" +
-        "</td>" +
-        "<td><input class='btn btn-danger' type='button' value='Sil' onclick=delete_row('row"+$rowno+"')></td></tr>");
+        "<div class='input-group-append'> " +
+        "<button class='btn btn-danger' type='button' onclick=delete_answer('row"+$rowno+"')>"+
+        "<i class='fas fa-trash'></i>"+
+        "</button>"+
+        "</div>" +
+        "</div>");
 }
-function delete_row(rowno)
+
+function delete_answer(rowno)
 {
     $('#'+rowno).remove();
 }
