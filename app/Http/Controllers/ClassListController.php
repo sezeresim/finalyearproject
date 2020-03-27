@@ -19,7 +19,7 @@ class ClassListController extends Controller
        $data = request()->validate([
             'list_id'=>['required','unique:class_lists,list_id,NULL,id,class_group_id,'.$classgroup->id],
             ], [
-                'unique' => 'Eklediğiniz kullanıcı bulunmaktadır.',
+                'unique' => 'Eklediğiniz kullanıcı sınıfta bulunmaktadır.',
             ]);
 
         $addlist=$classgroup->classlist()->create($data);
