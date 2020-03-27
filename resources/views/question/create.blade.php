@@ -8,7 +8,6 @@
                     <div class="card-body">
                         <form action="/questions/{{$questionarea->id}}/question" method="post">
                             @csrf
-
                             <div class="form-group">
                                 <input autocomplete="off" name="question[question]" type="text" class="form-control"
                                        value="{{ old('question.question') }}"
@@ -17,35 +16,29 @@
                                 <small class="text-danger">{{$message}}</small>
                                 @enderror
                             </div>
-                            <div class="form-group">
-                                <fieldset>
-                                    <legend>Cevaplar</legend>
-                                    <div class="form-group">
-                                        <div id="answers_form" class="col-12">
-                                            <div id="row1" class="row">
-                                                <div class="mt-2 input-group">
-                                                    <input autocomplete="off" name="answers[][answer]" type="text" class="form-control"
-                                                           value="{{ old('answers.0.answer') }}"
-                                                           id="answer1" aria-describedby="choicesHelp" placeholder="Cevap oluşturunuz.">
-                                                    @error('answers.1.answer')
-                                                    <small class="text-danger">{{$message}}</small>
-                                                    @enderror
-                                                </div>
-                                                <div  class="mt-2 input-group">
-                                                    <input autocomplete="off" name="answers[][answer]" type="text" class="form-control"
-                                                           value="{{ old('answers.1.answer') }}"
-                                                           id="answer2" aria-describedby="choicesHelp" placeholder="Cevap oluşturunuz.">
-                                                    @error('answers.2.answer')
-                                                    <small class="text-danger">{{$message}}</small>
-                                                    @enderror
-                                                </div>
-                                            </div>
+                            <div class="form-group col-md-12" id="answers_form">
+                                <fieldset >
+                                    <legend >Cevaplar</legend>
+                                        <div class="mt-2 input-group">
+                                            <input autocomplete="off" name="answers[][answer]" type="text" class="form-control"
+                                                   value="{{ old('answers.0.answer') }}"
+                                                   id="answer1" aria-describedby="choicesHelp" placeholder="Cevap oluşturunuz.">
+                                            @error('answers.1.answer')
+                                            <small class="text-danger">{{$message}}</small>
+                                            @enderror
                                         </div>
-                                        <button type="button" class="btn btn-outline-success mt-2 col-md-12" onclick="add_answer();">
-                                            <i class="fas fa-plus"></i> Ek Cevap Ekle
-                                        </button>
-                                    </div>
+                                        <div  class="mt-2 input-group">
+                                            <input autocomplete="off" name="answers[][answer]" type="text" class="form-control"
+                                                   value="{{ old('answers.1.answer') }}"
+                                                   id="answer2" aria-describedby="choicesHelp" placeholder="Cevap oluşturunuz.">
+                                            @error('answers.2.answer')
+                                            <small class="text-danger">{{$message}}</small>
+                                            @enderror
+                                        </div>
                                 </fieldset>
+                                <button type="button" class="btn btn-outline-success mt-2" onclick="add_answer();">
+                                    <i class="fas fa-plus"></i> Ek Cevap Ekle
+                                </button>
                             </div>
                             <hr>
                                 <button type="submit" class="btn btn-warning col-md-12">Soruyu Kaydet</button>
