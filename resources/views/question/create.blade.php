@@ -5,8 +5,6 @@
         <div class="row justify-content-center">
             <div class="col-md-12">
                 <div class="card">
-
-                    <div class="card-header">Soru Oluştur</div>
                     <div class="card-body">
                         <form action="/questions/{{$questionarea->id}}/question" method="post">
                             @csrf
@@ -50,7 +48,7 @@
                                 </fieldset>
                             </div>
                             <hr>
-                                <button type="submit" class="btn btn-success">Soruyu Kaydet</button>
+                                <button type="submit" class="btn btn-warning col-md-12">Soruyu Kaydet</button>
                         </form>
                     </div>
                 </div>
