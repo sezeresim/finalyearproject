@@ -18,10 +18,10 @@ class CreateQuestionAreasTable extends Migration
             $table->unsignedBigInteger('user_id');;
             $table->string('title');
             $table->string('purpose');
-          /*  $table->boolean('public_state')->default(0);
-            $table->boolean('private_state')->default(0);
+            $table->string('survey_state')->default('public');
             $table->date('last_date');
-            $table->time('time_limit')->default(null);*/
+            $table->string('survey_list');
+          /*  $table->time('time_limit')->default(0);*/
             $table->timestamps();
 
             //foreign key

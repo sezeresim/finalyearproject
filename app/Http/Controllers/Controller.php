@@ -14,7 +14,7 @@ class Controller extends BaseController
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
 
     public function indexfun(){
-        $questions=\App\QuestionArea::all();
+        $questions= QuestionArea::where('survey_state', '=', "public")->get();
         $users=User::all();
        // return response()->json($questions);
         return view('welcome',compact('questions','users'));
