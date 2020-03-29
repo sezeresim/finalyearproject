@@ -8,7 +8,7 @@
                 <div>
                     <a href="myclass/create" class="btn btn-success"> <i class="fas fa-address-card"></i> Sınıf Yarat</a>
                 </div>
-                <table class="table">
+                <table class="table mt-2">
                     <thead class="thead-dark">
                         <tr>
                             <th scope="col">Sıra</th>

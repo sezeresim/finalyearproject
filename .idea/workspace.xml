@@ -2,17 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7b7971d4-60a0-44c8-9bbe-4cb8c4a06ce3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/SurveyUser.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_03_28_173328_create_survey_users_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/custom/selectState.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dictionaries/Sezer_Esim.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/Sezer_Esim.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Controller.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/QuestionAreaController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/QuestionAreaController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/QuestionArea.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/QuestionArea.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_03_10_160805_create_question_areas_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_03_10_160805_create_question_areas_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/questionarea/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/questionarea/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_03_28_173328_create_survey_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_03_28_173328_create_survey_users_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/myclass/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/myclass/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/mytests/mytests.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/mytests/mytests.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,13 +48,6 @@
         <item name="MySQL - finaldb@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="finaldb: schema" type="76f4a085:MysqlImplModel$Schema" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="MySQL - finaldb@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="finaldb: schema" type="76f4a085:MysqlImplModel$Schema" />
-        <item name="question_areas: table" type="285a2a93:MysqlImplModel$Table" />
       </path>
     </expand>
     <select />
@@ -325,7 +315,8 @@
       <workItem from="1585233550913" duration="4845000" />
       <workItem from="1585321898292" duration="8450000" />
       <workItem from="1585345398250" duration="2027000" />
-      <workItem from="1585391197723" duration="10969000" />
+      <workItem from="1585391197723" duration="11259000" />
+      <workItem from="1585505035898" duration="9906000" />
     </task>
     <task id="LOCAL-00001" summary="deneme todo">
       <created>1585159502750</created>
@@ -448,6 +439,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="169" key="com.intellij.database.dbimport.ImportUtil.MyDialog/0.0.1366.728@0.0.1366.728" timestamp="1584997097042" />
+    <state x="466" y="179" width="433" height="361" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog" timestamp="1585515215273">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="466" y="179" width="433" height="361" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog/0.0.1366.728@0.0.1366.728" timestamp="1585515215273" />
     <state x="392" y="6" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1584995547981">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -467,12 +462,12 @@
     </state>
     <state x="1742" y="127" key="run.anything.popup/0.0.1366.728/1366.-137.1440.860@1366.-137.1440.860" timestamp="1584464770870" />
     <state x="357" y="223" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1585159445364" />
-    <state x="371" y="92" width="672" height="574" key="search.everywhere.popup" timestamp="1585420757926">
+    <state x="371" y="92" width="672" height="574" key="search.everywhere.popup" timestamp="1585507299904">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="-1057" y="101" width="672" height="678" key="search.everywhere.popup/0.0.1366.728/-1440.-79.1440.860@-1440.-79.1440.860" timestamp="1584299109696" />
     <state x="1749" y="43" width="672" height="678" key="search.everywhere.popup/0.0.1366.728/1366.-137.1440.860@1366.-137.1440.860" timestamp="1584450462286" />
-    <state x="371" y="92" width="672" height="574" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1585420757926" />
+    <state x="371" y="92" width="672" height="574" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1585507299904" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -484,7 +479,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/resources/views/welcome.blade.php</url>
-          <line>27</line>
+          <line>32</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">

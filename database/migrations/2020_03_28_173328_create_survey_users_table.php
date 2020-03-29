@@ -15,7 +15,13 @@ class CreateSurveyUsersTable extends Migration
     {
         Schema::create('survey_users', function (Blueprint $table) {
             $table->id();
+            $table->unsignedBigInteger("question_area_id");
+            $table->unsignedBigInteger("list_id");
             $table->timestamps();
+
+            //foreign key
+            $table->foreign('question_area_id')->references('id')->on('question_areas')->onDelete('cascade');
+
         });
     }
 

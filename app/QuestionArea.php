@@ -31,7 +31,7 @@ class QuestionArea extends Model
     {
         return $this->hasMany( Survey::class);
     }
-    public function surveyuser(){
-        return $this->hasOne(SurveyUser::class);
+    public function surveyusers(){
+        return $this->hasMany(SurveyUser::class);
     }
 }

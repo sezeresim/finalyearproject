@@ -4,10 +4,9 @@ namespace App\Http\Controllers;
 
 use App\ClassList;
 use App\QuestionArea;
+use App\SurveyUser;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\DB;
-use function GuzzleHttp\Promise\all;
 
 class questionAreaController extends Controller
 {
@@ -34,16 +33,29 @@ class questionAreaController extends Controller
 
     public function store()
     {
+
         $data=request()->validate([
             'title'=>'required',
             'purpose'=>'required',
         ]);
+
         $data['survey_state']=request("survey_state");
         $data['last_date']=request("last_date");
         $data['survey_list']=request("survey_list");
 
         //Creating new test
         $questions= auth()->user()->questionarea()->create($data);
+
+        //Create Question Area -User table
+        if($data['survey_state']=="private"){
+            $surveyUser=ClassList::where("class_group_id",request("survey_list"))->get(['list_id'])->toArray();
+
+            foreach ( $surveyUser as &$elem ) {
+                $elem['question_area_id'] = $questions->id;
+            }
+            SurveyUser::insert($surveyUser);
+        }
+
 
         //Counting Post
         auth()->user()->increment('post_counter',1);
