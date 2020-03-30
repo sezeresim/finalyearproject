@@ -9,21 +9,25 @@ use Illuminate\Http\Request;
 class SurveyController extends Controller
 {
 
-  /*  public function __construct()
+   public function __construct()
     {
-        $this->middleware('surveycontroller');
-    }*/
+        $this->middleware('auth');
+    }
 
     public function show(QuestionArea $questionarea,$slug){
 
-        $control=SurveyUser::where("question_area_id",$questionarea->id)->where("list_id",auth()->user()->id)->count();
-        if($control=="1"){
+        if($questionarea->survey_state =="public"){
             $questionarea->load('questions.answers');
             return view('survey.show',compact('questionarea'));
         }else{
-            echo "Erişim Yetkiniz Yok";
+            $control=SurveyUser::where("question_area_id",$questionarea->id)->where("list_id",auth()->user()->id)->count();
+            if($control=="1" && $questionarea->survey_state=="private" ){
+                $questionarea->load('questions.answers');
+                return view('survey.show',compact('questionarea'));
+            }else{
+                echo "Erişim Yetkiniz Yok";
+            }
         }
-
     }
 
     public function store(QuestionArea $questionarea)

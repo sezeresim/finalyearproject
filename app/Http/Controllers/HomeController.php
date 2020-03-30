@@ -25,7 +25,9 @@ class HomeController extends Controller
      */
     public function index()
     {
+
         $userssurvey=SurveyUser::where("list_id",auth()->user()->id)->get("question_area_id")->toArray();
+
         //dd($userssurvey);
         $tests=QuestionArea::whereIn("id",$userssurvey)->get();
         //dd($tests);
