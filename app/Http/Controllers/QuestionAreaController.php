@@ -43,19 +43,20 @@ class questionAreaController extends Controller
         $data['last_date']=request("last_date");
         $data['survey_list']=request("survey_list");
 
-        //Creating new test
+        //Create New Question Aea
         $questions= auth()->user()->questionarea()->create($data);
 
-        //Create Question Area -User table
+        //Create to SurveyUser Table
         if($data['survey_state']=="private"){
+
             $surveyUser=ClassList::where("class_group_id",request("survey_list"))->get(['list_id'])->toArray();
 
             foreach ( $surveyUser as &$elem ) {
+
                 $elem['question_area_id'] = $questions->id;
             }
             SurveyUser::insert($surveyUser);
         }
-
 
         //Counting Post
         auth()->user()->increment('post_counter',1);
