@@ -47,6 +47,7 @@
                             <div class="form-group mt-2">
                                 <label for="title" class="category font-weight-bold">Sınıf Tanımla</label>
                                 <select class="form-control custom-select" name="survey_list" id="surveyState" >
+                                    <option value="0">Public</option>
                                     @foreach($userclass as $class)
                                     <option value="{{ $class->id }}" selected>{{ $class->name }}</option>
                                     @endforeach
