@@ -21,6 +21,10 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/mytests','MyTestsController@index');
 Route::delete('/mytests/{questionarea}','MyTestsController@destroy');
 
+//Detail
+Route::get('/mytests/analysis/{questionarea}','DetailController@show');
+
+
 //For Question Area
 Route::get('/questionarea/create','QuestionAreaController@create');
 Route::post('/questionarea','QuestionAreaController@store');

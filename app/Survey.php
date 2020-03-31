@@ -10,6 +10,7 @@ class Survey extends Model
 
     public function questionarea(){
         return $this->belongsTo(QuestionArea::class);
+
     }
     public function responses()
     {

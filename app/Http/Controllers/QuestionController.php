@@ -20,8 +20,11 @@ class QuestionController extends Controller
         $data = request()->validate([
             'question.question'=>'required',
             'answers.*.answer'=>'required',
+	          'question.rightanswer'=>'required',
         ]);
+
         //dd($data);
+
         $question=$questionarea->questions()->create($data['question']);
         $question->answers()->createMany($data['answers']);
 

@@ -23,8 +23,8 @@
                             <tr>
                                 <th scope="col">Sıra</th>
                                 <th scope="col">Test Adı</th>
-                                <th scope="col">#Soru</th>
-                                <th scope="col">#Katılımcı</th>
+                               {{-- <th scope="col">#Soru</th>
+                                <th scope="col">#Katılımcı</th>--}}
                                 <th scope="col">Oluşturma Tarihi</th>
                                 <th scope="col">P.Link</th>
                                 <th scope="col">İşlemler</th>
@@ -35,15 +35,16 @@
                                 <tr>
                                     <th scope="row">{{ $loop->iteration }} </th>
                                     <td> <a href="{{$question_area->path()}}" class="text text-dark">{{ $question_area->title }}</a></td>
-                                    <td>{{ $question_area->questions->count() }}</td>
-                                    <td>{{$question_area->surveys->count()}}</td>
-                                    <td>{{ $question_area->created_at }}</td>
+                                   {{-- <td>{{ $question_area->questions->count() }}</td>
+                                    <td>{{$question_area->surveys->count()}}</td>--}}
+                                    <td>{{ $question_area->created_at->todatestring()}}</td>
                                     <td>
                                         <a href="{{ $question_area->publicPath() }}"><i class="fas fa-share"></i>Link</a>
                                     </td>
 
                                     <td>
                                         <div class="row">
+                                            <a class="btn btn-sm btn-outline-warning mr-1" href="/mytests/analysis/{{$question_area->id}}">Analiz</a>
                                             <a href="{{$question_area->path()}}" class="btn btn-sm btn-outline-info mr-1"><i class="far fa-eye"></i> Teste Git</a>
                                             <form action="/mytests/{{$question_area->id}}" method="post">
                                                 @method('DELETE')

@@ -16,6 +16,9 @@ class MyTestsController extends Controller
         $question_areas= auth()->user()->questionarea;
         return view('mytests.mytests',compact('question_areas'));
     }
+
+
+
     public function destroy(QuestionArea $questionarea)
     {
         $questionarea->delete();

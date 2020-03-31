@@ -16,6 +16,14 @@
                                 <small class="text-danger">{{$message}}</small>
                                 @enderror
                             </div>
+                            <div class="form-group">
+                                <input autocomplete="off" name="question[rightanswer]" type="text" class="form-control"
+                                       value="{{ old('rightanswer') }}"
+                                       id="rightanswer" aria-describedby="rightanswerHelp" placeholder="Doğru Cevabı Giriniz">
+                                @error('question.rightanswer')
+                                <small class="text-danger">{{$message}}</small>
+                                @enderror
+                            </div>
                             <div class="form-group col-md-12" id="answers_form">
                                 <fieldset >
                                     <legend >Cevaplar</legend>
@@ -41,6 +49,7 @@
                                 </button>
                             </div>
                             <hr>
+
                                 <button type="submit" class="btn btn-warning col-md-12">Soruyu Kaydet</button>
                         </form>
                     </div>

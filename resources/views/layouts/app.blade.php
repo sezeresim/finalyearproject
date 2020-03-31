@@ -46,7 +46,9 @@
                     <li class="nav-item">
                         <a class="nav-link text text-white" href="/mytests"><i class="fas fa-poll-h"></i> Testlerim</a>
                     </li>
-
+                    <li class="nav-item">
+                        <a class="nav-link text text-white" href="/mytests"><i class="fas fa-list-ul"></i> Bana Özel</a>
+                    </li>
                     <li class="nav-item dropdown">
                         <a id="navbarDropdown" class="nav-link dropdown-toggle text text-success" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                             <i class="fas fa-user"></i>
