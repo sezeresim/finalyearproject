@@ -2,16 +2,22 @@
 
 namespace App\Http\Controllers;
 
+use App\ClassGroup;
+use App\QuestionArea;
 use Illuminate\Http\Request;
 
 class DetailController extends Controller
 {
-  public function show()
+  public function show(QuestionArea $questionarea)
   {
-    /* $questionarea->load('questions.answers.responses');
+  	$questionarea->load('questions.answers.responses');
      $questionarea->load('surveys');
-     $questionarea->load('questions');*/
+     $questionarea->load('questions');
 
-    return view('mytests.detail.show');
+     $classgroup=ClassGroup::find($questionarea["survey_list"]);
+
+     //dd($classgroup);
+
+    return view('mytests.detail.show',compact('questionarea','classgroup'));
   }
 }

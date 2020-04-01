@@ -3,9 +3,9 @@
 @section('content')
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-md-12">
-                <div>
-                    <div class="mb-2">
+            <div class="col-md-12 ">
+                <div >
+                    <div class="mb-2 ">
                         @if(Auth::user()->post_counter==Auth::user()->post_count)
                             <div class="alert alert-danger" role="alert">
                                 <i class="fas fa-exclamation"></i>
@@ -17,7 +17,7 @@
                             </a>
                         @endif
                     </div>
-                    <div class="mt-2">
+                    <div class="mt-2 card shadow">
                         <table class="table">
                             <thead class="thead-dark">
                             <tr>

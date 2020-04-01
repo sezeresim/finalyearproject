@@ -11,7 +11,7 @@
             @foreach($questions as $question)
                 <div class="col-md-4">
 
-                <div class="card border border-dark mb-4">
+                <div class="card border-left-primary shadow h-100 py-2">
                     <div class="card-body">
                         {{--TODO--}}
                         <div class="font-weight-bold">
@@ -22,8 +22,8 @@
                             {{ $question->purpose }}
                         </div>
                         <br>
-                        <div>
-                            <a class="btn btn-success col-md-12" href="/surveys/{{$question->id}}-{{ Str::slug($question->title) }}">Teste Git</a>
+                        <div class="align-items-center">
+                            <a class="btn btn-success" href="/surveys/{{$question->id}}-{{ Str::slug($question->title) }}">Teste Git</a>
                         </div>
                     </div>
                 </div>

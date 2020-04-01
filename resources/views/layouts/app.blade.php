@@ -11,11 +11,12 @@
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Nunito:400,700" rel="stylesheet">
     <!-- Styles -->
-    {{--<link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">--}}
-        <link href="{{ asset('css-sketch/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('css-sketch/bootstrap.min.css') }}" rel="stylesheet">
     <link href="{{ asset('css/custom.css') }}" rel="stylesheet">
     <link href="{{ asset('fontawesome-free-5.12.1-web/css/all.css') }}" rel="stylesheet">
     <script src="{{ asset('fontawesome-free-5.12.1-web/js/all.js') }}"></script>
+    <link href="{{ asset('https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.css') }}" rel="stylesheet">
+    <script src="{{ asset('https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js') }}"></script>
 <body>
 <nav class="navbar navbar-expand-lg bg bg-dark" >
     <div class="container">
@@ -80,8 +81,8 @@
         </div>
     </div>
 </nav>
-<div >
-    <div class="container section-padding">
+<div style="background-color: #879db7" >
+    <div class="pt-5 mb-5" >
         @yield('content')
     </div>
     <footer>
@@ -107,6 +108,7 @@
 <script src="{{ asset('js/custom.js') }}"></script>
 <script src="{{ asset('js/app.js') }}"></script>
 <script src="{{ asset('js/custom/selectState.js') }}"></script>
+@yield('script')
 </body>
 </html>
 
