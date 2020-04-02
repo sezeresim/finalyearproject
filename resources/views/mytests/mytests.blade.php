@@ -44,7 +44,9 @@
 
                                     <td>
                                         <div class="row">
-                                            <a class="btn btn-sm btn-outline-warning mr-1" href="/mytests/analysis/{{$question_area->id}}">Analiz</a>
+                                            <a class="btn btn-sm btn-outline-warning mr-1" href="/mytests/analysis/{{$question_area->id}}">
+                                                <i class="fa fa-chart-bar"></i>
+                                                Analiz</a>
                                             <a href="{{$question_area->path()}}" class="btn btn-sm btn-outline-info mr-1"><i class="far fa-eye"></i> Teste Git</a>
                                             <form action="/mytests/{{$question_area->id}}" method="post">
                                                 @method('DELETE')

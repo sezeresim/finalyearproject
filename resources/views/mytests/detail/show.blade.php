@@ -39,7 +39,6 @@
 
         <!-- Content Row -->
         <div class="row">
-            <!-- Earnings (Monthly) Card Example -->
             <div class="col-xl-5 col-md-6 mb-4">
                 <div class="card border-left-primary shadow h-100 py-2">
                     <div class="card-body">
@@ -69,7 +68,6 @@
                 </div>
             </div>
 
-            <!-- Earnings (Monthly) Card Example -->
             <div class="col-xl-4 col-md-6 mb-4">
                 <div class="card border-left-success shadow h-100 py-2">
                     <div class="card-body">
@@ -83,14 +81,15 @@
                 </div>
             </div>
 
-            <!-- Earnings (Monthly) Card Example -->
             <div class="col-xl-3 col-md-6 mb-4">
                 <div class="card border-left-info shadow h-100 py-2">
                     <div class="card-body">
                         <div class="row no-gutters align-items-center">
                             <div class="col mr-2">
                                 <div class="text-xs font-weight-bold text-info text-uppercase mb-1">Tasks</div>
-                                <div class="row no-gutters align-items-center">
+                                <div class="row no
+
+                                   -gutters align-items-center">
                                     <div class="col-auto">
                                         <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">TODO</div>
                                     </div>
@@ -105,7 +104,35 @@
                     </div>
                 </div>
             </div>
-
+        </div>
+        <div>
+            <div class="card shadow mb-4">
+                <div class="card-header py-3">
+                    <h6 class="m-0 font-weight-bold text-primary">Kullanıcılar</h6>
+                </div>
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <div id="dataTable_wrapper" class="dataTables_wrapper dt-bootstrap4">
+                            <table class="table table-bordered" role="grid" aria-describedby="dataTable_info" style="width: 100%;">
+                                <thead class="thead-dark">
+                                    <tr role="row">
+                                        <th>Sıra</th>
+                                        <th>Kullanıcı İsmi</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                @foreach($questionarea->surveyusers as $user)
+                                    <tr role="row" class="odd">
+                                        <td>{{ $user->list_id }}</td>
+                                        <td>{{ auth()->user()->find($user->list_id)->name }}</td>
+                                    </tr>
+                                @endforeach
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
     </div>

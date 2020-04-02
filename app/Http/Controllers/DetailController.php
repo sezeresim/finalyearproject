@@ -14,8 +14,9 @@ class DetailController extends Controller
      $questionarea->load('surveys');
      $questionarea->load('questions');
 
+     $questionarea->load('surveyusers');
+     //dd($questionarea);
      $classgroup=ClassGroup::find($questionarea["survey_list"]);
-
      //dd($classgroup);
 
     return view('mytests.detail.show',compact('questionarea','classgroup'));
