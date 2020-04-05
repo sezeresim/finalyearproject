@@ -6,8 +6,7 @@
             <div class="col-md-12">
                 <div class="card">
                     <div class="card-body">
-                        <form action="/questionarea" method="post">
-
+                        <form method="post" action="/questionarea/store" >
                             @csrf
 
                             <div class="form-group">

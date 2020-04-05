@@ -21,6 +21,7 @@ class CreateQuestionAreasTable extends Migration
             $table->string('survey_state')->default('public');
             $table->date('last_date');
             $table->string('survey_list');
+            $table->integer('like_count')->default('0');
           /*  $table->time('time_limit')->default(0);*/
             $table->timestamps();
 

@@ -19,4 +19,5 @@ class Controller extends BaseController
        // return response()->json($questions);
         return view('welcome',compact('questions','users'));
     }
+
 }

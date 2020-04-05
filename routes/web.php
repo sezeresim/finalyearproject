@@ -1,5 +1,4 @@
 <?php
-
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -15,6 +14,8 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/','Controller@indexfun');
 Auth::routes();
+Route::post('/{questionarea}','QuestionAreaController@ajaxRequest');
+
 Route::get('/home', 'HomeController@index')->name('home');
 
 //My Test
@@ -27,7 +28,7 @@ Route::get('/mytests/analysis/{questionarea}','DetailController@show');
 
 //For Question Area
 Route::get('/questionarea/create','QuestionAreaController@create');
-Route::post('/questionarea','QuestionAreaController@store');
+Route::post('/questionarea/store','QuestionAreaController@store');
 Route::get('/questionarea/{questionarea}','QuestionAreaController@show');
 
 //For Edit Questions
@@ -45,7 +46,7 @@ Route::get('/pricing','PricingController@index');
 //Class
 Route::get('/myclass','ClassGroupController@index');
 Route::get('/myclass/create','ClassGroupController@create');
-Route::post('/myclass','ClassGroupController@store');
+Route::post('/myclass/store','ClassGroupController@store');
 Route::get('/myclass/{classgroup}/list','ClassGroupController@show');
 Route::delete('myclass/{classgroup}/delete','ClassGroupController@destroy');
 

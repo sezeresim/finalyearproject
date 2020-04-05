@@ -2,11 +2,6 @@
 
 @section('content')
     <div class="container">
-        <div class="col-md-12 mb-2">
-            <div>
-                TODO
-            </div>
-        </div>
         <section class="row ">
             @foreach($questions as $question)
                 <div class="col-md-4">
@@ -23,6 +18,14 @@
                         </div>
                         <br>
                         <div class="align-items-center">
+                            <button type="button" class="btn btn-outline" id="like_button" value="{{$question->id}}">
+                                <i class="text text-danger fas fa-thumbs-up fa-2x"></i>
+                                <span id="like_count">{{$question->like_count}}</span>
+                            </button>
+                            <button type="button" class="btn btn-outline" id="dislike_button" value="{{$question->id}}">
+                                <i class="text text-danger fas fa-thumbs-down fa-2x"></i>
+                                <span id="dislike_count">{{$question->like_count}}</span>
+                            </button>
                             <a class="btn btn-success" href="/surveys/{{$question->id}}-{{ Str::slug($question->title) }}">Teste Git</a>
                         </div>
                     </div>
@@ -40,4 +43,30 @@
         <div id="example"></div>--}}
     </div>
 @endsection
+
+@section('script')
+    <script type="text/javascript">
+
+        $.ajaxSetup({
+            headers: {
+                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+            }
+        });
+
+        $("#like_button").click(function(e){
+            e.preventDefault();
+            let id=$("#like_button").val();
+            console.log(id);
+            $.ajax({
+                type:'POST',
+                url:'/'+id,
+                data:{id:id},
+                success:function(data){
+                    $("#like_count").text(data.success);
+                }
+            });
+
+        });
+    </script>
+    @endsection
 

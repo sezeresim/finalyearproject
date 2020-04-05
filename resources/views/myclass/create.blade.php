@@ -6,7 +6,7 @@
             <div class="col-md-12">
                 <div class="card">
                     <div class="card-body">
-                        <form action="/myclass" method="post">
+                        <form action="/myclass/store" method="post">
                             @csrf
                             <div class="form-group">
                                 <label for="title" class="category font-weight-bold">Sınıfınız için bir isim giriniz</label>

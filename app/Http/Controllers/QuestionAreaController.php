@@ -79,4 +79,10 @@ class questionAreaController extends Controller
 
         return redirect('/questionarea/'.$questionarea->id);
     }
+
+		public function ajaxRequest(QuestionArea $questionarea)
+	{
+		$questionarea::increment('like_count',1);
+		return response()->json(['success'=>$questionarea['like_count']]);
+	}
 }
