@@ -2,14 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7b7971d4-60a0-44c8-9bbe-4cb8c4a06ce3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/public/js/custom/likeSystem.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Controller.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/QuestionAreaController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/QuestionAreaController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/migrations/2020_03_10_160805_create_question_areas_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_03_10_160805_create_question_areas_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/myclass/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/myclass/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/questionarea/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/questionarea/create.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -224,17 +221,17 @@
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.HTML" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\Final Project\projectWeb\resources\views\mytests\detail" />
-      <recent name="E:\Final Project\projectWeb\resources\views\mytests" />
-      <recent name="E:\Final Project\projectWeb\resources\views" />
-      <recent name="E:\Final Project\projectWeb\public\css" />
-      <recent name="E:\Final Project\projectWeb\public\js" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\Final Project\projectWeb\resources\views\myclass\list" />
       <recent name="E:\Final Project\projectWeb\resources\views\myclass" />
       <recent name="E:\Final Project\projectWeb\resources\views\pricing" />
+      <recent name="E:\Final Project\projectWeb\public\css" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Final Project\projectWeb\public\js\custom" />
+      <recent name="E:\Final Project\projectWeb\resources\views\mytests\detail" />
+      <recent name="E:\Final Project\projectWeb\resources\views\mytests" />
+      <recent name="E:\Final Project\projectWeb\resources\views" />
       <recent name="E:\Final Project\projectWeb\public\css" />
     </key>
   </component>
@@ -321,7 +318,7 @@
       <workItem from="1585828568745" duration="5747000" />
       <workItem from="1585851154673" duration="4013000" />
       <workItem from="1586082202550" duration="14036000" />
-      <workItem from="1586098895099" duration="993000" />
+      <workItem from="1586098895099" duration="6858000" />
     </task>
     <task id="LOCAL-00001" summary="deneme todo">
       <created>1585159502750</created>
@@ -488,12 +485,12 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="275" y="22" key="scopes/0.0.1366.728@0.0.1366.728" timestamp="1585669397453" />
-    <state x="371" y="92" width="672" height="574" key="search.everywhere.popup" timestamp="1586096898630">
+    <state x="371" y="92" width="672" height="574" key="search.everywhere.popup" timestamp="1586105013517">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="-1057" y="101" width="672" height="678" key="search.everywhere.popup/0.0.1366.728/-1440.-79.1440.860@-1440.-79.1440.860" timestamp="1584299109696" />
     <state x="1749" y="43" width="672" height="678" key="search.everywhere.popup/0.0.1366.728/1366.-137.1440.860@1366.-137.1440.860" timestamp="1584450462286" />
-    <state x="371" y="92" width="672" height="574" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1586096898630" />
+    <state x="371" y="92" width="672" height="574" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1586105013517" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -502,11 +499,6 @@
           <url>file://$PROJECT_DIR$/resources/views/pricing/show.blade.php</url>
           <line>10</line>
           <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/resources/views/welcome.blade.php</url>
-          <line>35</line>
-          <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/resources/js/components/Example.js</url>
