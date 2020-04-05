@@ -4,8 +4,9 @@
     <list default="true" id="7b7971d4-60a0-44c8-9bbe-4cb8c4a06ce3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/DetailController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/DetailController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/MyTestsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/MyTestsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/mytests/detail/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/mytests/detail/show.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/mytests/mytests.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/mytests/mytests.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +51,7 @@
         <item name="MySQL - finaldb@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="finaldb: schema" type="76f4a085:MysqlImplModel$Schema" />
-        <item name="survey_users: table" type="285a2a93:MysqlImplModel$Table" />
+        <item name="questions: table" type="285a2a93:MysqlImplModel$Table" />
       </path>
     </expand>
     <select />
@@ -311,7 +312,9 @@
       <workItem from="1585664449689" duration="4570000" />
       <workItem from="1585669303312" duration="2750000" />
       <workItem from="1585736628923" duration="10744000" />
-      <workItem from="1585828568745" duration="4983000" />
+      <workItem from="1585828568745" duration="5747000" />
+      <workItem from="1585851154673" duration="4013000" />
+      <workItem from="1586082202550" duration="7403000" />
     </task>
     <task id="LOCAL-00001" summary="deneme todo">
       <created>1585159502750</created>
@@ -384,6 +387,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="296" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1585159501090" />
+    <state x="399" y="0" key="Diagram.Print.Preview.Dialog" timestamp="1585852769800">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="399" y="0" key="Diagram.Print.Preview.Dialog/0.0.1366.728@0.0.1366.728" timestamp="1585852769800" />
     <state x="92" y="92" width="1182" height="544" maximized="true" key="DiffContextDialog" timestamp="1584976028848">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -457,21 +464,21 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="485" y="276" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728@0.0.1366.728" timestamp="1585167670136" />
-    <state x="357" y="223" key="run.anything.popup" timestamp="1585755811824">
+    <state x="357" y="223" key="run.anything.popup" timestamp="1586086671527">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="1742" y="127" key="run.anything.popup/0.0.1366.728/1366.-137.1440.860@1366.-137.1440.860" timestamp="1584464770870" />
-    <state x="357" y="223" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1585755811824" />
+    <state x="357" y="223" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1586086671527" />
     <state x="275" y="22" key="scopes" timestamp="1585669397453">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="275" y="22" key="scopes/0.0.1366.728@0.0.1366.728" timestamp="1585669397453" />
-    <state x="371" y="92" width="672" height="574" key="search.everywhere.popup" timestamp="1585845226780">
+    <state x="371" y="92" width="672" height="574" key="search.everywhere.popup" timestamp="1586091129285">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="-1057" y="101" width="672" height="678" key="search.everywhere.popup/0.0.1366.728/-1440.-79.1440.860@-1440.-79.1440.860" timestamp="1584299109696" />
     <state x="1749" y="43" width="672" height="678" key="search.everywhere.popup/0.0.1366.728/1366.-137.1440.860@1366.-137.1440.860" timestamp="1584450462286" />
-    <state x="371" y="92" width="672" height="574" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1585845226780" />
+    <state x="371" y="92" width="672" height="574" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1586091129285" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

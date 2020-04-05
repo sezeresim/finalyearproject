@@ -11,6 +11,7 @@ class MyTestsController extends Controller
     {
         $this->middleware('auth');
     }
+
     public function index()
     {
         $question_areas= auth()->user()->questionarea;
