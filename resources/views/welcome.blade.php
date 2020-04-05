@@ -17,10 +17,14 @@
                         </div>
                         <br>
                         <div class="align-items-center">
-                            <button onclick="likeIncrement({{$question->id}});" id="{{$question->id}}"  type="button" class="btn btn-outline" >
-                            <span id="like_counter_{{$question->id}}">{{$question->like_count}}</span>
-                            </button>
-                            <a class="btn btn-success" href="/surveys/{{$question->id}}-{{ Str::slug($question->title) }}">Teste Git</a>
+                            <a onclick="likeIncrement({{$question->id}});" id="{{$question->id}}"  type="button" class="btn btn-outline-primary" >
+                                <i class="fas fa-thumbs-up"></i>
+                                <span id="like_counter_{{$question->id}}">{{$question->like_count}}</span>
+                            </a>
+
+                            <a class="btn btn-outline-success" href="/surveys/{{$question->id}}-{{ Str::slug($question->title) }}">
+                                <i class="fas fa-eye"></i>
+                            </a>
                         </div>
                     </div>
                 </div>

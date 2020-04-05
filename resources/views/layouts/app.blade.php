@@ -13,8 +13,10 @@
     <!-- Styles -->
     <link href="{{ asset('css-sketch/bootstrap.min.css') }}" rel="stylesheet">
     <link href="{{ asset('css/custom.css') }}" rel="stylesheet">
-    <link href="{{ asset('fontawesome-free-5.12.1-web/css/all.css') }}" rel="stylesheet">
-    <script src="{{ asset('fontawesome-free-5.12.1-web/js/all.js') }}"></script>
+    <link href="{{ asset('fontawesome/css/all.css') }}" rel="stylesheet">
+    <script src="{{ asset('fontawesome/js/all.js') }}"></script>
+    <script src="{{ asset('js/jquery-3.4.1.min.js') }}"></script>
+
     <link href="{{ asset('https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.css') }}" rel="stylesheet">
     <script src="{{ asset('https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js') }}"></script>
 <body>
@@ -109,8 +111,7 @@
     </footer>
 </div>
 <!--   Core JS Files   -->
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 
 <script src="{{ asset('js/custom.js') }}"></script>
 <script src="{{ asset('js/app.js') }}"></script>
