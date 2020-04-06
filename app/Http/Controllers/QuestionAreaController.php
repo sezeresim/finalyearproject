@@ -81,10 +81,10 @@ class questionAreaController extends Controller
     }
 
 		public function ajaxRequest(QuestionArea $questionarea)
-	{
-		$id=$questionarea['id'];
-		$questionarea->where("id",$id)->increment("like_count",1);
-		$data=$questionarea->where('id',$id)->first();
-		return response()->json(['success'=>$data['like_count']]);
-	}
+		{
+			$id=$questionarea['id'];
+			$questionarea->where("id",$id)->increment("like_count",1);
+			$data=$questionarea->where('id',$id)->first();
+			return response()->json(['success'=>$data['like_count']]);
+		}
 }

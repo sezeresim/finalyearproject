@@ -44,6 +44,5 @@
 
 @section('script')
     <script src="{{ asset('js/custom/likeSystem.js') }}"></script>
-
 @endsection
 

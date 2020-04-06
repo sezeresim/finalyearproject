@@ -34,7 +34,11 @@ class DetailController extends Controller
 
 			}
 		}
-		return $rightcount/($rightcount+$falsecount)*100;
+
+		if($rightcount+$falsecount != 0){
+			return $rightcount/($rightcount+$falsecount)*100;
+		}
+		return null;
 	}
   public function show(QuestionArea $questionarea)
   {
@@ -45,6 +49,7 @@ class DetailController extends Controller
 	  $success_sta=$this->calculateSuccess($questionarea->id);
 
      $classgroup=ClassGroup::find($questionarea["survey_list"]);
+
     return view('mytests.detail.show',compact('questionarea','classgroup','success_sta'));
   }
 }

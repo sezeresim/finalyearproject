@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="container-fluid col-md-10 mt-5 mb-5">
-
+        {{--ABOUT DATA--}}
         <div class="row">
             <div class="col-xl-12 col-md-12 mb-4 ">
                 <div class="card border-left-primary shadow h-100 py-2">
@@ -37,74 +37,78 @@
             </div>
         </div>
 
-        <!-- Content Row -->
+        <!-- ANALYSİS -->
         <div class="row">
-            <div class="col-xl-5 col-md-6 mb-4">
+
+            <div class="col-xl-5 col-md-5 mb-4">
                 <div class="card border-left-primary shadow h-100 py-2">
                     <div class="card-body">
                         <div class="row no-gutters align-items-center">
                             <div class="col mr-2">
-                                <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Kullanici Sayisi</div>
-                                <div class="h5 mb-0 font-weight-bold text-gray-800">{{$questionarea->surveyusers->count()-1}}</div>
-                            </div>
-                            <div class="col mr-2">
                                 <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Katilimci Sayisi</div>
                                 <div class="h5 mb-0 font-weight-bold text-gray-800">{{$questionarea->surveys->count()}}</div>
+                            </div>
+                            @if($questionarea->survey_state=="private")
+                            <div class="col mr-2">
+                                <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Kullanici Sayisi</div>
+                                <div class="h5 mb-0 font-weight-bold text-gray-800">{{$questionarea->surveyusers->count()}}</div>
                             </div>
                             <div class="col mr-2">
                                 <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Katılımcı Oranı</div>
                                 <div class="h5 mb-0 font-weight-bold text-gray-800">
-                                {{ intval(($questionarea->surveys->count()* 100 ) / (($questionarea->surveyusers->count()-1)))}}
+                                {{ intval(($questionarea->surveys->count()* 100 ) / (($questionarea->surveyusers->count())))}}
                                     %
                                 </div>
                             </div>
+                            @endif
+                            <div class="col">
+                                <div class="text-xs font-weight-bold text-success text-uppercase mb-1">Başarı Oranı</div>
+                                <div class="h5 mb-0 font-weight-bold text-gray-800">{{intval($success_sta)}} %</div>
+                            </div>
                         </div>
+                        @if($questionarea->survey_state=="private")
                         <div class="row">
                             <canvas data-surveys="{{$questionarea->surveys->count()}}"
                                     data-users="{{$questionarea->surveyusers->count()-1}}"
                                     id="pie-chart" width="auto" height="auto"></canvas>
                         </div>
+                        @endif
                     </div>
                 </div>
             </div>
 
-            <div class="col-xl-4 col-md-6 mb-4">
-                <div class="card border-left-success shadow h-100 py-2">
+            <div class="col-xl-7 col-md-7 mb-4">
+                <div class="card border-left-info shadow">
                     <div class="card-body">
-                        <div class="row no-gutters align-items-center">
-                            <div class="col mr-2">
-                                <div class="text-xs font-weight-bold text-success text-uppercase mb-1">Başarı İstatistikleri</div>
-                                <div class="h5 mb-0 font-weight-bold text-gray-800">{{intval($success_sta)}} %</div>
+                        @foreach($questionarea->questions as $question)
+                            <div class="border-dark">
+                                <ul class="list-group">
+                                    <div>{{$question->question}}{{$question->rightanswer}}</div>
+                                    @foreach($question->answers as $answer)
+
+                                    <li class="list-group-item d-flex justify-content-between
+                                    @if($question->rightanswer == $answer->answer) list-group-item-success
+                                     @else list-group-item-warning
+                                    @endif">
+
+                                    <div class="text text-dark font-weight-bold">{{ $answer->answer }}</div>
+
+                                    @if($question->responses->count())
+                                        <span class="badge badge-success ">{{ intval(($answer->responses->count() * 100 ) /$question->responses->count())}} %</span>
+                                    @endif
+
+                                    </li>
+                                    @endforeach
+                                </ul>
                             </div>
-                        </div>
+                        @endforeach
                     </div>
                 </div>
             </div>
 
-            <div class="col-xl-3 col-md-6 mb-4">
-                <div class="card border-left-info shadow h-100 py-2">
-                    <div class="card-body">
-                        <div class="row no-gutters align-items-center">
-                            <div class="col mr-2">
-                                <div class="text-xs font-weight-bold text-info text-uppercase mb-1">Tasks</div>
-                                <div class="row no
-
-                                   -gutters align-items-center">
-                                    <div class="col-auto">
-                                        <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">TODO</div>
-                                    </div>
-                                    <div class="col">
-                                        <div class="progress progress-sm mr-2">
-                                            <div class="progress-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
+        <!-- USERS PANEL ONLY FOR PRİVATE -->
+        @if($questionarea->survey_state=="private")
         <div>
             <div class="card shadow mb-4">
                 <div class="card-header py-3">
@@ -135,7 +139,7 @@
                 </div>
             </div>
         </div>
-
+        @endif
     </div>
 @endsection
 @section('script')
