@@ -8,15 +8,34 @@
                     <div class="card-header font-weight-bold">
                         Testlerim
                     </div>
-                    <div class="card-body">
-                        <ul class="list-group list-group-flush text text-dark font-weight-bold">
+                    <table class="table">
+                        <thead>
+                        <tr>
+                            <th scope="col">Sıra</th>
+                            <th scope="col">Test Adı</th>
+                            <th scope="col">Son Tarih</th>
+                            <th scope="col">Tamamlandı</th>
+                        </tr>
+                        </thead>
+                        <tbody>
                             @foreach($tests as $test)
-                                <li class="list-group-item">
-                                    <a class="btn btn-outline-info" href="/surveys/{{$test->id}}-{{ Str::slug($test->title) }}">{{$test->title}}</a>
-                                </li>
+                            <tr>
+                                <td scope="row">
+                                    {{$loop->iteration}}
+                                </td>
+                                <td>
+                                    <a class="font-weight-bold" href="/surveys/{{$test->id}}-{{ Str::slug($test->title) }}">{{$test->title}}</a>
+                                </td>
+                                <td>
+                                    {{$test->last_date}}
+                                </td>
+                                <td>
+                                    {{ $test->complete}}
+                                </td>
+                            </tr>
                             @endforeach
-                        </ul>
-                    </div>
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </div>
