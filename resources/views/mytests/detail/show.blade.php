@@ -82,8 +82,8 @@
                     <div class="card-body">
                         @foreach($questionarea->questions as $question)
                             <div class="border-dark">
-                                <ul class="list-group">
-                                    <div>{{$question->question}}{{$question->rightanswer}}</div>
+                                <ul class="list-group mb-2">
+                                    <div class="h5 text text-dark font-weight-bold">{{$question->question}}</div>
                                     @foreach($question->answers as $answer)
 
                                     <li class="list-group-item d-flex justify-content-between

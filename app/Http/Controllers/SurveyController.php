@@ -37,7 +37,7 @@ class SurveyController extends Controller
             'responses.*.answer_id' =>'required',
             'responses.*.question_id' => 'required',
             'survey.name'=> 'required',
-            'survey.email'=> 'required',
+            'survey.email'=> ['required'],
         ]);
 
         $survey = $questionarea->surveys()->create($data['survey']);

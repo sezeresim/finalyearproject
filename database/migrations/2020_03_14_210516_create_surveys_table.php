@@ -17,7 +17,7 @@ class CreateSurveysTable extends Migration
             $table->id();
             $table->unsignedBigInteger('question_area_id');
             $table->string('name');
-            $table->string('email');
+            $table->string('email')->unique();
             $table->timestamps();
             //foreign key
             $table->foreign('question_area_id')->references('id')->on('question_areas')->onDelete('cascade');

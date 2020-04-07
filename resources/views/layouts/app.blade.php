@@ -50,7 +50,7 @@
                         <a class="nav-link text text-white" href="/mytests"><i class="fas fa-poll-h"></i> Testlerim</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text text-white" href="/mytests"><i class="fas fa-list-ul"></i> Bana Özel</a>
+                        <a class="nav-link text text-white" href="/personal"><i class="fas fa-list-ul"></i> Bana Özel</a>
                     </li>
                     <li class="nav-item">
                         <a href="" class="nav-link text text-white">
