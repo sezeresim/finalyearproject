@@ -18,7 +18,6 @@ class PersonalController extends Controller
 			    ->where('survey_users.list_id', '=', auth()->user()->id);
 		    })->get();
 
-
 	    return view('personal.show',compact('tests'));
     }
 }

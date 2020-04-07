@@ -5,7 +5,7 @@
         <div class="row justify-content-center">
             <div class="col-md-12">
                 <div class="card">
-                    <div class="card-header font-weight-bold">
+                    <div class="card-header bg font-weight-bold">
                         Testlerim
                     </div>
                     <table class="table">
@@ -14,7 +14,8 @@
                             <th scope="col">Sıra</th>
                             <th scope="col">Test Adı</th>
                             <th scope="col">Son Tarih</th>
-                            <th scope="col">Tamamlandı</th>
+                            <th scope="col">Durum</th>
+                            <th scope="col">Skor</th>
                         </tr>
                         </thead>
                         <tbody>
@@ -30,7 +31,14 @@
                                     {{$test->last_date}}
                                 </td>
                                 <td>
-                                    {{ $test->complete}}
+                                    @if($test->complete)
+                                        <i class="text text-success fas fa-check fa-2x"></i>
+                                        @else
+                                        <i class="text text-warning fas fa-clock fa-2x"></i>
+                                    @endif
+                                </td>
+                                <td>
+                                    TODO
                                 </td>
                             </tr>
                             @endforeach
