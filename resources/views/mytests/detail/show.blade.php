@@ -122,7 +122,7 @@
                                     <tr role="row">
                                         <th>Sıra</th>
                                         <th>Kullanıcı İsmi</th>
-                                        <th></th>
+                                        <th>Durum</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -130,6 +130,14 @@
                                     <tr role="row" class="odd">
                                         <td>{{ $user->list_id }}</td>
                                         <td>{{ auth()->user()->find($user->list_id)->name }}</td>
+                                        <td>
+                                            @if($user->complete)
+                                                <i class="text text-success fas fa-check"></i>
+                                                Tamamladı
+                                            @else
+                                                <i class="text text-warning fas fa-clock "></i>
+                                                Beklemede
+                                            @endif</td>
                                     </tr>
                                 @endforeach
                                 </tbody>

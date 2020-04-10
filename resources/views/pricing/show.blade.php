@@ -5,7 +5,9 @@
         <section class="pricing">
             <div class="container">
                 <div class="row">
-                    <!-- Free Tier -->
+                    {{$checkoutFormInitialize->getCheckoutFormContent()}}
+                    <div id="iyzipay-checkout-form" class="responsive"></div>
+                <!-- Free Tier -->
                     <div class="col-md-4">
                         <div class="card mb-5 mb-lg-0">
                             <div class="card-body">

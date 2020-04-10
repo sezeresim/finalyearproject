@@ -6,14 +6,14 @@
             <div class="col-md-12 ">
                 <div >
                     <div class="mb-2 ">
-                        @if(Auth::user()->post_counter==Auth::user()->post_count)
+                        @if(Auth::user()->post_counter==Auth::user()->questionarea()->count())
                             <div class="alert alert-danger" role="alert">
                                 <i class="fas fa-exclamation"></i>
                                 Daha Fazla Oluşturamazsınız
                             </div>
                         @else
                             <a href="/questionarea/create" class="btn btn-success">Yeni bir test oluştur
-                                <span class="badge badge-light">{{Auth::user()->post_count-Auth::user()->post_counter}}</span>
+                                <span class="badge badge-light">{{Auth::user()->post_count-Auth::user()->questionarea()->count()}}</span>
                             </a>
                         @endif
                     </div>

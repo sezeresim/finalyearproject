@@ -52,13 +52,13 @@
                     <li class="nav-item">
                         <a class="nav-link text text-white" href="/personal"><i class="fas fa-list-ul"></i> Bana Özel</a>
                     </li>
-                    <li class="nav-item">
+                    {{--<li class="nav-item">
                         <a href="" class="nav-link text text-white">
-                            {{--TODO--}}
+                            --}}{{--TODO--}}{{--
                             <i class="fas fa-bell"></i>
                             <span class="badge badge-warning">2</span>
                         </a>
-                    </li>
+                    </li>--}}
                     <li class="nav-item dropdown">
                         <a id="navbarDropdown" class="nav-link dropdown-toggle text text-success" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                             <i class="fas fa-user"></i>

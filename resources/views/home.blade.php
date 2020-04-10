@@ -16,7 +16,7 @@
                         <li class="list-group-item">Doğum Tarihi :{{ Auth::user()->birtdate }}</li>
                         <li class="list-group-item">Yetki :{{ Auth::user()->role }}</li>
                         <li class="list-group-item">Toplam Test Sayısı :{{ Auth::user()->post_count }}</li>
-                        <li class="list-group-item">Oluşturulan Test Sayısı :{{ Auth::user()->post_counter }}</li>
+                        <li class="list-group-item">Oluşturulan Test Sayısı :{{ Auth::user()->questionarea()->count() }}</li>
                     </ul>
                 </div>
             </div>

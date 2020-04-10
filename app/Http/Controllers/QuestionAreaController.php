@@ -75,8 +75,6 @@ class questionAreaController extends Controller
     public function destroy(QuestionArea $questionarea)
     {
         $questionarea->delete();
-        auth()->user()->decrement('post_counter');
-
         return redirect('/questionarea/'.$questionarea->id);
     }
 
