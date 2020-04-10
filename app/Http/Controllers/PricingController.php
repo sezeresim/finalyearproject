@@ -28,8 +28,8 @@ class PricingController extends Controller
 	    $request->setLocale(Locale::TR);
 	    $request->setConversationId("123456789");
 	    $request->setPrice("1");
-	    $request->setPaidPrice("0.1");
-	    $request->setCurrency(Currency::TL);
+	    $request->setPaidPrice("5000");
+	    $request->setCurrency(Currency::EUR);
 	    $request->setBasketId("B67832");
 	    $request->setPaymentGroup(PaymentGroup::PRODUCT);
 	    $request->setCallbackUrl("https://www.merchant.com/callback");
@@ -37,9 +37,9 @@ class PricingController extends Controller
 
 	    $buyer = new Buyer();
 	    $buyer->setId("BY789");
-	    $buyer->setName("John");
-	    $buyer->setSurname("Doe");
-	    $buyer->setGsmNumber("+905350000000");
+	    $buyer->setName("Sezer");
+	    $buyer->setSurname("Esim");
+	    $buyer->setGsmNumber("+9053388173182");
 	    $buyer->setEmail("email@email.com");
 	    $buyer->setIdentityNumber("74300864791");
 	    $buyer->setLastLoginDate("2015-10-05 12:43:35");
@@ -69,7 +69,7 @@ class PricingController extends Controller
 
 	    $basketItems = array();
 	    $firstBasketItem = new BasketItem();
-	    $firstBasketItem->setId("BI101");
+	    $firstBasketItem->setId("BI0101");
 	    $firstBasketItem->setName("Binocular");
 	    $firstBasketItem->setCategory1("Collectibles");
 	    $firstBasketItem->setCategory2("Accessories");
@@ -97,9 +97,8 @@ class PricingController extends Controller
 	    $request->setBasketItems($basketItems);
 
 	    $checkoutFormInitialize = CheckoutFormInitialize::create($request, $options);
-	    $veri = $checkoutFormInitialize->getCheckoutFormContent();
-	    dd($veri);
+	    $paymentinput = $checkoutFormInitialize->getCheckoutFormContent();
 
-	    return view('pricing.show',compact('checkoutFormInitialize'));
+	    return view('pricing.show',compact('paymentinput'));
     }
 }
