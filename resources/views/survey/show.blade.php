@@ -38,6 +38,7 @@
                         </div>
                     @endforeach
 
+                    @if($questionarea->survey_state=="public")
                     <div class="card mb-2 ">
                         <div class="card-header ">Kullanıcı Bilgileri</div>
                         <div class="card-body">
@@ -55,9 +56,13 @@
                                 <small class="text-danger">{{$message}}</small>
                                 @enderror
                             </div>
-                            <div>
-                                <button class="btn btn-outline-success" type="submit">Tamamla</button>
-                            </div>
+                        </div>
+                    </div>
+                    @endif
+
+                    <div class="card mb-2 ">
+                        <div class="card-body">
+                            <button class="btn btn-outline-success" type="submit">Tamamla</button>
                         </div>
                     </div>
                 </form>

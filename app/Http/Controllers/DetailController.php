@@ -7,7 +7,7 @@ use App\ClassGroup;
 use App\Question;
 use App\QuestionArea;
 use App\Survey;
-use App\SurveyResponse;
+use App\Response;
 use Illuminate\Http\Request;
 
 class DetailController extends Controller
@@ -20,7 +20,7 @@ class DetailController extends Controller
 		$falsecount=0;
 		foreach ($surveys as $survey){
 
-			$responses=SurveyResponse::where("survey_id",$survey)->get('answer_id')->toArray();
+			$responses=Response::where("survey_id",$survey)->get('answer_id')->toArray();
 
 			foreach ($responses as $response){
 				$answer=Answer::where('id',$response)->get(['answer','question_id'])->toArray();

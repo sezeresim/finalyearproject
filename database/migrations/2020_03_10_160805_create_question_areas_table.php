@@ -23,6 +23,7 @@ class CreateQuestionAreasTable extends Migration
             $table->string('survey_list');
             $table->integer('like_count')->default('0');
             $table->integer('dislike_count')->default('0');
+            $table->string('whatIs')->default('survey');
           /*  $table->time('time_limit')->default(0);*/
             $table->timestamps();
 

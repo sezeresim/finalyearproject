@@ -25,7 +25,7 @@
                                     {{$loop->iteration}}
                                 </td>
                                 <td>
-                                    <a class="font-weight-bold" href="/surveys/{{$test->id}}-{{ Str::slug($test->title) }}">{{$test->title}}</a>
+                                    <a class="font-weight-bold" href="/surveys/{{$test->question_area_id}}-{{ Str::slug($test->title) }}">{{$test->title}}</a>
                                 </td>
                                 <td>
                                     {{$test->last_date}}

@@ -4,12 +4,12 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class SurveyResponse extends Model
+class Response extends Model
 {
     protected  $guarded=[];
 
     public function survey()
     {
-        return $this->belongsTo(Survey::class);
+        return $this->belongsTo(Survey::class,'id','survey_id');
     }
 }

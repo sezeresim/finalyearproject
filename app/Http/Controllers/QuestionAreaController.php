@@ -51,7 +51,6 @@ class questionAreaController extends Controller
 
             $surveyUser=ClassList::where("class_group_id",request("survey_list"))->get(['list_id'])->toArray();
             foreach ( $surveyUser as &$elem ) {
-
                 $elem['question_area_id'] = $questions->id;
             }
             SurveyUser::insert($surveyUser);
