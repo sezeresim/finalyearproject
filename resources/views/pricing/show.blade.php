@@ -14,7 +14,7 @@
                                 <h6 class="card-price text-center">0 ₺<span class="period">/aylık</span></h6>
                                 <hr>
                                 <ul class="fa-ul">
-                                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Corona</li>
+                                    <li><span class="fa-li"><i class="fas fa-check"></i></span>////////</li>
                                 </ul>
                                 <a href="#" class="btn btn-block btn-success text-uppercase">Satın Al</a>
                             </div>
@@ -28,7 +28,7 @@
                                 <h6 class="card-price text-center">149 ₺<span class="period">/aylık</span></h6>
                                 <hr>
                                 <ul class="fa-ul">
-                                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Süper Corona</li>
+                                    <li><span class="fa-li"><i class="fas fa-check"></i></span>/////</li>
                                 </ul>
                                 <a href="#" class="btn btn-block btn-success text-uppercase">Satın Al</a>
                             </div>
@@ -42,7 +42,7 @@
                                 <h6 class="card-price text-center">299 ₺<span class="period">/aylık</span></h6>
                                 <hr>
                                 <ul class="fa-ul">
-                                    <li><span class="fa-li"><i class="fas fa-check"></i></span> Ultra Corona</li>
+                                    <li><span class="fa-li"><i class="fas fa-check"></i></span> /////</li>
                                 </ul>
                                 <a href="#" class="btn btn-block btn-success text-uppercase">Satın Al</a>
                             </div>

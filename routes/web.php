@@ -13,10 +13,10 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/','Controller@indexfun');
-Auth::routes();
+Auth::routes(['verify'=>false]);
 Route::post('/{questionarea}','QuestionAreaController@ajaxRequest');
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/home', 'HomeController@index')->name('home')->middleware('verified');
 
 //My Test
 Route::get('/mytests','MyTestsController@index');

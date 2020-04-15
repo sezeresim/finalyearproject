@@ -11,7 +11,6 @@ use Iyzipay\Model\Locale;
 use Iyzipay\Model\PaymentGroup;
 use Iyzipay\Options;
 use Iyzipay\Request\CreateCheckoutFormInitializeRequest;
-use Iyzipay\Request\CreatePaymentRequest;
 
 class PricingController extends Controller
 {
@@ -19,17 +18,17 @@ class PricingController extends Controller
     public function index(){
 
 
-		    $options = new Options();
-		    $options->setApiKey('sandbox-gD487ZET82BnrJizenQocXboGvLTp2fG');
-		    $options->setSecretKey('sandbox-MMOyIDnFiHi8YKCU3cfqDRV78QvnHRQG');
-		    $options->setBaseUrl('https://sandbox-api.iyzipay.com');
+	    $options = new Options();
+	    $options->setApiKey('sandbox-gD487ZET82BnrJizenQocXboGvLTp2fG');
+	    $options->setSecretKey('sandbox-MMOyIDnFiHi8YKCU3cfqDRV78QvnHRQG');
+	    $options->setBaseUrl('https://sandbox-api.iyzipay.com');
 
 	    $request = new CreateCheckoutFormInitializeRequest();
 	    $request->setLocale(Locale::TR);
 	    $request->setConversationId("123456789");
 	    $request->setPrice("1");
-	    $request->setPaidPrice("5000");
-	    $request->setCurrency(Currency::EUR);
+	    $request->setPaidPrice("50");
+	    $request->setCurrency(Currency::TL);
 	    $request->setBasketId("B67832");
 	    $request->setPaymentGroup(PaymentGroup::PRODUCT);
 	    $request->setCallbackUrl("https://www.merchant.com/callback");

@@ -6,7 +6,7 @@
             <div class="col-md-12 ">
                 <div >
                     <div class="mb-2 ">
-                        @if(Auth::user()->post_counter==Auth::user()->questionarea()->count())
+                        @if(Auth::user()->questionarea()->count()==Auth::user()->post_count)
                             <div class="alert alert-danger" role="alert">
                                 <i class="fas fa-exclamation"></i>
                                 Daha Fazla Oluşturamazsınız
