@@ -4,15 +4,10 @@
     <list default="true" id="7b7971d4-60a0-44c8-9bbe-4cb8c4a06ce3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/DetailController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/DetailController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PersonalController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PersonalController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/QuestionAreaController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/QuestionAreaController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/SurveyController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/SurveyController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/SurveyResponse.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Response.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_03_10_160805_create_question_areas_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_03_10_160805_create_question_areas_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_03_14_210555_create_survey_responses_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_03_14_210555_create_responses_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/personal/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/personal/show.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/survey/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/survey/show.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Response.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/SurveyResponse.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Survey.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Survey.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_03_14_210555_create_responses_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_03_14_210555_create_survey_responses_table.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -333,7 +328,7 @@
       <workItem from="1586697616911" duration="1415000" />
       <workItem from="1586778335466" duration="1252000" />
       <workItem from="1586863268338" duration="596000" />
-      <workItem from="1586952260095" duration="12766000" />
+      <workItem from="1586952260095" duration="14245000" />
     </task>
     <task id="LOCAL-00001" summary="deneme todo">
       <created>1585159502750</created>
@@ -457,10 +452,10 @@
     </state>
     <state x="-1347" y="61" key="SettingsEditor/0.0.1366.728/-1440.-79.1440.860@-1440.-79.1440.860" timestamp="1584295876528" />
     <state x="144" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1585669634107" />
-    <state x="413" y="169" key="com.intellij.database.dbimport.ImportUtil.MyDialog" timestamp="1586968389998">
+    <state x="413" y="169" key="com.intellij.database.dbimport.ImportUtil.MyDialog" timestamp="1586977527214">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="413" y="169" key="com.intellij.database.dbimport.ImportUtil.MyDialog/0.0.1366.728@0.0.1366.728" timestamp="1586968389998" />
+    <state x="413" y="169" key="com.intellij.database.dbimport.ImportUtil.MyDialog/0.0.1366.728@0.0.1366.728" timestamp="1586977527214" />
     <state x="466" y="179" width="433" height="357" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog" timestamp="1586976211285">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -473,10 +468,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="92" y="92" width="1182" height="544" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.0.1366.728@0.0.1366.728" timestamp="1586099024767" />
-    <state x="92" y="92" width="1182" height="544" maximized="true" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1586275971620">
+    <state x="92" y="92" width="1182" height="544" maximized="true" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1586977058125">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="92" y="92" width="1182" height="544" maximized="true" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1366.728@0.0.1366.728" timestamp="1586275971620" />
+    <state x="92" y="92" width="1182" height="544" maximized="true" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1366.728@0.0.1366.728" timestamp="1586977058125" />
     <state x="342" y="188" key="com.intellij.ide.util.TipDialog" timestamp="1585131695585">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -517,7 +512,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/app/Http/Controllers/PersonalController.php</url>
-          <line>23</line>
+          <line>19</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
