@@ -21,6 +21,7 @@ class CreateUsersTable extends Migration
             $table->date('birtdate');
             $table->string('country');
             $table->string('password');
+            $table->string('gender')->default('null');
             $table->string('role')->default('standart');
             $table->unsignedBigInteger('post_count')->default(50);
             $table->unsignedBigInteger('post_counter')->default(0);

@@ -16,7 +16,7 @@
 
                 @foreach($questionarea->questions as $question)
                     <div class="card mb-2">
-                        <div class="card-header">{{$question->question}}</div>
+                        <div class="card-header">{!! $question->question !!}</div>
                         <div class="card-body ">
                             <ul class="list-group">
                                 @foreach($question->answers as $answer)

@@ -37,8 +37,8 @@
                                         <i class="text text-warning fas fa-clock fa-2x"></i>
                                     @endif
                                 </td>
-                                <td>
-                                    TODO
+                                <td class="text font-weight-bold">
+                                    {{$test->score}}
                                 </td>
                             </tr>
                             @endforeach

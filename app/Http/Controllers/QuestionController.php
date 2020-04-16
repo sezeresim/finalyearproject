@@ -21,6 +21,7 @@ class QuestionController extends Controller
             'question.question'=>'required',
             'answers.*.answer'=>'required',
 	          'question.rightanswer'=>'required',
+	          'question.score'=>'numeric',
         ]);
 
         //dd($data);

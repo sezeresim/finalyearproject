@@ -4,43 +4,38 @@
     <div class="container-fluid col-md-10 mt-5 mb-5">
         {{--ABOUT DATA--}}
         <div class="row">
-            <div class="col-xl-12 col-md-12 mb-4 ">
+
+            <div class="col-xl-6 col-md-6 mb-4 ">
                 <div class="card border-left-primary shadow h-100 py-2">
                     <div class="card-body">
                         <div class="row no-gutters align-items-center">
-                            <div class="col mr-2 col-md-8">
+                            <div class="col col-md-12">
                                 <div class="h5 mb-0 font-weight-bold text-gray-800">
                                     <ul class="list-group-flush ">
                                         <li class="list-group-item">
-                                            "{{ $questionarea->title }}" isimli testi incelemektesiniz.
+                                            "{{ $questionarea->title }}"
                                         </li>
                                         <li class="list-group-item ">
-                                            "{{ $questionarea->created_at }}" tarihinde oluşturulmuştur.
-                                            "{{ $questionarea->last_date }}" tarihine kadar açık durumdadır.
+                                            "{{ $questionarea->created_at }}"
+                                            "{{ $questionarea->last_date }}"
                                         </li>
                                         <li class="list-group-item ">
                                             @if( $questionarea->survey_list)
-                                                "{{ $questionarea->survey_state }}" {{ $classgroup->name }} grubu için oluşturulmuştur.
+                                                "{{ $questionarea->survey_state }}" {{ $classgroup->name }}
                                             @else
-                                                " {{ $questionarea->survey_state }}" durumunda bulunmaktadır.
+                                                " {{ $questionarea->survey_state }}"
                                             @endif
                                         </li>
                                     </ul>
                                 </div>
                             </div>
-                            <div class="col-auto pl-5">
-                                <i class="fas fa-info  fa-6x text-danger"></i>
-                            </div>
+
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <!-- ANALYSİS -->
-        <div class="row">
-
-            <div class="col-xl-5 col-md-5 mb-4">
+            <div class="col-xl-6 col-md-6 mb-4">
                 <div class="card border-left-primary shadow h-100 py-2">
                     <div class="card-body">
                         <div class="row no-gutters align-items-center">
@@ -49,17 +44,17 @@
                                 <div class="h5 mb-0 font-weight-bold text-gray-800">{{$questionarea->surveys->count()}}</div>
                             </div>
                             @if($questionarea->survey_state=="private")
-                            <div class="col mr-2">
-                                <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Kullanici Sayisi</div>
-                                <div class="h5 mb-0 font-weight-bold text-gray-800">{{$questionarea->surveyusers->count()}}</div>
-                            </div>
-                            <div class="col mr-2">
-                                <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Katılımcı Oranı</div>
-                                <div class="h5 mb-0 font-weight-bold text-gray-800">
-                                {{ intval(($questionarea->surveys->count()* 100 ) / (($questionarea->surveyusers->count())))}}
-                                    %
+                                <div class="col mr-2">
+                                    <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Kullanici Sayisi</div>
+                                    <div class="h5 mb-0 font-weight-bold text-gray-800">{{$questionarea->surveyusers->count()}}</div>
                                 </div>
-                            </div>
+                                <div class="col mr-2">
+                                    <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Katılımcı Oranı</div>
+                                    <div class="h5 mb-0 font-weight-bold text-gray-800">
+                                        {{ intval(($questionarea->surveys->count()* 100 ) / (($questionarea->surveyusers->count())))}}
+                                        %
+                                    </div>
+                                </div>
                             @endif
                             <div class="col">
                                 <div class="text-xs font-weight-bold text-success text-uppercase mb-1">Başarı Oranı</div>
@@ -67,23 +62,26 @@
                             </div>
                         </div>
                         @if($questionarea->survey_state=="private")
-                        <div class="row">
-                            <canvas data-surveys="{{$questionarea->surveys->count()}}"
-                                    data-users="{{$questionarea->surveyusers->count()-1}}"
-                                    id="pie-chart" width="auto" height="auto"></canvas>
-                        </div>
+                            <div class="row">
+                                <canvas data-surveys="{{$questionarea->surveys->count()}}"
+                                        data-users="{{$questionarea->surveyusers->count()-1}}"
+                                        id="pie-chart" width="auto" height="auto"></canvas>
+                            </div>
                         @endif
                     </div>
                 </div>
             </div>
+        </div>
 
-            <div class="col-xl-7 col-md-7 mb-4">
+        <!-- ANALYSİS -->
+        <div class="row">
+            <div class="col-xl-12 col-md-12 mb-4">
                 <div class="card border-left-info shadow">
-                    <div class="card-body">
+                    <div class="card-body ">
                         @foreach($questionarea->questions as $question)
                             <div class="border-dark">
                                 <ul class="list-group mb-2">
-                                    <div class="h5 text text-dark font-weight-bold">{{$question->question}}</div>
+                                    <div class="h5 text text-dark font-weight-bold">{!! $question->question !!}</div>
                                     @foreach($question->answers as $answer)
 
                                     <li class="list-group-item d-flex justify-content-between
@@ -105,7 +103,6 @@
                     </div>
                 </div>
             </div>
-
         </div>
         <!-- USERS PANEL ONLY FOR PRİVATE -->
         @if($questionarea->survey_state=="private")
@@ -123,6 +120,7 @@
                                         <th>Sıra</th>
                                         <th>Kullanıcı İsmi</th>
                                         <th>Durum</th>
+                                        <th>Başarı Puanı</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -138,6 +136,7 @@
                                                 <i class="text text-warning fas fa-clock "></i>
                                                 Beklemede
                                             @endif</td>
+                                        <td>{{$user->score}}</td>
                                     </tr>
                                 @endforeach
                                 </tbody>

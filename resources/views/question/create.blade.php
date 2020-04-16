@@ -3,15 +3,18 @@
 @section('content')
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-md-12">
+            <div class="col-md-10">
                 <div class="card">
                     <div class="card-body">
                         <form action="/questions/{{$questionarea->id}}/question" method="post">
                             @csrf
                             <div class="form-group">
-                                <input autocomplete="off" name="question[question]" type="text" class="form-control"
+                               {{-- <input autocomplete="off" name="question[question]" type="text" class="form-control"
                                        value="{{ old('question.question') }}"
-                                       id="question" aria-describedby="questionHelp" placeholder="Soru oluşturunuz.">
+                                       id="question" aria-describedby="questionHelp" placeholder="Soru oluşturunuz.">--}}
+                                <textarea name="question[question]" id="mytextarea" cols="30" rows="10" class="form-control"
+                                          value="{{ old('question.question') }}"
+                                           aria-describedby="questionHelp" placeholder="Soru oluşturunuz."></textarea>
                                 @error('question.question')
                                 <small class="text-danger">{{$message}}</small>
                                 @enderror
@@ -24,6 +27,16 @@
                                 <small class="text-danger">{{$message}}</small>
                                 @enderror
                             </div>
+                            @if($questionarea->whatIs=="quiz")
+                            <div class="form-group">
+                                <input autocomplete="off" name="question[score]" type="text" class="form-control"
+                                       value="{{ old('score') }}"
+                                       id="score" aria-describedby="scoreHelp" placeholder="Puan">
+                                @error('question.score')
+                                <small class="text-danger">{{$message}}</small>
+                                @enderror
+                            </div>
+                            @endif
                             <div class="form-group col-md-12" id="answers_form">
                                 <fieldset >
                                     <legend >Cevaplar</legend>
@@ -44,13 +57,15 @@
                                             @enderror
                                         </div>
                                 </fieldset>
-                                <button type="button" class="btn btn-outline-success mt-2" onclick="add_answer();">
-                                    <i class="fas fa-plus"></i> Ek Cevap Ekle
-                                </button>
+                                <div class="text-center">
+                                    <button type="button" class="btn btn-outline-success mt-2 " onclick="add_answer();">
+                                        <i class="fas fa-plus"></i> Cevap Ekle
+                                    </button>
+                                </div>
+
                             </div>
                             <hr>
-
-                                <button type="submit" class="btn btn-warning col-md-12">Soruyu Kaydet</button>
+                                <button type="submit" class="btn btn-warning">Soruyu Kaydet</button>
                         </form>
                     </div>
                 </div>
@@ -58,4 +73,11 @@
             </div>
         </div>
     </div>
+@endsection
+@section('script')
+    <script>
+        tinymce.init({
+            selector: '#mytextarea'
+        });
+    </script>
 @endsection

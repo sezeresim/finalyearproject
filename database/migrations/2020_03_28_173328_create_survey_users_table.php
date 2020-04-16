@@ -18,6 +18,7 @@ class CreateSurveyUsersTable extends Migration
             $table->unsignedBigInteger("question_area_id");
             $table->unsignedBigInteger("list_id");
             $table->boolean('complete')->default(false);
+            $table->integer('score')->default(0);
             $table->timestamps();
 
             //foreign key

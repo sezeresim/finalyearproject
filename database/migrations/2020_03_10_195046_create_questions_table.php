@@ -18,6 +18,7 @@ class CreateQuestionsTable extends Migration
             $table->unsignedBigInteger('question_area_id');
             $table->string('question');
             $table->string('rightanswer');
+            $table->integer('score')->default(0);
             $table->timestamps();
 
             //foreign key

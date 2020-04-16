@@ -42,6 +42,12 @@
 
                             </div>
                             <div class="input-group  mb-2">
+                                <select class="form-control" id="gender" name="gender" autofocus>
+                                    <option value="male">Erkek</option>
+                                    <option value="female">Kadın</option>
+                                </select>
+                            </div>
+                            <div class="input-group  mb-2">
                                 <select class="form-control" id="country" name="country" autofocus>
                                     <option value="Afganistan">Afghanistan</option>
                                     <option value="Albania">Albania</option>

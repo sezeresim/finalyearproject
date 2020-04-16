@@ -11,7 +11,7 @@
 
                     @foreach($questionarea->questions as $key => $question)
                         <div class="card mb-2">
-                            <div class="card-header"><strong>{{ $key + 1 }}</strong> {{$question->question}}</div>
+                            <div class="card-header">{{--<strong>{{ $key + 1 }}</strong>--}} {!! $question->question !!}</div>
                             <div class="card-body">
 
                                 @error('responses.' .$key. '.answer_id')

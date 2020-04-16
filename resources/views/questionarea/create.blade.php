@@ -8,7 +8,6 @@
                     <div class="card-body">
                         <form method="post" action="/questionarea/store" >
                             @csrf
-
                             <div class="form-group">
                                 <label for="title" class="category font-weight-bold">İsim</label>
                                 <input name="title" type="text" class="form-control" id="title" aria-describedby="TitleHelp" autocomplete="off" placeholder="Testinize İsim Veriniz.">
@@ -30,15 +29,22 @@
                                 <small class="text-danger">{{$message}}</small>
                                 @enderror
                             </div>
+                            <label for="title" class="category font-weight-bold">Anket veya Test</label>
+                            <div class="input-group" >
+                                <select class="form-control custom-select" name="whatIs" id="whatIs" >
+                                    <option value="quiz" selected>Test</option>
+                                    <option value="survey">Anket</option>
+                                </select>
+                                @error('survey_state')
+                                <small class="text-danger">{{$message}}</small>
+                                @enderror
+                            </div>
                             <label for="title" class="category font-weight-bold">Paylaşım Ayarları</label>
                             <div class="input-group" >
                                 <select class="form-control custom-select" name="survey_state" id="surveyState" >
                                     <option value="public" selected>Herkese Açık</option>
                                     <option value="private">Gizli</option>
                                 </select>
-                               {{-- <div class="input-group-append">
-                                    <a  onclick="add_private();" class="btn btn-outline-danger input-group-text">Onayla</a>
-                                </div>--}}
                                 @error('survey_state')
                                 <small class="text-danger">{{$message}}</small>
                                 @enderror

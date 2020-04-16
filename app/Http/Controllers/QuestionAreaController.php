@@ -42,7 +42,7 @@ class questionAreaController extends Controller
         $data['survey_state']=request("survey_state");
         $data['last_date']=request("last_date");
         $data['survey_list']=request("survey_list");
-
+				$data['whatIs']=request("whatIs");
         //Create New Question Aea
         $questions= auth()->user()->questionarea()->create($data);
 
