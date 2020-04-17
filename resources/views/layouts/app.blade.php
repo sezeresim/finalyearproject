@@ -32,7 +32,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto ">
                 <li class="nav-item">
-                    <a class="nav-link text text-white" href="/public"><i class="fas fa-hourglass-half"></i>Popüler</a>
+                    <a class="nav-link text text-white" href="/public">Popüler</a>
                 </li>
                 <!-- Authentication Links -->
                 @guest
@@ -46,13 +46,13 @@
                     @endif
                 @else
                     <li class="nav-item">
-                        <a class="nav-link text text-white" href="/myclass"><i class="fas fa-users"></i> Sınıflarım</a>
+                        <a class="nav-link text text-white" href="/myclass"> Sınıflarım</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text text-white" href="/mytests"><i class="fas fa-poll-h"></i> Testlerim</a>
+                        <a class="nav-link text text-white" href="/mytests">Testlerim</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text text-white" href="/personal"><i class="fas fa-list-ul"></i> Bana Özel</a>
+                        <a class="nav-link text text-white" href="/personal"> Bana Özel</a>
                     </li>
                     {{--<li class="nav-item">
                         <a href="" class="nav-link text text-white">
@@ -97,19 +97,17 @@
 <div style="background-color: #879db7" >
     @yield('content')
     <footer>
-        <!--Bottom Footer-->
         <div class="bottom section-padding">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
-                        <div class="copyright">
-                            sezer.best
+                        <div class="footer-bottom">
+                            Copyright © 2020, All Rights Reserved
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!--Bottom Footer-->
     </footer>
 </div>
 <!--   Core JS Files   -->

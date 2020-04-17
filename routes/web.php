@@ -3,7 +3,12 @@
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
-
+//Static Pages
+Route::get('/about','StaticPageController@about');
+Route::get('/career','StaticPageController@career');
+Route::get('/contact','StaticPageController@contact');
+Route::get('/references','StaticPageController@references');
+Route::get('/team','StaticPageController@team');
 
 //Public
 Route::get('/','Controller@indexfun');

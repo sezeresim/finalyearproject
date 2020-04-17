@@ -2,33 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7b7971d4-60a0-44c8-9bbe-4cb8c4a06ce3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/public/show.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/StaticPageController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/logo-band.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/staticpages/about.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/staticpages/career.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/staticpages/contact.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/staticpages/referecences.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/staticpages/team.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ClassGroupController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ClassGroupController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Controller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/DetailController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/DetailController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PricingController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PricingController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/QuestionAreaController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/QuestionAreaController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/QuestionController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/QuestionController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/SurveyController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/SurveyController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_03_10_195046_create_questions_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_03_10_195046_create_questions_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_03_23_194441_create_class_groups_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_03_23_194441_create_class_groups_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/custom.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/custom.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/custom/likeSystem.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/custom/likeSystem.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/profile/home.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/myclass/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/myclass/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/myclass/list/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/myclass/list/show.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/myclass/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/myclass/show.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/mytests/detail/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/mytests/detail/show.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/mytests/mytests.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/mytests/mytests.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/personal/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/personal/show.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/pricing/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pricing/show.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/question/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/question/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/questionarea/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/questionarea/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/questionarea/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/questionarea/show.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/survey/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/survey/show.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
@@ -232,25 +216,26 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/public" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="Blade" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/staticpages" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.HTML" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Final Project\projectWeb\public" />
+      <recent name="E:\Final Project\projectWeb\resources\views\profile" />
+      <recent name="E:\Final Project\projectWeb\resources\views" />
+      <recent name="E:\Final Project\projectWeb\public\js\custom" />
+      <recent name="E:\Final Project\projectWeb\resources\views\mytests\detail" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Final Project\projectWeb\resources\views\staticpages" />
       <recent name="E:\Final Project\projectWeb\resources\views\public" />
       <recent name="E:\Final Project\projectWeb\database\migrations" />
       <recent name="E:\Final Project\projectWeb\public\fontawesome\webfonts" />
       <recent name="E:\Final Project\projectWeb\public\js" />
-      <recent name="E:\Final Project\projectWeb\resources\views\myclass\list" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\Final Project\projectWeb\resources\views" />
-      <recent name="E:\Final Project\projectWeb\resources\views\profile" />
-      <recent name="E:\Final Project\projectWeb\public\js\custom" />
-      <recent name="E:\Final Project\projectWeb\resources\views\mytests\detail" />
-      <recent name="E:\Final Project\projectWeb\resources\views\mytests" />
     </key>
   </component>
   <component name="RunManager">
@@ -357,7 +342,7 @@
       <workItem from="1587039869904" duration="1200000" />
       <workItem from="1587045255782" duration="17662000" />
       <workItem from="1587119013680" duration="7377000" />
-      <workItem from="1587138153806" duration="1068000" />
+      <workItem from="1587138153806" duration="4684000" />
     </task>
     <task id="LOCAL-00001" summary="deneme todo">
       <created>1585159502750</created>
@@ -467,11 +452,11 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="446" y="183" key="NewPhpClassDialog/0.0.1366.728@0.0.1366.728" timestamp="1586976305655" />
-    <state x="509" y="300" key="NewPhpFileDialog" timestamp="1586263034054">
+    <state x="509" y="300" key="NewPhpFileDialog" timestamp="1587146079948">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="1903" y="217" key="NewPhpFileDialog/0.0.1366.728/1366.-137.1440.860@1366.-137.1440.860" timestamp="1584465024703" />
-    <state x="509" y="300" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1586263034054" />
+    <state x="509" y="300" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1587146079948" />
     <state x="533" y="103" key="RollbackChangesDialog" timestamp="1586097525459">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -519,11 +504,15 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="485" y="276" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728@0.0.1366.728" timestamp="1585167670136" />
-    <state x="357" y="223" width="672" height="677" key="run.anything.popup" timestamp="1586448012391">
+    <state x="362" y="0" width="642" height="728" key="find.popup" timestamp="1587146268147">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="362" y="0" width="642" height="728" key="find.popup/0.0.1366.728@0.0.1366.728" timestamp="1587146268147" />
+    <state x="357" y="223" width="672" height="677" key="run.anything.popup" timestamp="1587146549860">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="1742" y="127" key="run.anything.popup/0.0.1366.728/1366.-137.1440.860@1366.-137.1440.860" timestamp="1584464770870" />
-    <state x="357" y="223" width="672" height="677" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1586448012391" />
+    <state x="357" y="223" width="672" height="677" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1587146549860" />
     <state x="275" y="22" key="scopes" timestamp="1585669397453">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
