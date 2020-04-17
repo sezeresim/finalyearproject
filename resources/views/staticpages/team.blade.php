@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="container pt-5 py-5">
-        About Us
+        Takım
     </div>
 @endsection
 

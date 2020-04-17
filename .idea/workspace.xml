@@ -2,19 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7b7971d4-60a0-44c8-9bbe-4cb8c4a06ce3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/StaticPageController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/logo-band.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/staticpages/about.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/staticpages/career.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/staticpages/contact.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/staticpages/referecences.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/staticpages/team.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/profile/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Controller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/custom.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/custom.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/register.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/register.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/verify.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/verify.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/staticpages/career.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/staticpages/career.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/staticpages/contact.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/staticpages/contact.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/staticpages/referecences.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/staticpages/referecences.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/staticpages/team.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/staticpages/team.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -342,7 +341,8 @@
       <workItem from="1587039869904" duration="1200000" />
       <workItem from="1587045255782" duration="17662000" />
       <workItem from="1587119013680" duration="7377000" />
-      <workItem from="1587138153806" duration="4684000" />
+      <workItem from="1587138153806" duration="4812000" />
+      <workItem from="1587151810730" duration="4046000" />
     </task>
     <task id="LOCAL-00001" summary="deneme todo">
       <created>1585159502750</created>
@@ -411,6 +411,10 @@
     </state>
     <state x="1816" y="48" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728/1366.-137.1440.860@1366.-137.1440.860" timestamp="1584473352961" />
     <state x="427" y="157" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1586448089351" />
+    <state x="463" y="292" key="#com.jetbrains.php.lang.intentions.PhpImportClassDialog#" timestamp="1587155839323">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="292" key="#com.jetbrains.php.lang.intentions.PhpImportClassDialog#/0.0.1366.728@0.0.1366.728" timestamp="1587155839323" />
     <state x="296" y="0" key="CommitChangelistDialog2" timestamp="1585159501090">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

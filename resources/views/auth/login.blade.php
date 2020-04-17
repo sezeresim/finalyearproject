@@ -2,7 +2,7 @@
 
 @section('content')
     <div >
-        <div class="container col-md-6">
+        <div class="container col-md-6 pt-5 pb-5">
             <div>
                 <div class="card" data-background-color="blue">
                     <form method="POST" action="{{ route('login') }}">

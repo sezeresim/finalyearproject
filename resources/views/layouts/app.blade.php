@@ -94,15 +94,69 @@
     </div>
 </nav>
 
-<div style="background-color: #879db7" >
+<div>
     @yield('content')
     <footer>
+
         <div class="bottom section-padding">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
-                        <div class="footer-bottom">
-                            Copyright © 2020, All Rights Reserved
+                        <p class="mbr-text align-right links mbr-fonts-style display-7">
+                            <a href="/about" class="text-white-50">Hakkımızda</a> &nbsp;&nbsp;&nbsp;&nbsp;
+                            <a href="/career" class="text-white-50">Kariyer</a> &nbsp;&nbsp;&nbsp;&nbsp;
+                            <a href="/references" class="text-white-50">Referanslar</a> &nbsp;&nbsp;&nbsp;&nbsp;
+                            <a href="/team" class="text-white-50">Takımımız</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                            <a href="/contact" class="text-white-50">İletişim</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="footer">
+                    <div class="media-container-row">
+                        <div class="col-md-12">
+                            <hr class="border-info">
+                        </div>
+                    </div>
+                    <div class="media-container-row mbr-white">
+                        <div class="col-md-6 copyright">
+                            <p class="mbr-text mbr-fonts-style display-8">
+                                <small>© Copyright 2020</small>
+                            </p>
+
+                        </div>
+                        <div class="col-md-6">
+                            <div class="social-list align-right">
+                                <div class="soc-item">
+                                    <a href="https://twitter.com/mobirise" target="_blank">
+                                        <span class="socicon-twitter socicon mbr-iconfont mbr-iconfont-social" media-simple="true"></span>
+                                    </a>
+                                </div>
+                                <div class="soc-item">
+                                    <a href="https://www.facebook.com/pages/Mobirise/1616226671953247" target="_blank">
+                                        <span class="socicon-facebook socicon mbr-iconfont mbr-iconfont-social" media-simple="true"></span>
+                                    </a>
+                                </div>
+                                <div class="soc-item">
+                                    <a href="https://www.youtube.com/c/mobirise" target="_blank">
+                                        <span class="socicon-youtube socicon mbr-iconfont mbr-iconfont-social" media-simple="true"></span>
+                                    </a>
+                                </div>
+                                <div class="soc-item">
+                                    <a href="https://instagram.com/mobirise" target="_blank">
+                                        <span class="socicon-instagram socicon mbr-iconfont mbr-iconfont-social" media-simple="true"></span>
+                                    </a>
+                                </div>
+                                <div class="soc-item">
+                                    <a href="https://plus.google.com/u/0/+Mobirise" target="_blank">
+                                        <span class="socicon-googleplus socicon mbr-iconfont mbr-iconfont-social" media-simple="true"></span>
+                                    </a>
+                                </div>
+                                <div class="soc-item">
+                                    <a href="https://www.behance.net/Mobirise" target="_blank">
+                                        <span class="socicon-behance socicon mbr-iconfont mbr-iconfont-social" media-simple="true"></span>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
