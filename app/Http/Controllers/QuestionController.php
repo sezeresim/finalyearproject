@@ -8,6 +8,12 @@ use Illuminate\Http\Request;
 
 class QuestionController extends Controller
 {
+
+	public function __construct()
+	{
+		$this->middleware('auth');
+	}
+
     public function create(QuestionArea $questionarea)
     {
         return view('question.create',compact('questionarea'));
@@ -16,13 +22,20 @@ class QuestionController extends Controller
     public function store(QuestionArea $questionarea)
     {
         //dd(request()->all());
-
-        $data = request()->validate([
-            'question.question'=>'required',
-            'answers.*.answer'=>'required',
-	          'question.rightanswer'=>'required',
+				if ($questionarea->whatIs=="quiz"){
+					$data = request()->validate([
+						'question.question'=>'required',
+						'answers.*.answer'=>'required',
+						'question.rightanswer'=>'required',
 	          'question.score'=>'numeric',
+          ]);
+				}else{
+					$data = request()->validate([
+						'question.question'=>'required',
+						'answers.*.answer'=>'required',
         ]);
+				}
+
 
         //dd($data);
 

@@ -12,6 +12,10 @@ use Illuminate\Http\Request;
 
 class DetailController extends Controller
 {
+	public function __construct()
+	{
+		$this->middleware('auth');
+	}
 	public function calculateSuccess($id){
 
 		$surveys=Survey::where("question_area_id",$id)->get('id')->toArray();

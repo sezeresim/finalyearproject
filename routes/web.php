@@ -1,21 +1,19 @@
 <?php
+
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
-*/
 
+
+//Public
 Route::get('/','Controller@indexfun');
-Auth::routes(['verify'=>true]);
-Route::post('/{questionarea}','QuestionAreaController@ajaxRequest');
+Route::get('/public','Controller@showPublic');
+Route::post('/public/{questionarea}','Controller@ajaxRequest');
 
+//Auth Routes
+Auth::routes(['verify'=>true]);
+
+//Profile
 Route::get('/home', 'HomeController@index')->name('home')->middleware('verified');
 
 //My Test

@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
+<div class="container  pb-5 pt-5">
     <div class="row">
         <div class="col-md-12">
             <div class="mb-2">
@@ -30,6 +30,7 @@
                         <tr>
                             <th >Sıra</th>
                             <th >İsim</th>
+                            <th>E-Posta</th>
                             <th >Düzenle</th>
                         </tr>
                     </thead>
@@ -38,6 +39,7 @@
                         <tr>
                             <td > {{$loop->iteration}}</td>
                             <td> {{ $users->find($list->list_id)->name }}</td>
+                            <td>{{ $users->find($list->list_id)->email }}</td>
                             <td>
                                 <form action="/myclass/{{$classgroup->id}}/list/{{$list->id}}" method="post">
                                     @method('DELETE')

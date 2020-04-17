@@ -8,7 +8,7 @@ function likeIncrement(id){
 
     $.ajax({
         type: 'POST',
-        url: '/' + id,
+        url: '/public/' + id,
         data: {id: id},
         success: function (data) {
             $("#like_counter_"+id).html(data.success);

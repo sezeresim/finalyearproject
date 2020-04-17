@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="container">
+    <div class="container  pb-5 pt-5">
         <section class="pricing">
             <div class="container">
                 {!! $paymentinput !!}

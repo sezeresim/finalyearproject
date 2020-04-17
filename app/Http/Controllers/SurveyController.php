@@ -11,11 +11,6 @@ use Illuminate\Http\Request;
 
 class SurveyController extends Controller
 {
-    public function __construct()
-    {
-        $this->middleware('auth');
-    }
-
 		public function calculateScore($scores){
 			$totalScore=0;
 			foreach ($scores as $score){
@@ -88,8 +83,12 @@ class SurveyController extends Controller
 
 		    $survey->responses()->createMany($data['responses']);
 	    }
+	      if($questionarea->whatIs == "quiz"){
+		      return '<h1>Teşekkürler</h1><br>Puanınız ='.$totalScore;
+	      }else{
+		      return '<h1>Katılımınız için Teşekkürler</h1>';
+	      }
 
-        return '<h1>Teşekkürler</h1>'.$totalScore;
 
     }
 

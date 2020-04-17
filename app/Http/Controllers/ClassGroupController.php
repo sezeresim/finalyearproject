@@ -23,10 +23,12 @@ class ClassGroupController extends Controller
     {
         return view('myclass.create');
     }
+
     public function store(){
 
         $data=request()->validate([
             'name'=>'required',
+	          'description'=>'required',
         ]);
         //dd($data);
         //create new class group
@@ -35,14 +37,14 @@ class ClassGroupController extends Controller
             'list_id' => auth()->user()->id,
             'class_group_id'=>$newclassgroup->id,
         ]);
-        return redirect('myclass');
+        return redirect('myclass/'.$newclassgroup->id.'/list');
     }
 
     public function show(ClassGroup $classgroup)
     {
         $classgroup->load('classlist');
-        $users=User::all();
-        //dd($classgroup);
+	    $users=User::all();
+
         return view('myclass.list.show',compact('classgroup','users'));
     }
 

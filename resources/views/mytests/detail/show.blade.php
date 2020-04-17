@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="container-fluid col-md-10 mt-5 mb-5">
+    <div class="container-fluid col-md-10 pt-5 py-5">
         {{--ABOUT DATA--}}
         <div class="row">
 

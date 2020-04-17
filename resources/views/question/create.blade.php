@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="container">
+    <div class="container  pb-5 pt-5">
         <div class="row justify-content-center">
             <div class="col-md-10">
                 <div class="card">
@@ -19,6 +19,7 @@
                                 <small class="text-danger">{{$message}}</small>
                                 @enderror
                             </div>
+                            @if($questionarea->whatIs=="quiz")
                             <div class="form-group">
                                 <input autocomplete="off" name="question[rightanswer]" type="text" class="form-control"
                                        value="{{ old('rightanswer') }}"
@@ -27,7 +28,6 @@
                                 <small class="text-danger">{{$message}}</small>
                                 @enderror
                             </div>
-                            @if($questionarea->whatIs=="quiz")
                             <div class="form-group">
                                 <input autocomplete="off" name="question[score]" type="text" class="form-control"
                                        value="{{ old('score') }}"

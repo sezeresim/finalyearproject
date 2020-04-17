@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
+<div class="container  pb-5 pt-5">
     <div class="row justify-content-center">
         <div class="col-md-12">
             <div class="mt-2">
@@ -15,6 +15,7 @@
                         <tr>
                             <th scope="col">Sıra</th>
                             <th scope="col">Sınıf Adı</th>
+                            <th scope="col">Açıklama</th>
                             <th scope="col">Düzenle </th>
                         </tr>
                         </thead>
@@ -23,6 +24,7 @@
                             <tr>
                                 <th scope="row">{{ $loop->iteration }} </th>
                                 <td scope="row"><a>{{ $group->name }}</a></td>
+                                <td scope="row"><a>{{ $group->description }}</a></td>
                                 <td scope="row">
                                     <div class="row btn-group-sm">
                                         <a class="btn btn-outline-info mr-1" href="{{ $group->path() }}"><i class="fas fa-users-cog"></i> Sınıfı Yönet</a>

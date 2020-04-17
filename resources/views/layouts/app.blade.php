@@ -23,8 +23,7 @@
 <nav class="navbar navbar-expand-lg bg bg-dark" >
     <div class="container">
         <a class="navbar-brand text text-white" href="{{ url('/') }}">
-            {{--{{ config('app.name', 'Laravel') }}--}}
-            Sezer Esim
+            {{ config('app.name') }}
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
             <span class="text text-white navbar-toggler-icon mr-2"><i class="fas fa-bars"></i></span>
@@ -32,6 +31,9 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto ">
+                <li class="nav-item">
+                    <a class="nav-link text text-white" href="/public"><i class="fas fa-hourglass-half"></i>Popüler</a>
+                </li>
                 <!-- Authentication Links -->
                 @guest
                     <li class="nav-item">
@@ -91,10 +93,9 @@
         </div>
     </div>
 </nav>
+
 <div style="background-color: #879db7" >
-    <div class="pt-5 mb-5" >
-        @yield('content')
-    </div>
+    @yield('content')
     <footer>
         <!--Bottom Footer-->
         <div class="bottom section-padding">

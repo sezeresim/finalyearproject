@@ -1,25 +1,8 @@
 @extends('layouts.app')
 
 @section('content')
-    <header class="bg-primary py-5 mb-5">
-        <div class="container h-100">
-            <div class="row h-100 align-items-center">
-                <div class="col-lg-12">
-                    <h1 class="display-2 text-white mt-5 mb-2">QASQ</h1>
-                    <p class="lead mb-2 text-white-50">
-                        Çevrimiçi anket ve test oluşturma.
-                    </p>
-                    <p class="lead mb-2 text-white-50">
-                        Özelleştirebilir sınıf sistemi ile grupları değerlendirebilirme.
-                    </p>
-                    <p class="lead mb-2 text-white-50">
-                        Detaylı analiz ve değerlendirme sistemi.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </header>
-    {{--<div class="container pb-5">
+
+    <div class="container pb-5 pt-5">
         <section class="row ">
             @foreach($questions as $question)
                 <div class="col-md-4">
@@ -49,12 +32,11 @@
             </div>
             @endforeach
         </section>
-    </div>--}}
+    </div>
 @endsection
 
-{{--
+
 @section('script')
     <script src="{{ asset('js/custom/likeSystem.js') }}"></script>
 @endsection
---}}
 
