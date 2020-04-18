@@ -17,10 +17,11 @@ class Controller extends BaseController
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
 
     public function indexfun(){
+    	$userCount=User::count();
     	$questionareaCount=QuestionArea::count();
     	$responseCount=SurveyResponse::count();
     	$questionCount=Question::count();
-        return view('welcome',compact('questionareaCount','responseCount','questionCount'));
+        return view('welcome',compact('userCount','questionareaCount','responseCount','questionCount'));
     }
 
     public function showPublic(){

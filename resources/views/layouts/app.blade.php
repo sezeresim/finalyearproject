@@ -37,11 +37,11 @@
                 <!-- Authentication Links -->
                 @guest
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route('login') }}">{{ __('Giriş Yap') }}</a>
+                        <a class="nav-link text text-white" href="{{ route('login') }}">{{ __('Giriş Yap') }}</a>
                     </li>
                     @if (Route::has('register'))
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('register') }}">{{ __('Üye Ol') }}</a>
+                            <a class="nav-link text text-white" href="{{ route('register') }}">{{ __('Üye Ol') }}</a>
                         </li>
                     @endif
                 @else
@@ -62,7 +62,7 @@
                         </a>
                     </li>--}}
                     <li class="nav-item dropdown">
-                        <a id="navbarDropdown" class="nav-link dropdown-toggle text text-success" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                        <a id="navbarDropdown" class="nav-link dropdown-toggle text text-success text-uppercase" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                             <i class="fas fa-user"></i>
                             {{ Auth::user()->name }} <span class="caret"></span>
                         </a>
@@ -95,6 +95,7 @@
 </nav>
 
 <div>
+
     @yield('content')
     <footer>
 
@@ -171,6 +172,19 @@
 <script src="{{ asset('js/app.js') }}"></script>
 <script src="{{ asset('js/custom/selectState.js') }}"></script>
 @yield('script')
+<!-- Start of Survicate (www.survicate.com) code -->
+<!-- Start of Survicate (www.survicate.com) code -->
+<script type="text/javascript">
+    (function (w) {
+        var s = document.createElement('script');
+        s.src = '//survey.survicate.com/workspaces/6030db34145301b3fea3227b9e2903ee/web_surveys.js';
+        s.async = true;
+        var e = document.getElementsByTagName('script')[0];
+        e.parentNode.insertBefore(s, e);
+    })(window);
+</script>
+<!-- End of Survicate code -->
+<!-- End of Survicate code -->
 </body>
 </html>
 

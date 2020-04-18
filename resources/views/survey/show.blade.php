@@ -6,6 +6,12 @@
             <div class="col-md-12">
 
                 <h1>{{$questionarea->title}}</h1>
+                @if( auth()->user()->id == $questionarea->user_id )
+                    <div class="alert alert-danger" role="alert">
+                        <i class="fas fa-exclamation"></i>
+                        Size ait olan test veya anketi cevaplayamazsınız
+                    </div>
+                @endif
                 <form action="/surveys/{{$questionarea->id}}-{{Str::slug($questionarea->title)}}" method="post">
                     @csrf
 
@@ -38,7 +44,7 @@
                         </div>
                     @endforeach
 
-                    @if($questionarea->survey_state=="public")
+                    @if($questionarea->survey_state=="public" && auth()->user()->id != $questionarea->user_id)
                     <div class="card mb-2 ">
                         <div class="card-header ">Kullanıcı Bilgileri</div>
                         <div class="card-body">
@@ -58,13 +64,12 @@
                             </div>
                         </div>
                     </div>
-                    @endif
-
                     <div class="card mb-2 ">
                         <div class="card-body">
                             <button class="btn btn-outline-success" type="submit">Tamamla</button>
                         </div>
                     </div>
+                    @endif
                 </form>
 
             </div>

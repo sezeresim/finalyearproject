@@ -33,10 +33,10 @@ class ClassGroupController extends Controller
         //dd($data);
         //create new class group
         $newclassgroup=auth()->user()->myclassgroup()->create($data);
-        ClassList::create([
+        /*ClassList::create([
             'list_id' => auth()->user()->id,
             'class_group_id'=>$newclassgroup->id,
-        ]);
+        ]);*/
         return redirect('myclass/'.$newclassgroup->id.'/list');
     }
 

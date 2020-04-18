@@ -32,7 +32,7 @@ class SurveyController extends Controller
             return view('survey.show',compact('questionarea'));
         }else{
             $control=SurveyUser::where("question_area_id",$questionarea->id)->where("list_id",auth()->user()->id)->count();
-            if($control=="1" && $questionarea->survey_state=="private" ){
+            if($control=="1" || $questionarea->user_id ==auth()->user()->id){
                 $questionarea->load('questions.answers');
                 return view('survey.show',compact('questionarea'));
             }else{
