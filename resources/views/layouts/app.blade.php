@@ -16,9 +16,9 @@
     <link href="{{ asset('fontawesome/css/all.css') }}" rel="stylesheet">
     <script src="{{ asset('fontawesome/js/all.js') }}"></script>
     <script src="{{ asset('js/jquery-3.4.1.min.js') }}"></script>
-    <link href="{{ asset('https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.css') }}" rel="stylesheet">
-    <script src="{{ asset('https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js') }}"></script>
-    <script src="{{ asset('https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js') }}" referrerpolicy="origin"></script>
+    <link href="{{ asset('http://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.css') }}" rel="stylesheet">
+    <script src="{{ asset('http://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js') }}"></script>
+    <script src="{{ asset('http://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js') }}" referrerpolicy="origin"></script>
 <body>
 <nav class="navbar navbar-expand-lg bg bg-dark" >
     <div class="container">
