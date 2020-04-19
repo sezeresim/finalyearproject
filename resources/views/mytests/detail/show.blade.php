@@ -58,7 +58,7 @@
                             @endif
                             <div class="col">
                                 <div class="text-xs font-weight-bold text-success text-uppercase mb-1">Başarı Oranı</div>
-                                <div class="h5 mb-0 font-weight-bold text-gray-800">{{intval($success_sta)}} %</div>
+                                    <div class="h5 mb-0 font-weight-bold text-gray-800">{{$success_sta}} %</div>
                             </div>
                         </div>
                         @if($questionarea->survey_state=="private")

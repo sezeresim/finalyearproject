@@ -6,6 +6,7 @@ use App\Answer;
 use App\Question;
 use App\QuestionArea;
 use App\SurveyUser;
+use Carbon\Carbon;
 use Illuminate\Http\Request;
 
 
@@ -27,6 +28,11 @@ class SurveyController extends Controller
 
     public function show(QuestionArea $questionarea,$slug){
 
+	    $nowdate=Carbon::now();
+	    if($nowdate>$questionarea->last_date){
+	    	return view('survey.notime');
+	    }
+
         if($questionarea->survey_state =="public"){
             $questionarea->load('questions.answers');
             return view('survey.show',compact('questionarea'));
@@ -43,13 +49,17 @@ class SurveyController extends Controller
 
     public function store(QuestionArea $questionarea)
     {
+
     	if ($questionarea->survey_state=="public"){
 		    $data=request()->validate([
 			    'responses.*.answer_id' =>'required',
 			    'responses.*.question_id' => 'required',
 			    'survey.name'=> 'required',
-			    'survey.email'=> ['required'],
-		    ]);
+			    'survey.email'=> ['required','unique:surveys,email,NULL,id,question_area_id,'.$questionarea->id],
+		    ],
+			    [
+				    'unique' => 'Daha önce bu anketi cevapladınız.',
+			    ]);
 
 				if($questionarea->whatIs == "quiz"){
 					$totalScore=$this->calculateScore($data['responses']);
@@ -83,13 +93,12 @@ class SurveyController extends Controller
 
 		    $survey->responses()->createMany($data['responses']);
 	    }
-	      if($questionarea->whatIs == "quiz"){
-		      return '<h1>Teşekkürler</h1><br>Puanınız ='.$totalScore;
-	      }else{
-		      return '<h1>Katılımınız için Teşekkürler</h1>';
-	      }
 
-
+      if($questionarea->whatIs == "quiz"){
+	      return '<h1>Teşekkürler</h1><br>Puanınız ='.$totalScore;
+      }else{
+	      return '<h1>Katılımınız için Teşekkürler</h1>';
+      }
     }
 
 }

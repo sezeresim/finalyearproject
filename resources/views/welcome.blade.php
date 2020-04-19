@@ -56,7 +56,7 @@
         <section class="pricing">
             <div class="container">
                 <div class="row">
-                    <!-- Free Tier -->
+                    
                     <div class="col-md-4">
                         <div class="card mb-5 mb-lg-0">
                             <div class="card-body">
@@ -68,10 +68,11 @@
                                     <li><span class="fa-li"><i class="fas fa-check"></i></span>3 Anket veya Test</li>
                                     <li><span class="fa-li"><i class="fas fa-check"></i></span>2 Adet Grup Oluşturma</li>
                                 </ul>
+                                <a href="/pricing" class="btn btn-sm btn-block btn-success text-uppercase">Ödeme Sayfasına Git</a>
                             </div>
                         </div>
                     </div>
-                    <!-- Plus Tier -->
+
                     <div class="col-md-4">
                         <div class="card mb-5 mb-lg-0">
                             <div class="card-body">
@@ -83,11 +84,11 @@
                                     <li><span class="fa-li"><i class="fas fa-check"></i></span>30 Anket veya Test</li>
                                     <li><span class="fa-li"><i class="fas fa-check"></i></span>10 Adet Grup Oluşturma</li>
                                 </ul>
-
+                                <a href="/pricing" class="btn btn-sm btn-block btn-success text-uppercase">Ödeme Sayfasına Git</a>
                             </div>
                         </div>
                     </div>
-                    <!-- Pro Tier -->
+
                     <div class="col-md-4">
                         <div class="card mb-5 mb-lg-0">
                             <div class="card-body">
@@ -99,6 +100,7 @@
                                     <li><span class="fa-li"><i class="fas fa-check"></i></span>50 Anket veya Test</li>
                                     <li><span class="fa-li"><i class="fas fa-check"></i></span>50 Adet Grup Oluşturma</li>
                                 </ul>
+                                <a href="/pricing" class="btn btn-sm btn-block btn-success text-uppercase">Ödeme Sayfasına Git</a>
                             </div>
                         </div>
                     </div>
@@ -109,8 +111,11 @@
         <div class="container  pb-5 pt-5">
             <div class="row">
                 <div class="col-lg-5 mt-5 mt-lg-0">
+                    <p class="text text-dark h1">
+                        İletişim Kur
+                    </p>
                    {{-- TODO--}}
-                    <img src="{{ asset('img-bg-contact-intro-2.svg') }}" alt="">
+                    {{--<img src="{{ asset('img-bg-contact-intro-2.svg') }}" alt="">--}}
                 </div>
                 <div class="col-lg-7 mt-5 mt-lg-0 ">
                     <form action="forms/contact.php" method="post" role="form" class="php-email-form">

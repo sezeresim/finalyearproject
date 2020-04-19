@@ -50,10 +50,11 @@ class DetailController extends Controller
      $questionarea->load('surveys');
      $questionarea->load('questions');
 
-	  $success_sta=$this->calculateSuccess($questionarea->id);
-
-     $classgroup=ClassGroup::find($questionarea["survey_list"]);
-
-    return view('mytests.detail.show',compact('questionarea','classgroup','success_sta'));
+	  $classgroup=ClassGroup::find($questionarea["survey_list"]);
+	  $success_sta="Bulunamadı";
+	  if($questionarea->whatIs=="quiz"){
+		  $success_sta=$this->calculateSuccess($questionarea->id);
+	  }
+	  return view('mytests.detail.show',compact('questionarea','classgroup','success_sta'));
   }
 }

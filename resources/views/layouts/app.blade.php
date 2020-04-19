@@ -172,19 +172,7 @@
 <script src="{{ asset('js/app.js') }}"></script>
 <script src="{{ asset('js/custom/selectState.js') }}"></script>
 @yield('script')
-<!-- Start of Survicate (www.survicate.com) code -->
-<!-- Start of Survicate (www.survicate.com) code -->
-<script type="text/javascript">
-    (function (w) {
-        var s = document.createElement('script');
-        s.src = '//survey.survicate.com/workspaces/6030db34145301b3fea3227b9e2903ee/web_surveys.js';
-        s.async = true;
-        var e = document.getElementsByTagName('script')[0];
-        e.parentNode.insertBefore(s, e);
-    })(window);
-</script>
-<!-- End of Survicate code -->
-<!-- End of Survicate code -->
+
 </body>
 </html>
 

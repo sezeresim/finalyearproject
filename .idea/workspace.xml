@@ -2,12 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7b7971d4-60a0-44c8-9bbe-4cb8c4a06ce3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/img-bg-contact-intro-2.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/survey/notime.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ClassGroupController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ClassGroupController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Controller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/DetailController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/DetailController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/SurveyController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/SurveyController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/mytests/detail/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/mytests/detail/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/public/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/public/show.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/survey/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/survey/show.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
     </list>
@@ -219,25 +220,25 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="Blade" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/staticpages" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/survey" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.HTML" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\Final Project\projectWeb\resources\views\staticpages" />
-      <recent name="E:\Final Project\projectWeb\resources\views\public" />
-      <recent name="E:\Final Project\projectWeb\database\migrations" />
-      <recent name="E:\Final Project\projectWeb\public\fontawesome\webfonts" />
-      <recent name="E:\Final Project\projectWeb\public\js" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\Final Project\projectWeb\public" />
       <recent name="E:\Final Project\projectWeb\resources\views\profile" />
       <recent name="E:\Final Project\projectWeb\resources\views" />
       <recent name="E:\Final Project\projectWeb\public\js\custom" />
       <recent name="E:\Final Project\projectWeb\resources\views\mytests\detail" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Final Project\projectWeb\resources\views\survey" />
+      <recent name="E:\Final Project\projectWeb\resources\views\staticpages" />
+      <recent name="E:\Final Project\projectWeb\resources\views\public" />
+      <recent name="E:\Final Project\projectWeb\database\migrations" />
+      <recent name="E:\Final Project\projectWeb\public\fontawesome\webfonts" />
     </key>
   </component>
   <component name="RunManager">
@@ -348,7 +349,9 @@
       <workItem from="1587151810730" duration="4418000" />
       <workItem from="1587210786690" duration="595000" />
       <workItem from="1587214887329" duration="3235000" />
-      <workItem from="1587244299474" duration="2506000" />
+      <workItem from="1587244299474" duration="2975000" />
+      <workItem from="1587301680520" duration="17000" />
+      <workItem from="1587306203970" duration="6239000" />
     </task>
     <task id="LOCAL-00001" summary="deneme todo">
       <created>1585159502750</created>
@@ -559,7 +562,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/app/Http/Controllers/SurveyController.php</url>
-          <line>61</line>
+          <line>71</line>
           <option name="timeStamp" value="7" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">

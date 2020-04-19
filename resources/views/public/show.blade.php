@@ -15,6 +15,11 @@
                         <hr style="border-bottom: 2px;border-color: black">
                         <div  class="text text-dark">
                             {{ $question->purpose }}
+                            <br>
+                            @php
+                                Carbon\Carbon::setlocale('tr');
+                            @endphp
+                            {{ $diff = Carbon\Carbon::parse($question->created_at)->diffForHumans() }}
                         </div>
                         <br>
                         <div class="align-items-center">
@@ -24,7 +29,7 @@
                             </a>
 
                             <a class="btn btn-outline-success" href="/surveys/{{$question->id}}-{{ Str::slug($question->title) }}">
-                                <i class="fas fa-eye"></i>
+                                <i class="fas fa-eye"></i> Göz At
                             </a>
                         </div>
                     </div>
