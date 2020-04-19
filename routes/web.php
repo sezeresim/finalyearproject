@@ -16,10 +16,10 @@ Route::get('/public','Controller@showPublic');
 Route::post('/public/{questionarea}','Controller@ajaxRequest');
 
 //Auth Routes
-Auth::routes(['verify'=>true]);
+Auth::routes();
 
 //Profile
-Route::get('/home', 'HomeController@index')->name('home')->middleware('verified');
+Route::get('/home', 'HomeController@index')->name('home');
 
 //My Test
 Route::get('/mytests','MyTestsController@index');
