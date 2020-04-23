@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7b7971d4-60a0-44c8-9bbe-4cb8c4a06ce3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/PublicApiController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Controller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -351,7 +353,8 @@
       <workItem from="1587382030713" duration="448000" />
       <workItem from="1587412388423" duration="2168000" />
       <workItem from="1587662658154" duration="22000" />
-      <workItem from="1587676371855" duration="147000" />
+      <workItem from="1587676371855" duration="271000" />
+      <workItem from="1587677947595" duration="358000" />
     </task>
     <task id="LOCAL-00001" summary="deneme todo">
       <created>1585159502750</created>
@@ -415,11 +418,11 @@
       <screen x="1366" y="-137" width="1440" height="860" />
     </state>
     <state x="1723" y="62" key="#com.intellij.ide.fileTemplates.ui.ConfigureTemplatesDialog/0.0.1366.728/1366.-137.1440.860@1366.-137.1440.860" timestamp="1584462099371" />
-    <state x="427" y="157" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1586448089351">
+    <state x="427" y="157" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1587678157508">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="1816" y="48" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728/1366.-137.1440.860@1366.-137.1440.860" timestamp="1584473352961" />
-    <state x="427" y="157" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1586448089351" />
+    <state x="427" y="157" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1587678157508" />
     <state x="463" y="292" key="#com.jetbrains.php.lang.intentions.PhpImportClassDialog#" timestamp="1587155839323">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
