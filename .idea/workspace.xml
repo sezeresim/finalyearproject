@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7b7971d4-60a0-44c8-9bbe-4cb8c4a06ce3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Controller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -343,7 +345,13 @@
       <workItem from="1587214887329" duration="3235000" />
       <workItem from="1587244299474" duration="2975000" />
       <workItem from="1587301680520" duration="17000" />
-      <workItem from="1587306203970" duration="7065000" />
+      <workItem from="1587306203970" duration="7319000" />
+      <workItem from="1587333100538" duration="1944000" />
+      <workItem from="1587380108181" duration="670000" />
+      <workItem from="1587382030713" duration="448000" />
+      <workItem from="1587412388423" duration="2168000" />
+      <workItem from="1587662658154" duration="22000" />
+      <workItem from="1587676371855" duration="147000" />
     </task>
     <task id="LOCAL-00001" summary="deneme todo">
       <created>1585159502750</created>

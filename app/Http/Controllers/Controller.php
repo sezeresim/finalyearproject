@@ -28,6 +28,10 @@ class Controller extends BaseController
 	    $questions= QuestionArea::where('survey_state', '=', "public")->get();
 	    return view('public.show',compact('questions'));
     }
+		public function publicapi(){
+			$questions= QuestionArea::where('survey_state', '=', "public")->get();
+			return response()->json(['data' => $questions->toArray()], 201);
+		}
 	public function ajaxRequest(QuestionArea $questionarea)
 	{
 		$id=$questionarea['id'];

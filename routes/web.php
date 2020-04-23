@@ -60,3 +60,6 @@ Route::delete('/myclass/{classgroup}/list/{list}','ClassListController@destroy')
 
 //Personal
 Route::get('/personal','PersonalController@show');
+
+//Api
+Route::get('/api-public','Controller@publicapi');
