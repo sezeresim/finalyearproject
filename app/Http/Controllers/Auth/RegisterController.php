@@ -8,6 +8,7 @@ use App\User;
 use Illuminate\Foundation\Auth\RegistersUsers;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
+use Illuminate\Support\Str;
 
 class RegisterController extends Controller
 {
@@ -54,10 +55,10 @@ class RegisterController extends Controller
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
             'password' => ['required', 'string', 'min:8', 'confirmed'],
             'birtdate' => ['required'],
-            'country'=>['required'],
-	          'gender'=>['required'],
-        ],[
-            'name.required'=>"Lütfen isim alanını doldurunuz."
+            'country' => ['required'],
+            'gender' => ['required'],
+        ], [
+            'name.required' => "Lütfen isim alanını doldurunuz."
         ]);
     }
 
@@ -76,7 +77,8 @@ class RegisterController extends Controller
             'password' => Hash::make($data['password']),
             'birtdate' => $data['birtdate'],
             'country' => $data['country'],
-	          'gender'=>$data['gender'],
+            'gender' => $data['gender'],
+            'api_token' => Str::random(60),
         ]);
     }
 }

@@ -15,7 +15,7 @@ class PublicApiController extends Controller
     public function index()
     {
 	    $questions= QuestionArea::where('survey_state', '=', "public")->get();
-	    return response()->json(['data' => $questions->toArray()]);
+	    return response()->json(['data' => $questions->toArray()],200);
     }
 
     /**

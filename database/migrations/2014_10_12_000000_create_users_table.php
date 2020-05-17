@@ -18,9 +18,9 @@ class CreateUsersTable extends Migration
             $table->id();
             $table->string('name');
             $table->string('email')->unique();
-            $table->date('birtdate');
-            $table->string('country');
             $table->string('password');
+            $table->date('birtdate')->default(null);
+            $table->string('country')->default('Turkey');
             $table->string('gender')->default('null');
             $table->string('role')->default('standart');
             $table->unsignedBigInteger('post_count')->default(50);
@@ -28,6 +28,11 @@ class CreateUsersTable extends Migration
             $table->timestamp('email_verified_at')->nullable();
             $table->rememberToken();
             $table->timestamps();
+            //Api Token
+           /* $table->string('api_token', 80)->after('password')
+                ->unique()
+                ->nullable()
+                ->default(null);*/
         });
     }
 

@@ -9,6 +9,7 @@ class QuestionArea extends Model
 {
     protected $guarded=[];
 
+
     public function path()
     {
         return url('/questionarea/'. $this->id);
