@@ -1,7 +1,8 @@
 <?php
 
 use Illuminate\Support\Str;
-$DATABASE_URL=parse_url('postgres://alohmjprgzvifa:30020c7275c2e72e8d1d18bd3eaa353de43331e8b47cb728273d3bbbda9cc968@ec2-3-229-210-93.compute-1.amazonaws.com:5432/d9ej8rkig75v35');
+
+$DATABASE_URL = parse_url('postgres://alohmjprgzvifa:30020c7275c2e72e8d1d18bd3eaa353de43331e8b47cb728273d3bbbda9cc968@ec2-3-229-210-93.compute-1.amazonaws.com:5432/d9ej8rkig75v35');
 return [
 
     /*
@@ -53,7 +54,7 @@ return [
             'username' => env('DB_USERNAME', 'forge'),
             'password' => env('DB_PASSWORD', ''),
             'unix_socket' => env('DB_SOCKET', ''),
-            'charset' => 'utf8mb4',
+            'charset' => 'utf8',
             'collation' => 'utf8mb4_unicode_ci',
             'prefix' => '',
             'prefix_indexes' => true,
@@ -122,7 +123,7 @@ return [
 
         'options' => [
             'cluster' => env('REDIS_CLUSTER', 'redis'),
-            'prefix' => env('REDIS_PREFIX', Str::slug(env('APP_NAME', 'laravel'), '_').'_database_'),
+            'prefix' => env('REDIS_PREFIX', Str::slug(env('APP_NAME', 'laravel'), '_') . '_database_'),
         ],
 
         'default' => [
