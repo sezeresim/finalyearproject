@@ -19,7 +19,7 @@ class CreateUsersTable extends Migration
             $table->string('name');
             $table->string('email')->unique();
             $table->string('password');
-            $table->date('birtdate')->default(null);
+            $table->date('birtdate')->default(DB::raw('CURRENT_TIMESTAMP'));
             $table->string('country')->default('Turkey');
             $table->string('gender')->default('null');
             $table->string('role')->default('standart');
@@ -29,7 +29,7 @@ class CreateUsersTable extends Migration
             $table->rememberToken();
             $table->timestamps();
             //Api Token
-           /* $table->string('api_token', 80)->after('password')
+            /* $table->string('api_token', 80)->after('password')
                 ->unique()
                 ->nullable()
                 ->default(null);*/
