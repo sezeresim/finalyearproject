@@ -42,7 +42,7 @@ class AuthController extends Controller
 
       $user = Auth::user();
       $success['token'] =  $user->createToken('AppName')->accessToken;
-      return response()->json(['success' => $success], $this->successStatus, $user);
+      return response()->json(['success' => $success, 'user' => $user], $this->successStatus,);
     } else {
 
       return response()->json(['error' => 'Unauthorised'], 401);
