@@ -37,7 +37,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7b7971d4-60a0-44c8-9bbe-4cb8c4a06ce3" name="Default Changelist" comment="" />
+    <list default="true" id="7b7971d4-60a0-44c8-9bbe-4cb8c4a06ce3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/AuthController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/AuthController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -271,19 +276,19 @@
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\PhpStorm 2019.3.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\Final Project\projectWeb\public" />
-      <recent name="E:\Final Project\projectWeb\resources\views\profile" />
-      <recent name="E:\Final Project\projectWeb\resources\views" />
-      <recent name="E:\Final Project\projectWeb\public\js\custom" />
-      <recent name="E:\Final Project\projectWeb\resources\views\mytests\detail" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\Final Project\projectWeb\resources\views\survey" />
       <recent name="E:\Final Project\projectWeb\resources\views\staticpages" />
       <recent name="E:\Final Project\projectWeb\resources\views\public" />
       <recent name="E:\Final Project\projectWeb\database\migrations" />
       <recent name="E:\Final Project\projectWeb\public\fontawesome\webfonts" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Final Project\projectWeb\public" />
+      <recent name="E:\Final Project\projectWeb\resources\views\profile" />
+      <recent name="E:\Final Project\projectWeb\resources\views" />
+      <recent name="E:\Final Project\projectWeb\public\js\custom" />
+      <recent name="E:\Final Project\projectWeb\resources\views\mytests\detail" />
     </key>
   </component>
   <component name="RunManager" selected="npm.development">
@@ -422,6 +427,7 @@
       <workItem from="1589163648439" duration="9000" />
       <workItem from="1589743981738" duration="127000" />
       <workItem from="1589744151614" duration="5286000" />
+      <workItem from="1589976721623" duration="722000" />
     </task>
     <task id="LOCAL-00001" summary="deneme todo">
       <created>1585159502750</created>
