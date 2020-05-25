@@ -17,8 +17,12 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
   return $request->user();
 });
-
+//Home
 Route::get('home', 'Api\HomeController@show');
+Route::post('/home/{questionarea}','Api\HomeController@likeButton');
+
+Route::get('/surveys/{questionarea}','SurveyController@showQA');
+Route::post('/surveys/{questionarea}','SurveyController@store');
 
 //Login
 Route::prefix('auth')->group(function () {
@@ -28,3 +32,7 @@ Route::prefix('auth')->group(function () {
     Route::post('getUser', 'Api\AuthController@getUser');
   });
 });
+//Personal
+Route::get('/personal/{id}','Api\PersonalController@show');
+
+

@@ -57,6 +57,5 @@ Route::delete('myclass/{classgroup}/delete','ClassGroupController@destroy');
 Route::post('/myclass/{classgroup}/list/add','ClassListController@store');
 Route::delete('/myclass/{classgroup}/list/{list}','ClassListController@destroy');
 
-
 //Personal
 Route::get('/personal','PersonalController@show');

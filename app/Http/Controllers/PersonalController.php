@@ -10,7 +10,7 @@ class PersonalController extends Controller
 
 	    $tests = DB::table('question_areas')
 		    ->where('question_areas.survey_state','=',"private")
-		    ->leftJoin('survey_users', function ($join) {
+		    ->rightJoin('survey_users', function ($join) {
 		      $join->on('question_areas.id', '=', 'survey_users.question_area_id')
 			      ->where('survey_users.list_id', '=', auth()->user()->id);
 		    })->get();

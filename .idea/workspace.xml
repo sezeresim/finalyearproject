@@ -38,10 +38,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7b7971d4-60a0-44c8-9bbe-4cb8c4a06ce3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/HomeController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/PersonalController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/AuthController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/AuthController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Controller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PersonalController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PersonalController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/database.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/public/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/public/show.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,43 +58,6 @@
   <component name="ComposerSettings" doNotAsk="true" synchronizationState="DONT_SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
-  </component>
-  <component name="DatabaseView">
-    <option name="SHOW_INTERMEDIATE" value="true" />
-    <option name="GROUP_DATA_SOURCES" value="true" />
-    <option name="GROUP_SCHEMA" value="true" />
-    <option name="GROUP_CONTENTS" value="false" />
-    <option name="SORT_POSITIONED" value="false" />
-    <option name="SHOW_EMPTY_GROUPS" value="false" />
-    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
-    <option name="HIDDEN_KINDS">
-      <set />
-    </option>
-    <expand>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="MySQL - finaldb@localhost" type="feb32156:DbDataSourceImpl" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="MySQL - finaldb@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="MySQL - finaldb@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="finaldb: schema" type="76f4a085:MysqlImplModel$Schema" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="MySQL - finaldb@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="finaldb: schema" type="76f4a085:MysqlImplModel$Schema" />
-        <item name="question_areas: table" type="285a2a93:MysqlImplModel$Table" />
-      </path>
-    </expand>
-    <select />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -258,6 +228,7 @@
   <component name="ProjectViewState">
     <option name="autoscrollFromSource" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="false" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
@@ -269,26 +240,27 @@
     <property name="TODO_SCOPE" value="All Places" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="Blade" />
+    <property name="full.screen.before.presentation.mode" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\PhpStorm 2019.3.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\Final Project\projectWeb\resources\views\survey" />
-      <recent name="E:\Final Project\projectWeb\resources\views\staticpages" />
-      <recent name="E:\Final Project\projectWeb\resources\views\public" />
-      <recent name="E:\Final Project\projectWeb\database\migrations" />
-      <recent name="E:\Final Project\projectWeb\public\fontawesome\webfonts" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\Final Project\projectWeb\public" />
       <recent name="E:\Final Project\projectWeb\resources\views\profile" />
       <recent name="E:\Final Project\projectWeb\resources\views" />
       <recent name="E:\Final Project\projectWeb\public\js\custom" />
       <recent name="E:\Final Project\projectWeb\resources\views\mytests\detail" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Final Project\projectWeb\resources\views\survey" />
+      <recent name="E:\Final Project\projectWeb\resources\views\staticpages" />
+      <recent name="E:\Final Project\projectWeb\resources\views\public" />
+      <recent name="E:\Final Project\projectWeb\database\migrations" />
+      <recent name="E:\Final Project\projectWeb\public\fontawesome\webfonts" />
     </key>
   </component>
   <component name="RunManager" selected="npm.development">
@@ -427,7 +399,15 @@
       <workItem from="1589163648439" duration="9000" />
       <workItem from="1589743981738" duration="127000" />
       <workItem from="1589744151614" duration="5286000" />
-      <workItem from="1589976721623" duration="722000" />
+      <workItem from="1589976721623" duration="807000" />
+      <workItem from="1589980150426" duration="86000" />
+      <workItem from="1589980315949" duration="17000" />
+      <workItem from="1589996163237" duration="293000" />
+      <workItem from="1589999348121" duration="2136000" />
+      <workItem from="1590082017220" duration="7000" />
+      <workItem from="1590331878752" duration="223000" />
+      <workItem from="1590332168801" duration="139000" />
+      <workItem from="1590431648154" duration="4907000" />
     </task>
     <task id="LOCAL-00001" summary="deneme todo">
       <created>1585159502750</created>
@@ -478,10 +458,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="275" y="22" key="#Scopes/0.0.1366.728@0.0.1366.728" timestamp="1584727544013" />
-    <state x="275" y="22" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1584651622338">
+    <state x="228" y="25" width="816" height="678" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1590433671863">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="22" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1584651622338" />
+    <state x="228" y="25" width="816" height="678" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1590433671863" />
     <state x="437" y="159" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1585165686984">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -490,12 +470,12 @@
       <screen x="1366" y="-137" width="1440" height="860" />
     </state>
     <state x="1723" y="62" key="#com.intellij.ide.fileTemplates.ui.ConfigureTemplatesDialog/0.0.1366.728/1366.-137.1440.860@1366.-137.1440.860" timestamp="1584462099371" />
-    <state x="427" y="157" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1589745754298">
+    <state x="427" y="157" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1590436355989">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="427" y="157" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728/-1440.-137.1440.860@0.0.1366.728" timestamp="1589745754298" />
     <state x="1816" y="48" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728/1366.-137.1440.860@1366.-137.1440.860" timestamp="1584473352961" />
-    <state x="427" y="157" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1587678157508" />
+    <state x="427" y="157" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1590436355989" />
     <state x="463" y="292" key="#com.jetbrains.php.lang.intentions.PhpImportClassDialog#" timestamp="1587155839323">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -550,12 +530,12 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="533" y="103" key="RollbackChangesDialog/0.0.1366.728@0.0.1366.728" timestamp="1588512518353" />
-    <state x="144" y="2" width="998" height="708" key="SettingsEditor" timestamp="1589748180057">
+    <state x="191" y="0" width="998" height="708" key="SettingsEditor" timestamp="1590332088223">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="144" y="2" width="998" height="708" key="SettingsEditor/0.0.1366.728/-1440.-137.1440.860@0.0.1366.728" timestamp="1589748180057" />
     <state x="-1347" y="61" key="SettingsEditor/0.0.1366.728/-1440.-79.1440.860@-1440.-79.1440.860" timestamp="1584295876528" />
-    <state x="144" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1588474511413" />
+    <state x="191" y="0" width="998" height="708" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1590332088223" />
     <state x="495" y="246" width="375" height="253" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1587057809647">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -610,6 +590,10 @@
     <state x="371" y="92" width="672" height="574" key="search.everywhere.popup" timestamp="1588474500947">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state x="262" y="-1" width="840" height="1034" key="search.everywhere.popup.inPresentationMode" timestamp="1590331960179">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="262" y="-1" width="840" height="1034" key="search.everywhere.popup.inPresentationMode/0.0.1366.728@0.0.1366.728" timestamp="1590331960179" />
     <state x="-1057" y="101" width="672" height="678" key="search.everywhere.popup/0.0.1366.728/-1440.-79.1440.860@-1440.-79.1440.860" timestamp="1584299109696" />
     <state x="1749" y="43" width="672" height="678" key="search.everywhere.popup/0.0.1366.728/1366.-137.1440.860@1366.-137.1440.860" timestamp="1584450462286" />
     <state x="371" y="92" width="672" height="574" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1588474500947" />
@@ -651,6 +635,11 @@
           <url>file://$PROJECT_DIR$/resources/views/welcome.blade.php</url>
           <line>55</line>
           <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/app/Http/Controllers/Api/AuthController.php</url>
+          <line>10</line>
+          <option name="timeStamp" value="11" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

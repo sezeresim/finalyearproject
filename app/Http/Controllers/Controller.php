@@ -28,12 +28,13 @@ class Controller extends BaseController
 	    $questions= QuestionArea::where('survey_state', '=', "public")->get();
 	    return view('public.show',compact('questions'));
     }
-	public function ajaxRequest(QuestionArea $questionarea)
-	{
-		$id=$questionarea['id'];
-		$questionarea->where("id",$id)->increment("like_count",1);
-		$data=$questionarea->where('id',$id)->first();
-		return response()->json(['success'=>$data['like_count']]);
-	}
+
+    public function ajaxRequest(QuestionArea $questionarea)
+    {
+      $id=$questionarea['id'];
+      $questionarea->where("id",$id)->increment("like_count",1);
+      $data=$questionarea->where('id',$id)->first();
+      return response()->json(['success'=>$data['like_count']]);
+    }
 
 }

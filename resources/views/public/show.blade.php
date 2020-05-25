@@ -1,9 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <div id="example">
 
-    </div>
     <div class="container pb-5 pt-5">
         <section class="row ">
             @foreach($questions as $question)
