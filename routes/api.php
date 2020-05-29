@@ -21,8 +21,8 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 Route::get('home', 'Api\HomeController@show');
 Route::post('/home/{questionarea}','Api\HomeController@likeButton');
 
-Route::get('/surveys/{questionarea}','SurveyController@showQA');
-Route::post('/surveys/{questionarea}','SurveyController@store');
+Route::get('/surveys/{questionarea}','Api\SurveyController@show');
+Route::post('/surveys/{questionarea}','Api\SurveyController@store');
 
 //Login
 Route::prefix('auth')->group(function () {

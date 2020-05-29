@@ -12,7 +12,7 @@ class HomeController extends Controller
 {
     public function show()
     {
-      $questions = QuestionArea::where('survey_state', '=', "public")->get();
+      $questions = QuestionArea::where('survey_state', '=', "public")->orderBy('created_at', 'asc')->get();
       return response()->json(['data' => $questions, 'qacount' => $questions->count()], 200);
     }
 
