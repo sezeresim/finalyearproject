@@ -12,7 +12,7 @@
                                {{-- <input autocomplete="off" name="question[question]" type="text" class="form-control"
                                        value="{{ old('question.question') }}"
                                        id="question" aria-describedby="questionHelp" placeholder="Soru oluşturunuz.">--}}
-                                <textarea name="question[question]" id="mytextarea" cols="30" rows="10" class="form-control"
+                                <textarea name="question[question]"  cols="30" rows="5" class="form-control"
                                           value="{{ old('question.question') }}"
                                            aria-describedby="questionHelp" placeholder="Soru oluşturunuz."></textarea>
                                 @error('question.question')
@@ -75,9 +75,5 @@
     </div>
 @endsection
 @section('script')
-    <script>
-        tinymce.init({
-            selector: '#mytextarea'
-        });
-    </script>
+    
 @endsection

@@ -18,8 +18,6 @@
     <script src="{{ asset('js/jquery-3.4.1.min.js') }}"></script>
     <link href="{{ asset('http://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.css') }}" rel="stylesheet">
     <script src="{{ asset('http://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js') }}"></script>
-    <script src="{{ asset('http://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js') }}" referrerpolicy="origin"></script>
-
 <body>
 <nav class="navbar navbar-expand-lg bg bg-dark" >
     <div class="container">
@@ -169,7 +167,6 @@
 <!--   Core JS Files   -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 <script src="{{asset('https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js')}}"></script>
-
 <script src="{{ asset('js/custom.js') }}"></script>
 <script src="{{ asset('js/app.js') }}"></script>
 <script src="{{ asset('js/custom/selectState.js') }}"></script>
