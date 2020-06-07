@@ -8,6 +8,7 @@ use App\QuestionArea;
 use App\SurveyUser;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
+use function MongoDB\BSON\toJSON;
 
 
 class SurveyController extends Controller
@@ -50,7 +51,6 @@ class SurveyController extends Controller
     public function store(QuestionArea $questionarea)
     {
 
-
     	if ($questionarea->survey_state=="public"){
 		    $data=request()->validate([
 			    'responses.*.answer_id' =>'required',
@@ -65,7 +65,6 @@ class SurveyController extends Controller
 				if($questionarea->whatIs == "quiz"){
 					$totalScore=$this->calculateScore($data['responses']);
 				}
-        
 		    $survey = $questionarea->surveys()->create($data['survey']);
 		    $survey->responses()->createMany($data['responses']);
 	    }

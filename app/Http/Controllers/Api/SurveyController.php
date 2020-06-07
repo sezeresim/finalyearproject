@@ -10,6 +10,7 @@ use App\SurveyUser;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Validator;
 
 class SurveyController extends Controller
 {
@@ -32,8 +33,30 @@ class SurveyController extends Controller
     return response()->json(['questions'=>$questionarea['questions']],200);
   }
 
-  public function store(Request $request){
+  public function store(QuestionArea $questionarea){
+    $data=request()->all();
+    /*$data = Validator::make(
+      request()->all(),
+      [[
+        'responses.*.answer_id' =>'required',
+        'responses.*.question_id' => 'required',
+        'survey.name'=> 'required',
+        'survey.email'=> ['required','unique:surveys,email,NULL,id,question_area_id,'.$questionarea->id],
+      ],
+      [
+        'unique' => 'Daha önce bu anketi cevapladınız.',
+      ]]
+    );
+    if ($data->fails()) {
+      return response()->json(['error' => $data->errors()], 401);
+    }*/
+    if($questionarea->whatIs == "quiz"){
+      $totalScore=$this->calculateScore($data->responses);
+    }
     $survey = $questionarea->surveys()->create($data['survey']);
     $survey->responses()->createMany($data['responses']);
+
+    return response()->json(['data' => $data], 200);
+
   }
 }
