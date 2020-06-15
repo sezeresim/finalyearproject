@@ -17,7 +17,7 @@ class PostCounter
     public function handle($request, Closure $next)
     {
 
-        if(Auth::user()->post_counter==Auth::user()->post_count) {
+        if (Auth::user()->post_counter == Auth::user()->post_count) {
             return redirect('home');
         }
         return $next($request);

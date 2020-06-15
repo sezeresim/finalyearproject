@@ -14,8 +14,8 @@ class MyTestsController extends Controller
 
     public function index()
     {
-        $question_areas= auth()->user()->questionarea;
-        return view('mytests.mytests',compact('question_areas'));
+        $question_areas = auth()->user()->questionarea;
+        return view('mytests.mytests', compact('question_areas'));
     }
 
 

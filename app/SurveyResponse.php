@@ -6,10 +6,10 @@ use Illuminate\Database\Eloquent\Model;
 
 class SurveyResponse extends Model
 {
-    protected  $guarded=[];
+  protected $guarded = [];
 
-    public function survey()
-    {
-        return $this->belongsTo(Survey::class,'id','survey_id');
-    }
+  public function survey()
+  {
+    return $this->belongsTo(Survey::class, 'id', 'survey_id');
+  }
 }

@@ -7,35 +7,36 @@ use Illuminate\Support\Str;
 
 class QuestionArea extends Model
 {
-    protected $guarded=[];
+  protected $guarded = [];
 
 
-    public function path()
-    {
-        return url('/questionarea/'. $this->id);
-    }
+  public function path()
+  {
+    return url('/questionarea/' . $this->id);
+  }
 
-    public function publicPath(){
-        return url('/surveys/'.$this->id.'-'. Str::slug($this->title));
-    }
+  public function publicPath()
+  {
+    return url('/surveys/' . $this->id . '-' . Str::slug($this->title));
+  }
 
-    public function user()
-    {
-        return $this->belongsTo(User::class);
-    }
+  public function user()
+  {
+    return $this->belongsTo(User::class);
+  }
 
-    public function questions()
-    {
-        return $this->hasMany(Question::class);
-    }
-    public function surveys()
-    {
-        return $this->hasMany( Survey::class);
-    }
+  public function questions()
+  {
+    return $this->hasMany(Question::class);
+  }
 
-    public function surveyusers()
-    {
-    	return $this->hasMany(SurveyUser::class);
-    }
+  public function surveys()
+  {
+    return $this->hasMany(Survey::class);
+  }
+
+  public function surveyusers()
+  {
+    return $this->hasMany(SurveyUser::class);
+  }
 }
-

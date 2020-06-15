@@ -14,20 +14,21 @@ class ClassListController extends Controller
         $this->middleware('auth');
     }
 
-    public function store(ClassGroup $classgroup){
+    public function store(ClassGroup $classgroup)
+    {
 
-       $data = request()->validate([
-            'list_id'=>['required','unique:class_lists,list_id,NULL,id,class_group_id,'.$classgroup->id],
-            ], [
-                'unique' => 'Eklediğiniz kullanıcı sınıfta bulunmaktadır.',
-            ]);
+        $data = request()->validate([
+            'list_id' => ['required', 'unique:class_lists,list_id,NULL,id,class_group_id,' . $classgroup->id],
+        ], [
+            'unique' => 'Eklediğiniz kullanıcı sınıfta bulunmaktadır.',
+        ]);
 
-        $addlist=$classgroup->classlist()->create($data);
+        $addlist = $classgroup->classlist()->create($data);
 
-        return redirect('/myclass/'.$classgroup->id .'/list');
+        return redirect('/myclass/' . $classgroup->id . '/list');
     }
 
-    public function destroy(ClassGroup $classgroup,ClassList $list)
+    public function destroy(ClassGroup $classgroup, ClassList $list)
     {
         $list->delete();
         return redirect($classgroup->path());

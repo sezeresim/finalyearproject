@@ -39,6 +39,34 @@
   <component name="ChangeListManager">
     <list default="true" id="7b7971d4-60a0-44c8-9bbe-4cb8c4a06ce3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Answer.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Answer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/ClassGroup.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/ClassGroup.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/ClassList.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/ClassList.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/PersonalController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/PersonalController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/SurveyController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/SurveyController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ClassGroupController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ClassGroupController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ClassListController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ClassListController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Controller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/DetailController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/DetailController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/MyTestsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/MyTestsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PersonalController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PersonalController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PricingController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PricingController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PublicApiController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PublicApiController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/QuestionAreaController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/QuestionAreaController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/QuestionController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/QuestionController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/StaticPageController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/StaticPageController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/SurveyController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/SurveyController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/PostCounter.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/PostCounter.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Question.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Question.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/QuestionArea.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/QuestionArea.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Survey.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Survey.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/SurveyResponse.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/SurveyResponse.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/SurveyUser.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/SurveyUser.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/register.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/register.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/personal/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/personal/show.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -230,11 +258,11 @@
     <property name="TODO_SCOPE" value="All Places" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="Blade" />
-    <property name="full.screen.before.presentation.mode" value="true" />
+    <property name="full.screen.before.presentation.mode" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\PhpStorm 2019.3.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
@@ -412,6 +440,11 @@
       <workItem from="1591470760201" duration="1265000" />
       <workItem from="1591535303783" duration="3961000" />
       <workItem from="1591556538697" duration="692000" />
+      <workItem from="1592226195531" duration="79000" />
+      <workItem from="1592226343717" duration="391000" />
+      <workItem from="1592226761054" duration="80000" />
+      <workItem from="1592229765294" duration="591000" />
+      <workItem from="1592252413941" duration="1440000" />
     </task>
     <task id="LOCAL-00001" summary="deneme todo">
       <created>1585159502750</created>
@@ -454,9 +487,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="deneme todo" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="275" y="22" key="#Inspections" timestamp="1584999689586">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="-1150" y="-109" key="#Inspections" timestamp="1592255107010">
+      <screen x="-1440" y="-135" width="1440" height="860" />
     </state>
+    <state x="-1150" y="-109" key="#Inspections/0.0.1366.728/-1440.-135.1440.860@-1440.-135.1440.860" timestamp="1592255107010" />
     <state x="275" y="22" key="#Inspections/0.0.1366.728@0.0.1366.728" timestamp="1584999689586" />
     <state x="275" y="22" key="#Scopes" timestamp="1584727544013">
       <screen x="0" y="0" width="1366" height="728" />
@@ -474,6 +508,10 @@
       <screen x="1366" y="-137" width="1440" height="860" />
     </state>
     <state x="1723" y="62" key="#com.intellij.ide.fileTemplates.ui.ConfigureTemplatesDialog/0.0.1366.728/1366.-137.1440.860@1366.-137.1440.860" timestamp="1584462099371" />
+    <state x="-1040" y="32" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1592226262277">
+      <screen x="-1440" y="-135" width="1440" height="860" />
+    </state>
+    <state x="-1040" y="32" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1366.728/-1440.-135.1440.860@-1440.-135.1440.860" timestamp="1592226262277" />
     <state x="427" y="157" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1591549375039">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -534,9 +572,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="533" y="103" key="RollbackChangesDialog/0.0.1366.728@0.0.1366.728" timestamp="1588512518353" />
-    <state x="191" y="0" width="998" height="708" key="SettingsEditor" timestamp="1590332088223">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="-1239" y="-135" width="998" height="708" key="SettingsEditor" timestamp="1592255160769">
+      <screen x="-1440" y="-135" width="1440" height="860" />
     </state>
+    <state x="-1239" y="-135" key="SettingsEditor/0.0.1366.728/-1440.-135.1440.860@-1440.-135.1440.860" timestamp="1592255160769" />
     <state x="144" y="2" width="998" height="708" key="SettingsEditor/0.0.1366.728/-1440.-137.1440.860@0.0.1366.728" timestamp="1589748180057" />
     <state x="-1347" y="61" key="SettingsEditor/0.0.1366.728/-1440.-79.1440.860@-1440.-79.1440.860" timestamp="1584295876528" />
     <state x="191" y="0" width="998" height="708" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1590332088223" />
@@ -591,13 +630,14 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="275" y="22" key="scopes/0.0.1366.728@0.0.1366.728" timestamp="1585669397453" />
-    <state x="371" y="92" width="672" height="574" key="search.everywhere.popup" timestamp="1588474500947">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="-1049" y="-26" width="709" height="679" key="search.everywhere.popup" timestamp="1592255471713">
+      <screen x="-1440" y="-135" width="1440" height="860" />
     </state>
     <state x="262" y="-1" width="840" height="1034" key="search.everywhere.popup.inPresentationMode" timestamp="1590331960179">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="262" y="-1" width="840" height="1034" key="search.everywhere.popup.inPresentationMode/0.0.1366.728@0.0.1366.728" timestamp="1590331960179" />
+    <state x="-1049" y="-26" width="709" height="679" key="search.everywhere.popup/0.0.1366.728/-1440.-135.1440.860@-1440.-135.1440.860" timestamp="1592255471713" />
     <state x="-1057" y="101" width="672" height="678" key="search.everywhere.popup/0.0.1366.728/-1440.-79.1440.860@-1440.-79.1440.860" timestamp="1584299109696" />
     <state x="1749" y="43" width="672" height="678" key="search.everywhere.popup/0.0.1366.728/1366.-137.1440.860@1366.-137.1440.860" timestamp="1584450462286" />
     <state x="371" y="92" width="672" height="574" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1588474500947" />
@@ -612,7 +652,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/app/Http/Controllers/PersonalController.php</url>
-          <line>19</line>
+          <line>20</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
@@ -627,7 +667,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/app/Http/Controllers/SurveyController.php</url>
-          <line>71</line>
+          <line>75</line>
           <option name="timeStamp" value="7" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
@@ -645,9 +685,14 @@
           <line>10</line>
           <option name="timeStamp" value="11" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/app/Http/Controllers/HomeController.php</url>
+          <line>4</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
         <line-breakpoint enabled="true" type="php-line-method">
           <url>file://$PROJECT_DIR$/app/Http/Controllers/SurveyController.php</url>
-          <line>29</line>
+          <line>30</line>
           <properties>
             <option name="className" value="\App\Http\Controllers\SurveyController" />
             <option name="methodName" value="show" />

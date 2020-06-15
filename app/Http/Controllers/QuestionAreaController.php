@@ -18,7 +18,7 @@ class questionAreaController extends Controller
 
     public function postCounter()
     {
-        if(Auth::user()->post_counter==Auth::user()->post_count) {
+        if (Auth::user()->post_counter == Auth::user()->post_count) {
             return false;
         }
         return true;
@@ -26,40 +26,40 @@ class questionAreaController extends Controller
 
     public function create()
     {
-        $userclass=Auth::user()->myclassgroup;
+        $userclass = Auth::user()->myclassgroup;
 
-        return view('questionarea.create',compact('userclass'));
+        return view('questionarea.create', compact('userclass'));
     }
 
     public function store()
     {
 
-        $data=request()->validate([
-            'title'=>'required',
-            'purpose'=>'required',
+        $data = request()->validate([
+            'title' => 'required',
+            'purpose' => 'required',
         ]);
 
-        $data['survey_state']=request("survey_state");
-        $data['last_date']=request("last_date");
-        $data['survey_list']=request("survey_list");
-				$data['whatIs']=request("whatIs");
+        $data['survey_state'] = request("survey_state");
+        $data['last_date'] = request("last_date");
+        $data['survey_list'] = request("survey_list");
+        $data['whatIs'] = request("whatIs");
         //Create New Question Aea
-        $questions= auth()->user()->questionarea()->create($data);
+        $questions = auth()->user()->questionarea()->create($data);
 
         //Create to SurveyUser Table
-        if($data['survey_state']=="private"){
+        if ($data['survey_state'] == "private") {
 
-            $surveyUser=ClassList::where("class_group_id",request("survey_list"))->get(['list_id'])->toArray();
-            foreach ( $surveyUser as &$elem ) {
+            $surveyUser = ClassList::where("class_group_id", request("survey_list"))->get(['list_id'])->toArray();
+            foreach ($surveyUser as &$elem) {
                 $elem['question_area_id'] = $questions->id;
             }
             SurveyUser::insert($surveyUser);
         }
 
         //Counting Post
-        auth()->user()->increment('post_counter',1);
+        auth()->user()->increment('post_counter', 1);
 
-        return redirect('/questionarea/'. $questions->id);
+        return redirect('/questionarea/' . $questions->id);
     }
 
     public function show(QuestionArea $questionarea)
@@ -68,14 +68,12 @@ class questionAreaController extends Controller
         $questionarea->load('surveys');
         $questionarea->load('questions');
 
-        return view('questionarea.show',compact('questionarea'));
+        return view('questionarea.show', compact('questionarea'));
     }
 
     public function destroy(QuestionArea $questionarea)
     {
         $questionarea->delete();
-        return redirect('/questionarea/'.$questionarea->id);
+        return redirect('/questionarea/' . $questionarea->id);
     }
-
-
 }

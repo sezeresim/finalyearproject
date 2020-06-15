@@ -7,7 +7,7 @@
                 <div class="card">
                     <div class="card-header bg font-weight-bold">
                         Testlerim
-                    </div>
+                    </div> 
                     <table class="table">
                         <thead>
                         <tr>

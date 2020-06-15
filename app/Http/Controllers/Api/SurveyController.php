@@ -14,27 +14,30 @@ use Illuminate\Support\Facades\Validator;
 
 class SurveyController extends Controller
 {
-  public function calculateScore($scores){
-    $totalScore=0;
-    foreach ($scores as $score){
-      $answer=Answer::where('id',$score['answer_id'])->get('answer')->toArray();
-      $questionanswer=Question::where('id',$score['question_id'])->get('rightanswer')->toArray();
-      $point=Question::where('id',$score['question_id'])->get('score')->toArray();
+  public function calculateScore($scores)
+  {
+    $totalScore = 0;
+    foreach ($scores as $score) {
+      $answer = Answer::where('id', $score['answer_id'])->get('answer')->toArray();
+      $questionanswer = Question::where('id', $score['question_id'])->get('rightanswer')->toArray();
+      $point = Question::where('id', $score['question_id'])->get('score')->toArray();
 
-      if ($answer[0]['answer'] == $questionanswer[0]['rightanswer'] ){
-        $totalScore=$totalScore+$point[0]['score'];
+      if ($answer[0]['answer'] == $questionanswer[0]['rightanswer']) {
+        $totalScore = $totalScore + $point[0]['score'];
       }
     }
     return $totalScore;
   }
 
-  public function show(QuestionArea $questionarea){
+  public function show(QuestionArea $questionarea)
+  {
     $questionarea->load('questions.answers');
-    return response()->json(['questions'=>$questionarea['questions']],200);
+    return response()->json(['questions' => $questionarea['questions']], 200);
   }
 
-  public function store(QuestionArea $questionarea){
-    $data=request()->all();
+  public function store(QuestionArea $questionarea)
+  {
+    $data = request()->all();
     /*$data = Validator::make(
       request()->all(),
       [[
@@ -50,13 +53,12 @@ class SurveyController extends Controller
     if ($data->fails()) {
       return response()->json(['error' => $data->errors()], 401);
     }*/
-    if($questionarea->whatIs == "quiz"){
-      $totalScore=$this->calculateScore($data->responses);
+    if ($questionarea->whatIs == "quiz") {
+      $totalScore = $this->calculateScore($data->responses);
     }
     $survey = $questionarea->surveys()->create($data['survey']);
     $survey->responses()->createMany($data['responses']);
 
     return response()->json(['data' => $data], 200);
-
   }
 }

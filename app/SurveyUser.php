@@ -6,9 +6,10 @@ use Illuminate\Database\Eloquent\Model;
 
 class SurveyUser extends Model
 {
-    protected $guarded=[];
+    protected $guarded = [];
 
-    public function questionarea(){
+    public function questionarea()
+    {
         $this->belongsTo(QuestionArea::class);
     }
 }
