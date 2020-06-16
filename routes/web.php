@@ -10,10 +10,12 @@ Route::get('/contact','StaticPageController@contact');
 Route::get('/references','StaticPageController@references');
 Route::get('/team','StaticPageController@team');
 
+//Welcome Page
+Route::get('/','Controller@index');
+
 //Public
-Route::get('/','Controller@indexfun');
-Route::get('/public','Controller@showPublic');
-Route::post('/public/{questionarea}','Controller@ajaxRequest');
+Route::get('/public','PublicController@show');
+Route::post('/public/{questionarea}','PublicController@like');
 
 //Auth Routes
 Auth::routes();
