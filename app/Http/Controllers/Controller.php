@@ -6,6 +6,7 @@ use App\QuestionArea;
 use App\SurveyResponse;
 use App\Question;
 use App\User;
+use Carbon\Carbon;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Foundation\Bus\DispatchesJobs;
 use Illuminate\Foundation\Validation\ValidatesRequests;
@@ -27,7 +28,8 @@ class Controller extends BaseController
 
   public function showPublic()
   {
-    $questions = QuestionArea::where('survey_state', '=', "public")->get();
+    $date = Carbon::now()->toDateString();
+    $questions = QuestionArea::where('survey_state', '=', "public")->where('last_date','>',$date)->get();
     return view('public.show', compact('questions'));
   }
 
