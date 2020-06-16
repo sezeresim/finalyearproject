@@ -102,8 +102,8 @@ class PricingController extends Controller
 		$request->setBasketItems($basketItems);
 
 		$checkoutFormInitialize = CheckoutFormInitialize::create($request, $options);
-		$paymentinput = $checkoutFormInitialize->getCheckoutFormContent();
+    $iyzicoPayment = $checkoutFormInitialize->getCheckoutFormContent();
 
-		return view('pricing.show', compact('paymentinput'));
+		return view('pricing.show', compact('iyzicoPayment'));
 	}
 }

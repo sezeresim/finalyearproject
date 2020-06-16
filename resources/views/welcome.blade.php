@@ -53,6 +53,7 @@
       </div>
     </div>
   </div>
+
   <div class="container-fluid bg bg-primary  pb-5 pt-5">
     <section class="pricing">
       <div class="container">
@@ -109,7 +110,10 @@
       </div>
     </section>
   </div>
-  <div class="container  pb-5 pt-5">
+
+
+
+<div class="container  pb-5 pt-5">
     <div class="row">
       <div class="col-lg-5 mt-5 mt-lg-0">
         <p class="text text-dark h1">

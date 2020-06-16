@@ -38,13 +38,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7b7971d4-60a0-44c8-9bbe-4cb8c4a06ce3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/PublicController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Controller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/SurveyController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/SurveyController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/survey/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/survey/show.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PricingController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PricingController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pricing/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pricing/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -240,23 +237,23 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.language" />
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\PhpStorm 2019.3.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\Final Project\projectWeb\public" />
-      <recent name="E:\Final Project\projectWeb\resources\views\profile" />
-      <recent name="E:\Final Project\projectWeb\resources\views" />
-      <recent name="E:\Final Project\projectWeb\public\js\custom" />
-      <recent name="E:\Final Project\projectWeb\resources\views\mytests\detail" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\Final Project\projectWeb\resources\views\survey" />
       <recent name="E:\Final Project\projectWeb\resources\views\staticpages" />
       <recent name="E:\Final Project\projectWeb\resources\views\public" />
       <recent name="E:\Final Project\projectWeb\database\migrations" />
       <recent name="E:\Final Project\projectWeb\public\fontawesome\webfonts" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Final Project\projectWeb\public" />
+      <recent name="E:\Final Project\projectWeb\resources\views\profile" />
+      <recent name="E:\Final Project\projectWeb\resources\views" />
+      <recent name="E:\Final Project\projectWeb\public\js\custom" />
+      <recent name="E:\Final Project\projectWeb\resources\views\mytests\detail" />
     </key>
   </component>
   <component name="RunManager" selected="npm.development">
@@ -423,7 +420,7 @@
       <workItem from="1592226761054" duration="80000" />
       <workItem from="1592229765294" duration="591000" />
       <workItem from="1592252413941" duration="2133000" />
-      <workItem from="1592303327266" duration="6593000" />
+      <workItem from="1592303327266" duration="7984000" />
     </task>
     <task id="LOCAL-00001" summary="deneme todo">
       <created>1585159502750</created>
@@ -551,13 +548,13 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="533" y="103" key="RollbackChangesDialog/0.0.1366.728@0.0.1366.728" timestamp="1588512518353" />
-    <state x="-1239" y="-135" width="998" height="708" key="SettingsEditor" timestamp="1592255160769">
-      <screen x="-1440" y="-135" width="1440" height="860" />
+    <state x="191" y="0" width="998" height="708" key="SettingsEditor" timestamp="1592321236738">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="-1239" y="-135" key="SettingsEditor/0.0.1366.728/-1440.-135.1440.860@-1440.-135.1440.860" timestamp="1592255160769" />
     <state x="144" y="2" width="998" height="708" key="SettingsEditor/0.0.1366.728/-1440.-137.1440.860@0.0.1366.728" timestamp="1589748180057" />
     <state x="-1347" y="61" key="SettingsEditor/0.0.1366.728/-1440.-79.1440.860@-1440.-79.1440.860" timestamp="1584295876528" />
-    <state x="191" y="0" width="998" height="708" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1590332088223" />
+    <state x="191" y="0" width="998" height="708" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1592321236738" />
     <state x="495" y="246" width="375" height="253" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1587057809647">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -655,11 +652,6 @@
           <option name="timeStamp" value="9" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/resources/views/welcome.blade.php</url>
-          <line>55</line>
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/app/Http/Controllers/Api/AuthController.php</url>
           <line>10</line>
           <option name="timeStamp" value="11" />
@@ -668,11 +660,6 @@
           <url>file://$PROJECT_DIR$/app/Http/Controllers/HomeController.php</url>
           <line>4</line>
           <option name="timeStamp" value="15" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/resources/views/welcome.blade.php</url>
-          <line>56</line>
-          <option name="timeStamp" value="16" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php-line-method">
           <url>file://$PROJECT_DIR$/app/Http/Controllers/SurveyController.php</url>
