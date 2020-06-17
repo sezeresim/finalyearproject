@@ -35,7 +35,7 @@
                 @enderror
 
               </div>
-              <div class="input-group  mb-2">
+             {{-- <div class="input-group  mb-2">
                 <input placeholder="Doğum Tarihinizi Giriniz" id="birtdate" type="date" class="form-control "
                        name="birtdate" required autocomplete="birtdate" autofocus>
 
@@ -307,7 +307,7 @@
                                     </span>
                 @enderror
 
-              </div>
+              </div>--}}
               <div class="input-group mb-2">
 
                 <input placeholder="Şifrenizi Giriniz" id="password" type="password"

@@ -60,7 +60,7 @@
         <div class="row">
 
           <div class="col-md-4">
-            <div class="card mb-5 mb-lg-0">
+            <div class="card mb-5 mb-lg-0 ">
               <div class="card-body">
                 <h5 class="card-title text-muted text-uppercase text-center">Ücretsiz</h5>
                 <h6 class="card-price text-center">0 ₺<span class="period">/Aylık</span></h6>
