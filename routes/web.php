@@ -58,6 +58,8 @@ Route::delete('myclass/{classgroup}/delete','ClassGroupController@destroy');
 //ClassList
 Route::post('/myclass/{classgroup}/list/add','ClassListController@store');
 Route::delete('/myclass/{classgroup}/list/{list}','ClassListController@destroy');
+Route::get('/myclass/{classgroup}/list/join','ClassListController@join');
+Route::post('/myclass/{classgroup}/list/join','ClassListController@joinList');
 
 //Personal
 Route::get('/personal','PersonalController@show');

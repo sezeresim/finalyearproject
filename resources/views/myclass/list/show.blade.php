@@ -5,6 +5,12 @@
     <div class="row">
         <div class="col-md-12">
             <div class="mb-2">
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="basic-addon1">Paylaşım Kodu</span>
+                </div>
+                <input type="text" class="form-control" value="{{ url("/myclass/{$classgroup->id}/list/join") }}"  placeholder="paylaşım kodu" aria-label="Username" aria-describedby="basic-addon1">
+              </div>
                 <form action="/myclass/{{$classgroup->id}}/list/add" method="post">
                     @csrf
                     <div class="form-group">
@@ -22,6 +28,7 @@
                     <i class="fas fa-exclamation-triangle"></i> {{$message}}
                 </div>
                 @enderror
+
             </div>
 
             <div class="mt-2">
@@ -59,3 +66,4 @@
     </div>
 </div>
 @endsection
+
