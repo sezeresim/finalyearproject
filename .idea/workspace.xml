@@ -38,10 +38,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7b7971d4-60a0-44c8-9bbe-4cb8c4a06ce3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/myclass/list/join.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/sweetalert.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor/sweetalert/sweetalert.all.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/vendor/sweetalert/alert.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/projectWeb.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/projectWeb.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ClassGroupController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ClassGroupController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ClassListController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ClassListController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/myclass/list/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/myclass/list/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Controller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/MyTestsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/MyTestsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/QuestionController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/QuestionController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/myclass/list/join.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/myclass/list/join.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/myclass/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/myclass/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/mytests/mytests.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/mytests/mytests.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -213,6 +227,8 @@
       <path value="$PROJECT_DIR$/vendor/nyholm/psr7" />
       <path value="$PROJECT_DIR$/vendor/laminas/laminas-diactoros" />
       <path value="$PROJECT_DIR$/vendor/laminas/laminas-zendframework-bridge" />
+      <path value="$PROJECT_DIR$/vendor/uxweb/sweet-alert" />
+      <path value="$PROJECT_DIR$/vendor/realrashid/sweet-alert" />
     </include_path>
   </component>
   <component name="ProjectId" id="1Z5fBCtA2atd3cr1QPLfXKZUfif" />
@@ -242,19 +258,19 @@
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\PhpStorm 2019.3.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\Final Project\projectWeb\public" />
-      <recent name="E:\Final Project\projectWeb\resources\views\profile" />
-      <recent name="E:\Final Project\projectWeb\resources\views" />
-      <recent name="E:\Final Project\projectWeb\public\js\custom" />
-      <recent name="E:\Final Project\projectWeb\resources\views\mytests\detail" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\Final Project\projectWeb\resources\views\survey" />
       <recent name="E:\Final Project\projectWeb\resources\views\staticpages" />
       <recent name="E:\Final Project\projectWeb\resources\views\public" />
       <recent name="E:\Final Project\projectWeb\database\migrations" />
       <recent name="E:\Final Project\projectWeb\public\fontawesome\webfonts" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Final Project\projectWeb\public" />
+      <recent name="E:\Final Project\projectWeb\resources\views\profile" />
+      <recent name="E:\Final Project\projectWeb\resources\views" />
+      <recent name="E:\Final Project\projectWeb\public\js\custom" />
+      <recent name="E:\Final Project\projectWeb\resources\views\mytests\detail" />
     </key>
   </component>
   <component name="RunManager" selected="npm.development">
@@ -424,7 +440,8 @@
       <workItem from="1592303327266" duration="8630000" />
       <workItem from="1592340930084" duration="1103000" />
       <workItem from="1592416776618" duration="1717000" />
-      <workItem from="1592423819195" duration="5572000" />
+      <workItem from="1592423819195" duration="6039000" />
+      <workItem from="1592514656324" duration="3252000" />
     </task>
     <task id="LOCAL-00001" summary="deneme todo">
       <created>1585159502750</created>
@@ -492,10 +509,10 @@
       <screen x="-1440" y="-135" width="1440" height="860" />
     </state>
     <state x="-1040" y="32" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1366.728/-1440.-135.1440.860@-1440.-135.1440.860" timestamp="1592226262277" />
-    <state x="-990" y="50" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1592428758945">
+    <state x="-990" y="50" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1592515391276">
       <screen x="-1440" y="-135" width="1440" height="860" />
     </state>
-    <state x="-990" y="50" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728/-1440.-135.1440.860@-1440.-135.1440.860" timestamp="1592428758945" />
+    <state x="-990" y="50" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728/-1440.-135.1440.860@-1440.-135.1440.860" timestamp="1592515391276" />
     <state x="427" y="157" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728/-1440.-137.1440.860@0.0.1366.728" timestamp="1591549375039" />
     <state x="1816" y="48" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728/1366.-137.1440.860@1366.-137.1440.860" timestamp="1584473352961" />
     <state x="427" y="157" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1592317567327" />

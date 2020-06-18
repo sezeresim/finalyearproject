@@ -6,6 +6,7 @@ use App\ClassGroup;
 use App\ClassList;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Validator;
+use RealRashid\SweetAlert\Facades\Alert;
 
 
 class ClassListController extends Controller
@@ -44,11 +45,14 @@ class ClassListController extends Controller
       'unique' => 'Bu Sınıfta Kayıtlısınız',
     ]);
     if ($validator->fails()){
-      $messages = $validator->messages();
-      return redirect('/myclass/' . $classgroup->id . '/list/join')->withErrors($validator);
+      alert()->error('Başarısız İşlem','Bu Sınıfta Kayıtlısınız' , 'Type');
+      return redirect('/myclass/' . $classgroup->id . '/list/join');
+    }else{
+      alert()->success('Başarılı','Sınıfa Katılım Tamamlandı');
+      $classgroup->classlist()->create($user);
+      return redirect('/myclass/' . $classgroup->id . '/list/join');
     }
-    $classgroup->classlist()->create($user);
-    return redirect('/myclass/' . $classgroup->id . '/list/join');
+
   }
 
   public function destroy(ClassGroup $classgroup, ClassList $list)

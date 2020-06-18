@@ -8,9 +8,6 @@
           <form action="/myclass/{{$classID}}/list/join/" method="post">
             @csrf
             <button type="submit" class="btn btn-success">Sınıfa Katıl</button>
-            @if($errors->any())
-              {{ implode('', $errors->all(':message')) }}
-            @endif
           </form>
         </div>
 

@@ -53,7 +53,7 @@ class ClassGroupController extends Controller
   public function destroy(ClassGroup $classgroup)
   {
     $classgroup->delete();
-
+    toast('Sınıf silme işlemi başarılı','success');
     return redirect('myclass');
   }
 }

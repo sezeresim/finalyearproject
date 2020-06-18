@@ -52,14 +52,8 @@
                                             <a class="btn btn-sm btn-outline-warning mr-1" href="/mytests/analysis/{{$question_area->id}}">
                                                 <i class="fa fa-chart-bar"></i>
                                                 Analiz</a>
-                                            <a href="{{$question_area->path()}}" class="btn btn-sm btn-outline-info mr-1"><i class="far fa-eye"></i> Teste Git</a>
-                                            <form action="/mytests/{{$question_area->id}}" method="post">
-                                                @method('DELETE')
-                                                @csrf
-                                                <button  type="submit" class="btn btn-sm btn-outline-danger" onclick="return confirm('{{ $question_area->title  }} silmek istediğinizden eminmisiniz?')">
-                                                    <i class="fa fa-trash"></i> Sil
-                                                </button>
-                                            </form>
+                                          <a href="{{$question_area->path()}}" class="btn btn-sm btn-outline-info mr-1"><i class="far fa-eye"></i> Teste Git</a>
+                                          <a href="/mytests/{{$question_area->id}}" class="btn btn-sm btn-outline-danger delete-confirm">Sil</a>
                                         </div>
                                     </td>
                                 </tr>
@@ -72,4 +66,23 @@
             </div>
         </div>
     </div>
+@endsection
+@section('script')
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <script>
+    $('.delete-confirm').on('click', function (event) {
+      event.preventDefault();
+      const url = $(this).attr('href');
+      swal({
+        title: 'Silmek istiyormusunuz ?',
+        text: 'Geri dönüşü yoktur',
+        icon: 'warning',
+        buttons: ["İptal", "Evet!"],
+      }).then(function(value) {
+        if (value) {
+          window.location.href = url;
+        }
+      });
+    });
+  </script>
 @endsection

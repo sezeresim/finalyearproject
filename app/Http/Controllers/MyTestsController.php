@@ -23,6 +23,7 @@ class MyTestsController extends Controller
     public function destroy(QuestionArea $questionarea)
     {
         $questionarea->delete();
+        toast('Test silme işlemi başarılı','success');
         return redirect('/mytests');
     }
 }

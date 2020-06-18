@@ -27,14 +27,8 @@
                                 <td scope="row"><a>{{ $group->description }}</a></td>
                                 <td scope="row">
                                     <div class="row btn-group-sm">
-                                        <a class="btn btn-outline-info mr-1" href="{{ $group->path() }}"><i class="fas fa-users-cog"></i> Sınıfı Yönet</a>
-                                        <form action="/myclass/{{$group->id}}/delete" method="post">
-                                            @method('DELETE')
-                                            @csrf
-                                            <button  type="submit" class="btn btn-sm btn-outline-danger" onclick="return confirm('{{ $group->name }} sınıfını silmek istediğinizden eminmisiniz?')">
-                                                <i class="fa fa-trash"></i> Sil
-                                            </button>
-                                        </form>
+                                      <a class="btn btn-outline-info mr-1" href="{{ $group->path() }}"><i class="fas fa-users-cog"></i> Sınıfı Yönet</a>
+                                      <a href="/myclass/{{$group->id}}/delete" class="btn btn-sm btn-outline-danger delete-confirm">Sil</a>
                                     </div>
                                 </td>
 
@@ -48,4 +42,23 @@
         </div>
     </div>
 </div>
+@endsection
+@section('script')
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <script>
+    $('.delete-confirm').on('click', function (event) {
+      event.preventDefault();
+      const url = $(this).attr('href');
+      swal({
+        title: 'Silmek istiyormusunuz ?',
+        text: 'Geri dönüşü yoktur',
+        icon: 'warning',
+        buttons: ["İptal", "Evet!"],
+      }).then(function(value) {
+        if (value) {
+          window.location.href = url;
+        }
+      });
+    });
+  </script>
 @endsection

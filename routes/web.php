@@ -25,7 +25,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 //My Test
 Route::get('/mytests','MyTestsController@index');
-Route::delete('/mytests/{questionarea}','MyTestsController@destroy');
+Route::get('/mytests/{questionarea}','MyTestsController@destroy');
 
 //Detail
 Route::get('/mytests/analysis/{questionarea}','DetailController@show');
@@ -53,7 +53,7 @@ Route::get('/myclass','ClassGroupController@index');
 Route::get('/myclass/create','ClassGroupController@create');
 Route::post('/myclass/store','ClassGroupController@store');
 Route::get('/myclass/{classgroup}/list','ClassGroupController@show');
-Route::delete('myclass/{classgroup}/delete','ClassGroupController@destroy');
+Route::get('myclass/{classgroup}/delete','ClassGroupController@destroy');
 
 //ClassList
 Route::post('/myclass/{classgroup}/list/add','ClassListController@store');

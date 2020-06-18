@@ -41,7 +41,7 @@ class QuestionController extends Controller
 
     $question = $questionarea->questions()->create($data['question']);
     $question->answers()->createMany($data['answers']);
-
+    toast('Yeni Soru Eklendi','success');
     return redirect('/questionarea/' . $questionarea->id);
   }
 
