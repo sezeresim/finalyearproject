@@ -11,13 +11,13 @@
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Nunito:400,700" rel="stylesheet">
   <!-- Styles -->
+  <script src="{{ asset('js/jquery-3.4.1.min.js') }}"></script>
   <link href="{{ asset('css-sketch/bootstrap.min.css') }}" rel="stylesheet">
+  <script src="{{ asset('js/bootstrap.bundle.js') }}" ></script>
   <link href="{{ asset('css/custom.css') }}" rel="stylesheet">
   <link href="{{ asset('fontawesome/css/all.css') }}" rel="stylesheet">
-  <script src="{{ asset('fontawesome/js/all.js') }}"></script>
-  <script src="{{ asset('js/jquery-3.4.1.min.js') }}"></script>
   <link href="{{ asset('http://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.css') }}" rel="stylesheet">
-  <script src="{{ asset('http://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js') }}"></script>
+
 <body>
 <nav class="navbar navbar-expand-lg bg bg-dark">
   <div class="container">
@@ -54,13 +54,6 @@
           <li class="nav-item">
             <a class="nav-link text text-white" href="/personal"> Bana Özel</a>
           </li>
-          {{--<li class="nav-item">
-              <a href="" class="nav-link text text-white">
-                  --}}{{--TODO--}}{{--
-                  <i class="fas fa-bell"></i>
-                  <span class="badge badge-warning">2</span>
-              </a>
-          </li>--}}
           <li class="nav-item dropdown">
             <a id="navbarDropdown" class="nav-link dropdown-toggle text text-success text-uppercase" href="#"
                role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
@@ -126,41 +119,6 @@
               </p>
 
             </div>
-            <div class="col-md-6">
-              <div class="social-list align-right">
-                <div class="soc-item">
-                  <a href="https://twitter.com/mobirise" target="_blank">
-                    <span class="socicon-twitter socicon mbr-iconfont mbr-iconfont-social" media-simple="true"></span>
-                  </a>
-                </div>
-                <div class="soc-item">
-                  <a href="https://www.facebook.com/pages/Mobirise/1616226671953247" target="_blank">
-                    <span class="socicon-facebook socicon mbr-iconfont mbr-iconfont-social" media-simple="true"></span>
-                  </a>
-                </div>
-                <div class="soc-item">
-                  <a href="https://www.youtube.com/c/mobirise" target="_blank">
-                    <span class="socicon-youtube socicon mbr-iconfont mbr-iconfont-social" media-simple="true"></span>
-                  </a>
-                </div>
-                <div class="soc-item">
-                  <a href="https://instagram.com/mobirise" target="_blank">
-                    <span class="socicon-instagram socicon mbr-iconfont mbr-iconfont-social" media-simple="true"></span>
-                  </a>
-                </div>
-                <div class="soc-item">
-                  <a href="https://plus.google.com/u/0/+Mobirise" target="_blank">
-                    <span class="socicon-googleplus socicon mbr-iconfont mbr-iconfont-social"
-                          media-simple="true"></span>
-                  </a>
-                </div>
-                <div class="soc-item">
-                  <a href="https://www.behance.net/Mobirise" target="_blank">
-                    <span class="socicon-behance socicon mbr-iconfont mbr-iconfont-social" media-simple="true"></span>
-                  </a>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </div>
@@ -168,8 +126,8 @@
   </footer>
 </div>
 <!--   Core JS Files   -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-<script src="{{asset('https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js')}}"></script>
+<script src="{{ asset('http://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js') }}"></script>
+<script src="{{ asset('fontawesome/js/all.js') }}"></script>
 <script src="{{ asset('js/custom.js') }}"></script>
 <script src="{{ asset('js/app.js') }}"></script>
 <script src="{{ asset('js/custom/selectState.js') }}"></script>
