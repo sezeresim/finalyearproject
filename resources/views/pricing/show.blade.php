@@ -5,6 +5,9 @@
     {!! $iyzicoPayment !!}
     <section class="pricing">
       <div class="container">
+        <div class="alert alert-danger" role="alert">
+          Bu uygulama geliştirilmesürecindedir bu bölümde gerçek kartlarınızı denemeyiniz!
+        </div>
         <div class="row">
           <div class="col-md-4">
             <div class="card mb-5 mb-lg-0">

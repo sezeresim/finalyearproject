@@ -40,6 +40,12 @@
     <list default="true" id="7b7971d4-60a0-44c8-9bbe-4cb8c4a06ce3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/myclass/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/myclass/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/mytests/mytests.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/mytests/mytests.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/personal/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/personal/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pricing/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pricing/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/profile/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/profile/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/questionarea/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/questionarea/create.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -426,7 +432,7 @@
       <workItem from="1592423819195" duration="6039000" />
       <workItem from="1592514656324" duration="3543000" />
       <workItem from="1592595607974" duration="829000" />
-      <workItem from="1592653145502" duration="2608000" />
+      <workItem from="1592653145502" duration="5347000" />
     </task>
     <task id="LOCAL-00001" summary="deneme todo">
       <created>1585159502750</created>
@@ -629,11 +635,6 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/resources/views/pricing/show.blade.php</url>
-          <line>11</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/app/Http/Controllers/PersonalController.php</url>
           <line>20</line>
           <option name="timeStamp" value="4" />
@@ -645,7 +646,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/resources/views/questionarea/create.blade.php</url>
-          <line>51</line>
+          <line>54</line>
           <option name="timeStamp" value="6" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
