@@ -31,6 +31,11 @@ class SurveyController extends Controller
 
   public function show(QuestionArea $questionarea)
   {
+    $nowdate = Carbon::now();
+    if ($nowdate > $questionarea->last_date) {
+      return response()->json(['error' => 'notime'], 200);
+    }
+
     $questionarea->load('questions.answers');
     return response()->json(['questions' => $questionarea['questions']], 200);
   }
@@ -59,6 +64,13 @@ class SurveyController extends Controller
       if ($questionarea->whatIs == "quiz") {
         $totalScore = $this->calculateScore($data->responses);
       }
+      $updateUSurveyUser = SurveyUser::where("list_id", $data->userID)
+        ->where("question_area_id", $questionarea->id)->update(["complete" => 1, "score" => $totalScore]);
+
+      // $updateUserScore = SurveyUser::where("list_id", $data->userID)
+      //   ->where("question_area_id", $questionarea->id)->update(["score" => $totalScore]);
+
+
       $survey = $questionarea->surveys()->create($data['survey']);
       $survey->responses()->createMany($data['responses']);
 
