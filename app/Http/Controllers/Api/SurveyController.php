@@ -53,6 +53,7 @@ class SurveyController extends Controller
     if ($data->fails()) {
       return response()->json(['error' => $data->errors()], 401);
     }*/
+    $totalScore = null;
     if ($questionarea->whatIs == "quiz") {
       $totalScore = $this->calculateScore($data->responses);
     }
