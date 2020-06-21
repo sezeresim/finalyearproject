@@ -63,9 +63,9 @@ class SurveyController extends Controller
 
     $totalScore = null;
     if ($questionarea->whatIs == "quiz") {
-      $totalScore = $this->calculateScore($data->responses);
+      $totalScore = $this->calculateScore($data['responses']);
     }
-    $updateUSurveyUser = SurveyUser::where("list_id", $data->userID)->where("question_area_id", $questionarea->id)->update(["complete" => 1, "score" => $totalScore]);
+    $updateUSurveyUser = SurveyUser::where("list_id", $data['userID'])->where("question_area_id", $questionarea->id)->update(["complete" => 1, "score" => $totalScore]);
 
     // $updateUserScore = SurveyUser::where("list_id", $data->userID)
     //   ->where("question_area_id", $questionarea->id)->update(["score" => $totalScore]);
