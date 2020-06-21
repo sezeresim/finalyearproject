@@ -58,22 +58,25 @@ class SurveyController extends Controller
       ]
     );
     if ($validator->fails()) {
-      return response()->json(['error' => $validator->errors()], 200);
+      return response()->json(['error' => $validator->errors()], 401);
+    } else {
+
+      $totalScore = null;
+
+      if ($questionarea->whatIs == "quiz") {
+        $totalScore = $this->calculateScore($data['responses']);
+      }
+
+      $updateUSurveyUser = SurveyUser::where("list_id", $data['userID'])->where("question_area_id", $questionarea->id)->update(["complete" => 1, "score" => $totalScore]);
+
+      // $updateUserScore = SurveyUser::where("list_id", $data->userID)
+      //   ->where("question_area_id", $questionarea->id)->update(["score" => $totalScore]);
+
+
+      $survey = $questionarea->surveys()->create($data['survey']);
+      $survey->responses()->createMany($data['responses']);
+
+      return response()->json(['data' => $data, 'score' => $totalScore], 200);
     }
-
-    $totalScore = null;
-    if ($questionarea->whatIs == "quiz") {
-      $totalScore = $this->calculateScore($data['responses']);
-    }
-    $updateUSurveyUser = SurveyUser::where("list_id", $data['userID'])->where("question_area_id", $questionarea->id)->update(["complete" => 1, "score" => $totalScore]);
-
-    // $updateUserScore = SurveyUser::where("list_id", $data->userID)
-    //   ->where("question_area_id", $questionarea->id)->update(["score" => $totalScore]);
-
-
-    $survey = $questionarea->surveys()->create($data['survey']);
-    $survey->responses()->createMany($data['responses']);
-
-    return response()->json(['data' => $data, 'score' => $totalScore], 200);
   }
 }
