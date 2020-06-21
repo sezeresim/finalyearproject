@@ -43,40 +43,37 @@ class SurveyController extends Controller
   public function store(QuestionArea $questionarea)
   {
     $data = request()->all();
-    $validator = Validator::make(
-      request()->all(),
-      [
-        [
-          'responses.*.answer_id' => 'required',
-          'responses.*.question_id' => 'required',
-          'survey.name' => 'required',
-          'survey.email' => ['required', 'unique:surveys,email,NULL,id,question_area_id,' . $questionarea->id],
-        ],
-        [
-          'unique' => 'Daha önce bu anketi cevapladınız.',
-        ]
-      ]
-    );
-    if ($validator->fails()) {
-      return response()->json(['error' => $validator->errors()], 401);
-    } else {
-
-      $totalScore = null;
-
-      if ($questionarea->whatIs == "quiz") {
-        $totalScore = $this->calculateScore($data['responses']);
-      }
-
-      $updateUSurveyUser = SurveyUser::where("list_id", $data['userID'])->where("question_area_id", $questionarea->id)->update(["complete" => 1, "score" => $totalScore]);
-
-      // $updateUserScore = SurveyUser::where("list_id", $data->userID)
-      //   ->where("question_area_id", $questionarea->id)->update(["score" => $totalScore]);
+    // $validator = Validator::make(
+    //   request()->all(),
+    //   [
+    //     [
+    //       'responses.*.answer_id' => 'required',
+    //       'responses.*.question_id' => 'required',
+    //       'survey.name' => 'required',
+    //       'survey.email' => ['required', 'unique:surveys,email,NULL,id,question_area_id,' . $questionarea->id],
+    //     ],
+    //     [
+    //       'unique' => 'Daha önce bu anketi cevapladınız.',
+    //     ]
+    //   ]
+    // );
 
 
-      $survey = $questionarea->surveys()->create($data['survey']);
-      $survey->responses()->createMany($data['responses']);
+    $totalScore = null;
 
-      return response()->json(['data' => $data, 'score' => $totalScore], 200);
+    if ($questionarea->whatIs == "quiz") {
+      $totalScore = $this->calculateScore($data['responses']);
     }
+
+    $updateUSurveyUser = SurveyUser::where("list_id", $data['userID'])->where("question_area_id", $questionarea->id)->update(["complete" => 1, "score" => $totalScore]);
+
+    // $updateUserScore = SurveyUser::where("list_id", $data->userID)
+    //   ->where("question_area_id", $questionarea->id)->update(["score" => $totalScore]);
+
+
+    $survey = $questionarea->surveys()->create($data['survey']);
+    $survey->responses()->createMany($data['responses']);
+
+    return response()->json(['data' => $data, 'score' => $totalScore], 200);
   }
 }
