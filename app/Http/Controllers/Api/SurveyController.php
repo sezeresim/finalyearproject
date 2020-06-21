@@ -59,7 +59,7 @@ class SurveyController extends Controller
     // );
 
 
-    $totalScore = null;
+    $totalScore = 0;
 
     if ($questionarea->whatIs == "quiz") {
       $totalScore = $this->calculateScore($data['responses']);
@@ -74,6 +74,6 @@ class SurveyController extends Controller
     $survey = $questionarea->surveys()->create($data['survey']);
     $survey->responses()->createMany($data['responses']);
 
-    return response()->json(['data' => $data, 'score' => $totalScore], 200);
+    return response()->json(['data' => $data], 200);
   }
 }
