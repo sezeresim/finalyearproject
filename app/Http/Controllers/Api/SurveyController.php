@@ -37,9 +37,9 @@ class SurveyController extends Controller
 
   public function store(QuestionArea $questionarea)
   {
-
-    $data = Validator::make(
-      request()->all(),
+    $data = request()->all();
+    $validator = Validator::make(
+      $data,
       [
         [
           'responses.*.answer_id' => 'required',
@@ -52,8 +52,8 @@ class SurveyController extends Controller
         ]
       ]
     );
-    if ($data->fails()) {
-      return response()->json(['error' => $data->errors()], 401);
+    if ($validator->fails()) {
+      return response()->json(['error' => $validator->errors()], 401);
     } else {
       $totalScore = null;
       if ($questionarea->whatIs == "quiz") {
