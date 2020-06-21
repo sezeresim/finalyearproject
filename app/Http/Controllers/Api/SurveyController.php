@@ -57,9 +57,9 @@ class SurveyController extends Controller
         ]
       ]
     );
-    // if ($validator->fails()) {
-    //   return response()->json(['error' => $validator->errors()], 401);
-    // }
+    if ($validator->fails()) {
+      return response()->json(['error' => $validator->errors()], 200);
+    }
 
     $totalScore = null;
     if ($questionarea->whatIs == "quiz") {
