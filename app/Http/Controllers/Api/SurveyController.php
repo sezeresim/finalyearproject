@@ -59,6 +59,6 @@ class SurveyController extends Controller
     $survey = $questionarea->surveys()->create($data['survey']);
     $survey->responses()->createMany($data['responses']);
 
-    return response()->json(['data' => $data], 200);
+    return response()->json(['data' => $data, 'score' => $totalScore], 200);
   }
 }

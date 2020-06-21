@@ -58,8 +58,8 @@ class SurveyController extends Controller
     if ($questionarea->survey_state == "public") {
 
       if (Auth::check()) {
-        $survey['name']=Auth::user()->name;
-        $survey['email']=Auth::user()->email;
+        $survey['name'] = Auth::user()->name;
+        $survey['email'] = Auth::user()->email;
         request()->merge(['survey' => $survey]);
       }
 

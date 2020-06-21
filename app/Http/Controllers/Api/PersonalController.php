@@ -10,7 +10,6 @@ class PersonalController extends Controller
 {
   public function show()
   {
-
     $tests = DB::table('question_areas')
       ->where('question_areas.survey_state', '=', "private")
       ->rightJoin('survey_users', function ($join) {
@@ -19,7 +18,7 @@ class PersonalController extends Controller
       })->get();
 
     if ($tests->count() == 0) {
-      return response()->json(['data' => 'no content'], 200);
+      return response()->json(['error' => 'no content'], 204);
     } else {
       return response()->json(['data' => $tests], 200);
     }
