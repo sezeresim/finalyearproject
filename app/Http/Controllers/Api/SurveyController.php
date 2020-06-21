@@ -44,7 +44,7 @@ class SurveyController extends Controller
   {
     $data = request()->all();
     $validator = Validator::make(
-      $data,
+      request()->all(),
       [
         [
           'responses.*.answer_id' => 'required',
