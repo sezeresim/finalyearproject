@@ -37,29 +37,32 @@ class SurveyController extends Controller
 
   public function store(QuestionArea $questionarea)
   {
-    $data = request()->all();
-    /*$data = Validator::make(
+
+    $data = Validator::make(
       request()->all(),
-      [[
-        'responses.*.answer_id' =>'required',
-        'responses.*.question_id' => 'required',
-        'survey.name'=> 'required',
-        'survey.email'=> ['required','unique:surveys,email,NULL,id,question_area_id,'.$questionarea->id],
-      ],
       [
-        'unique' => 'Daha önce bu anketi cevapladınız.',
-      ]]
+        [
+          'responses.*.answer_id' => 'required',
+          'responses.*.question_id' => 'required',
+          'survey.name' => 'required',
+          'survey.email' => ['required', 'unique:surveys,email,NULL,id,question_area_id,' . $questionarea->id],
+        ],
+        [
+          'unique' => 'Daha önce bu anketi cevapladınız.',
+        ]
+      ]
     );
     if ($data->fails()) {
       return response()->json(['error' => $data->errors()], 401);
-    }*/
-    $totalScore = null;
-    if ($questionarea->whatIs == "quiz") {
-      $totalScore = $this->calculateScore($data->responses);
-    }
-    $survey = $questionarea->surveys()->create($data['survey']);
-    $survey->responses()->createMany($data['responses']);
+    } else {
+      $totalScore = null;
+      if ($questionarea->whatIs == "quiz") {
+        $totalScore = $this->calculateScore($data->responses);
+      }
+      $survey = $questionarea->surveys()->create($data['survey']);
+      $survey->responses()->createMany($data['responses']);
 
-    return response()->json(['data' => $data, 'score' => $totalScore], 200);
+      return response()->json(['data' => $data, 'score' => $totalScore], 200);
+    }
   }
 }
