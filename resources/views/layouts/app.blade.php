@@ -11,11 +11,14 @@
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Nunito:400,700" rel="stylesheet">
   <!-- Styles -->
+  <script src="{{ asset('js/jquery-3.4.1.min.js') }}"></script>
+  <script src="{{ asset('js/bootstrap.min.js') }}"></script>
   <link href="{{ asset('css-sketch/bootstrap.min.css') }}" rel="stylesheet">
   <link href="{{ asset('css/custom.css') }}" rel="stylesheet">
   <link href="{{ asset('fontawesome/css/all.css') }}" rel="stylesheet">
   <script src="{{ asset('fontawesome/js/all.js') }}"></script>
-  <script src="{{ asset('js/jquery-3.4.1.min.js') }}"></script>
+
+
   <link href="{{ asset('http://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.css') }}" rel="stylesheet">
   <script src="{{ asset('http://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js') }}"></script>
 <body>
@@ -125,11 +128,12 @@
   </footer>
 </div>
 <!--   Core JS Files   -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-
+<script src="{{ asset('https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js') }}"></script>
+<script src="{{ asset('https://unpkg.com/sweetalert/dist/sweetalert.min.js') }}"></script>
 <script src="{{ asset('js/custom.js') }}"></script>
+{{--
 <script src="{{ asset('js/app.js') }}"></script>
+--}}
 <script src="{{ asset('js/custom/selectState.js') }}"></script>
 @yield('script')
 @include('sweetalert::alert')

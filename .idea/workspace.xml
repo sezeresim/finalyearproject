@@ -37,7 +37,18 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7b7971d4-60a0-44c8-9bbe-4cb8c4a06ce3" name="Default Changelist" comment="" />
+    <list default="true" id="7b7971d4-60a0-44c8-9bbe-4cb8c4a06ce3" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/projectWeb.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/projectWeb.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/bootstrap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -45,7 +56,9 @@
   </component>
   <component name="ComposerSettings" doNotAsk="true" synchronizationState="DONT_SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
-    <execution />
+    <execution>
+      <executable path="composer" />
+    </execution>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -209,6 +222,11 @@
       <path value="$PROJECT_DIR$/vendor/laminas/laminas-zendframework-bridge" />
       <path value="$PROJECT_DIR$/vendor/uxweb/sweet-alert" />
       <path value="$PROJECT_DIR$/vendor/realrashid/sweet-alert" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-normalizer" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-grapheme" />
+      <path value="$PROJECT_DIR$/vendor/symfony/deprecation-contracts" />
+      <path value="$PROJECT_DIR$/vendor/symfony/string" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php80" />
     </include_path>
   </component>
   <component name="ProjectId" id="1Z5fBCtA2atd3cr1QPLfXKZUfif" />
@@ -234,23 +252,23 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.language" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\PhpStorm 2019.3.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\Final Project\projectWeb\resources\views\survey" />
-      <recent name="E:\Final Project\projectWeb\resources\views\staticpages" />
-      <recent name="E:\Final Project\projectWeb\resources\views\public" />
-      <recent name="E:\Final Project\projectWeb\database\migrations" />
-      <recent name="E:\Final Project\projectWeb\public\fontawesome\webfonts" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\Final Project\projectWeb\public" />
       <recent name="E:\Final Project\projectWeb\resources\views\profile" />
       <recent name="E:\Final Project\projectWeb\resources\views" />
       <recent name="E:\Final Project\projectWeb\public\js\custom" />
       <recent name="E:\Final Project\projectWeb\resources\views\mytests\detail" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Final Project\projectWeb\resources\views\survey" />
+      <recent name="E:\Final Project\projectWeb\resources\views\staticpages" />
+      <recent name="E:\Final Project\projectWeb\resources\views\public" />
+      <recent name="E:\Final Project\projectWeb\database\migrations" />
+      <recent name="E:\Final Project\projectWeb\public\fontawesome\webfonts" />
     </key>
   </component>
   <component name="RunManager" selected="npm.development">
@@ -426,6 +444,11 @@
       <workItem from="1592653145502" duration="6355000" />
       <workItem from="1592762306527" duration="60000" />
       <workItem from="1592763682047" duration="28000" />
+      <workItem from="1592836586834" duration="76000" />
+      <workItem from="1592839362529" duration="2494000" />
+      <workItem from="1592842168084" duration="298000" />
+      <workItem from="1592842636724" duration="469000" />
+      <workItem from="1592846230912" duration="1527000" />
     </task>
     <task id="LOCAL-00001" summary="deneme todo">
       <created>1585159502750</created>
@@ -508,6 +531,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="296" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1585159501090" />
+    <state x="459" y="276" key="ComposerInitDialogKey" timestamp="1592841587864">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="459" y="276" key="ComposerInitDialogKey/0.0.1366.728/-1440.-138.1440.860@0.0.1366.728" timestamp="1592841587864" />
     <state x="399" y="0" key="Diagram.Print.Preview.Dialog" timestamp="1590879062653">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -554,11 +581,12 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="533" y="103" key="RollbackChangesDialog/0.0.1366.728@0.0.1366.728" timestamp="1588512518353" />
-    <state x="191" y="0" width="998" height="708" key="SettingsEditor" timestamp="1592321236738">
+    <state x="191" y="0" width="998" height="708" key="SettingsEditor" timestamp="1592839648047">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="-1239" y="-135" key="SettingsEditor/0.0.1366.728/-1440.-135.1440.860@-1440.-135.1440.860" timestamp="1592255160769" />
     <state x="144" y="2" width="998" height="708" key="SettingsEditor/0.0.1366.728/-1440.-137.1440.860@0.0.1366.728" timestamp="1589748180057" />
+    <state x="191" y="0" key="SettingsEditor/0.0.1366.728/-1440.-138.1440.860@0.0.1366.728" timestamp="1592839648047" />
     <state x="-1347" y="61" key="SettingsEditor/0.0.1366.728/-1440.-79.1440.860@-1440.-79.1440.860" timestamp="1584295876528" />
     <state x="191" y="0" width="998" height="708" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1592321236738" />
     <state x="495" y="246" width="375" height="253" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1587057809647">
@@ -589,7 +617,6 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="-1079" y="143" key="com.intellij.ide.util.TipDialog/0.0.1366.728/-1440.-79.1440.860@-1440.-79.1440.860" timestamp="1584349933921" />
-    <state x="342" y="188" key="com.intellij.ide.util.TipDialog/0.0.1366.728/-1440.-79.1440.860@0.0.1366.728" timestamp="1584133823673" />
     <state x="342" y="188" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1585131695585" />
     <state x="329" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1585667372165">
       <screen x="0" y="0" width="1366" height="728" />
